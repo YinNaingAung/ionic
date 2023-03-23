@@ -7,30 +7,42 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="/dist/output.css">
+<link rel="stylesheet" href="../src/style.css">
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
 <body>
     
 
+    <!-- navbar2 -->
+ <div class="px-10">
+    <div class="flex justify-between">
+        <div>
+            <h1>Pricing</h1>
+        </div>
+        <div>
+            <button class="p-1 px-2 rounded-lg bg-slate-500 text-sm text-slate-50">Contact Sales</button>
+        </div>
+    </div>
+ </div>
 
     <!-- hero section -->
     <div class="container mx-auto ">
         <h6 class="text-center mb-5">IONIC PLATFORM PRICING</h1>
-        <h1 class="text-5xl text-center mb-5">Pick a plan that’s right for you.</h1>
-        <h3 class="text-center text-xl max-w-2xl mx-auto">Enterprise-grade cloud and native packages that enhance Ionic application functionality and security.   </h3>
+        <h1 class="text-5xl text-center mx-auto max-w-md sm:max-w-2xl  mb-5">Pick a plan that’s right for you.</h1>
+        <h3 class="text-center text-xl max-w-sm sm:max-w-2xl mx-auto">Enterprise-grade cloud and native packages that enhance Ionic application functionality and security.   </h3>
     </div>
     
     <!-- Price section -->
-    <div>
+    <div class="container px-5 py-20 mx-auto grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
 
         <div class="max-w-sm rounded-3xl border p-5">
             <h1 class="text-4xl mb-4">Basic</h1>
-            <h6 class="max-w-xs text-sm mb-4">Powerful cloud services to help you ship faster and update your apps in real time.</h6>
-            <div class="mb-4">
+            <h6 class="max-w-xs text-sm mb-9">Powerful cloud services to help you ship faster and update your apps in real time.</h6>
+            <div class="mb-9">
                 <h4 class="text-md font-bold">Starting at</h4>
                 <h6 class="text-lg font-bold"><span class="text-3xl">$499</span>  /mo</h6>
             </div>
             
-            <h4 class=" mb-4">Cloud app delivery with Appflow</h4>
+            <h4 class=" mb-4">Cloud app delivery with <a href="" class="text-blue-500 hover:text-blue-400"> Appflow</a></h4>
             <div class="flex gap-4 mb-4">
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Cloud native app builds</h1>
@@ -47,7 +59,7 @@
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Native Builds with iOS Enterprise Certs</h1>
             </div>
-            <div class="flex gap-4 mb-6">
+            <div class="flex gap-4 mb-9">
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Includes five (5) seats</h1>
             </div>
@@ -57,21 +69,23 @@
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Helpdesk ticketings</h1>
             </div>
-            <div class="flex gap-4 mb-4">
+            <div class="flex gap-4 mb-[610px] xl:mb-[475px]">
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Issue resolution</h1>
             </div>
+
+            <button class="bg-blue-500 w-full py-3 rounded-lg font-bold text-white">Start your trial <i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
         <div class="max-w-sm rounded-3xl border p-5">
             <h1 class="text-4xl mb-4">Standard</h1>
-            <h6 class="max-w-xs text-sm mb-4">Combine the best of our cloud and native solutions for faster development.</h6>
-            <div class="mb-4">
+            <h6 class="max-w-xs text-sm mb-9">Combine the best of our cloud and native solutions for faster development.</h6>
+            <div class="mb-9">
                 <h4 class="text-md font-bold">Starting at</h4>
                 <h6 class="text-lg font-bold"><span class="text-3xl">$2499</span>  /mo</h6>
             </div>
             
-            <h4 class=" mb-4">Cloud app delivery with Appflow</h4>
+            <h4 class=" mb-4">Cloud app delivery with <a href="" class="text-blue-500 hover:text-blue-400" > Appflow</a></h4>
             <div class="flex gap-4 mb-4">
                 <div><i class="fa-solid fa-arrow-left-long"></i></div>
                 <h1>Everything included in Basic, plus:</h1>
@@ -84,25 +98,25 @@
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Control access with SSO & Permissions</h1>
             </div>
-            <div class="flex gap-4 mb-4">
+            <div class="flex gap-4 mb-9">
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Use with GitLab Self-Managed, GitHub Enterprise, Bitbucket Server, and Azure DevOps</h1>
             </div>
 
-            <h4 class=" mb-4">Native solutions access</h4>
+            <h4 class=" mb-9">Native solutions access</h4>
             <div class="flex gap-4 mb-6">
                 <div><i class="fa-solid fa-check"></i></div>
-                <h1>Advanced biometrics with Identity Vault</h1>
+                <h1>Advanced biometrics with <a href="" class="text-blue-500 hover:text-blue-400">Identity Vault</a> </h1>
             </div>
             
             <H1 class="mb-4">Basic support</H1>
             <div class="flex gap-4 mb-4">
                 <div><i class="fa-solid fa-check"></i></div>
-                <h1>Mobile SSO integration with Auth Connect</h1>
+                <h1>Mobile SSO integration with <a href="" class="text-blue-500 hover:text-blue-400">Auth Connect</a> </h1>
             </div>
-            <div class="flex gap-4 mb-4">
+            <div class="flex gap-4 mb-9">
                 <div><i class="fa-solid fa-check"></i></div>
-                <h1>Powerful protection with Secure Storage</h1>
+                <h1>Powerful protection with <a href="" class="text-blue-500 hover:text-blue-400">Secure Storage</a></h1>
             </div>
 
             <h4 class=" mb-4">Enterprise support</h4>
@@ -126,16 +140,613 @@
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Product onboardinge</h1>
             </div>
-            <div class="flex gap-4 mb-4">
+            <div class="flex gap-4 mb-24 xl:mb-14">
                 <div><i class="fa-solid fa-check"></i></div>
                 <h1>Implementation & integration assistance</h1>
             </div>
+            <button class="bg-blue-500 w-full py-3 rounded-lg font-bold text-white">Buy now <i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
 
+        <!-- third price -->
+        <div class="max-w-sm rounded-3xl border p-5 bg-slate-800">
+            <h1 class="text-4xl mb-4 text-white">Enterprise</h1>
+            <h6 class="max-w-xs text-sm mb-9 text-white">For teams building mission-critical apps. Access the entire Ionic Enterprise Platform.</h6>
+            <div class="mb-9 text-white">
+                <h4 class="text-md font-bold">Custom pricing</h4>
+                <h6 class="text-lg font-bold">Contact us</h6>
+            </div>
+            
+            <h4 class=" mb-4 text-white">Cloud app delivery with <a href="" class="text-blue-500 hover:text-blue-400" > Appflow</a></h4>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+                <h1>Everything included in Basic, plus:</h1>
+            </div>
+            <div class="flex gap-4 mb-9 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Ask us about unlimited Live Updates</h1>
+            </div>
+
+            <h4  class=" mb-4 text-white">Native solutions & premier plugins access</h4>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+                <h1>Everything included in Basic, plus:</h1>
+            </div>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Payment collection with Ionic Payments</h1>
+            </div>
+            <div class="flex gap-4 mb-9 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Access to Official Integrations library</h1>
+            </div>
+
+            <h4 class=" mb-4 text-white">Enterprise Premier support</h4>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+                <h1>Everything included in Basic, plus:</h1>
+            </div>
+
+            <div class="flex gap-4 mb-9 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Priority hot fixes for Ionic OSS software </h1>
+            </div>
+            
+            <H1 class="mb-4 text-white">Basic support</H1>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Dedicated Solutions Architect</h1>
+            </div>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Guaranteed response SLA</h1>
+            </div>
+
+            
+            <div class="flex gap-4 mb-9 text-white">
+                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+                <h1>Quarterly business reviews:</h1>
+            </div>
+
+            <h4 class=" mb-4 text-white">Expert services from Ionic Advisory team</h4>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Direct access to Ionic engineers & experts</h1>
+            </div>
+            <div class="flex gap-4 mb-4 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Architecture, code, and UX/UI reviews</h1>
+            </div>
+            <div class="flex gap-4 mb-14 text-white">
+                <div><i class="fa-solid fa-check"></i></div>
+                <h1>Team trainings</h1>
+            </div>
+            
+            <button class="bg-blue-500 w-full py-3 rounded-lg font-bold text-white">Contact us <i class="fa-solid fa-arrow-right"></i></button>
         </div>
+
 
     </div>
+
+    <!-- about -->
+    <div class="container mx-auto grid md:grid-cols-2 gap-5 px-5 py-9 mb-20">
+        <div class="border-2 border-slate-500 max-w-2xl rounded-xl px-10 py-5 ">
+            <div class="mb-9">
+                <h1 class="text-3xl font-bold">Indies and Startups</h1>
+                <p class="">Discounts are available for individuals or small start-ups with annual revenue or funding within certain specified limits.</p>
+            </div>
+            <div class="flex justify-between items-center">
+                    <div>
+                        <h6 class="font-bold">Starting at</h6>
+                        <p class="font-bold text-xl">$49/mo</p>
+                    </div>
+                    <div>
+                        <button class="bg-blue-500 px-4 py-2 rounded-full ">learn more <i class="fa-solid fa-arrow-right"></i> </button>
+                    </div>  
+            </div>
+        </div>
+        
+        <div class="border-2 border-slate-500  max-w-2xl rounded-xl px-10 py-5">
+            <div class=" mb-16 xl:mb-11">
+                <h1 class="text-3xl font-bold">Have a complex use case? </h1>
+                <p>No problem. Our App Strategists will make sure your company is set up for success from day one.</p>
+            </div>
+        
+          <button class="bg-blue-500 px-4 py-2 rounded-full ">learn more <i class="fa-solid fa-arrow-right"></i> </button>
+            
+        </div>
+        
+
+
+    </div>
+
+    <!-- logo -->
+    <div class="container mx-auto grid lg:grid-cols-2  lg:gap-20 xl:gap-9 px-10 lg:px-36 py-20">
+        <div class="flex justify-between space-x-5 lg:space-x-10 mb-10 lg:mb-auto">
+            <img class="W-logo" src="../assets/image/1.webp" alt="">
+            <img class="W-logo" src="../assets/image/2.png" alt="">
+            <img class="W-logo" src="../assets/image/3.png" alt="">
+            <img class="W-logo" src="../assets/image/4.png" alt="">
+            <img class="W-logo1" src="../assets/image/5.png" alt="">
+        </div>
+      <div class="flex justify-between space-x-5 sm:px-10 lg:space-x-10">
+        <img src="../assets/image/6.png" alt="">
+        <img src="../assets/image/7.png" alt="">
+        <img src="../assets/image/8.png" alt="">
+        <img src="../assets/image/9.png" alt="">
+      </div>
+      
+    </div>
+
+    <!-- H&R block -->
+    <div class="relative container px-5 mx-auto  xl:px-28">
+       
+        <div class="  bg-transparent      md:bg-green-500 z-20 md:z-auto  sm:max-w-[800px]  md:max-w-xl lg:max-w-2xl px-10   rounded-3xl">
+            <img class="w-20  pt-11 lg:pb-5 " src="../assets/image/h&R.webp" alt="">
+           <div class="py-5 relative">
+            
+                <img class="absolute -left-5" src="../assets/image/blockquote-16.png" alt="">
+            
+           
+            <p class="text-xl text-slate-50 font-bold md:max-w-xs lg:max-w-lg lg:pb-5 "> We didn’t want to maintain separate pipelines for native mobile apps and web apps. We wanted that cross-platform experience so we looked at Ionic. We’re able to use our existing code structure, port everything over, and take advantage of that.</p>
+            <div class="flex sm:gap-5 text-xl text-white py-5 col">
+                <span>Nick Trower </span>
+                <span class="text-green-300 font-bold">Solutions Architect</span>
+            </div>
+           </div>
+        
+     
+        </div>
+     
+        <div class="relative -z-10 md:z-10 overflow-hidden md:overflow-visible rounded-3xl b500 b460 bottom-[420px] sm:bottom-96 md:-bottom-64">
+                <div class=" w450 md:hidden h-[420px] sm:h-[400px] rounded-3xl   op   bg-green-500"></div>
+                <div class="absolute bottom-0 -z-10 overflow-hidden  md:z-auto md:bottom-[350px] lg:bottom-72    rounded-3xl xl:bottom-13 w700 w-[600px] sm:max-w-3xl  md:w-[350px] lg:w-[450px]    md:left-[400px] lg:left-[600px]  ">
+                    <img class=" w-full md:w-[400px]  lg:w-auto" src="../assets/image/photo.webp" alt="">
+                </div>
+        </div>
+           
+    </div>
+
+    <!-- plan -->
+    <h1 class="text-center text-5xl font-bold mb-10 -mt-60 md:mt-28 lg:mt-32">Plan Details</h1>
+    <div class="container mx-auto px-5 md:px-20">
+        <div class=" relative    h-[800px] md:h-auto overflow-scroll md:overflow-auto   mb-56">
+            <div class="top z-10">
+            <table class="w-[700px]    md:w-full">
+                    <thead class="">
+                    <tr>
+                        <th class=" w-[300px]  md:w-[40%] text-left text-3xl pb-5">Features</th>
+                        <th class=" w-[200px]  md:w-[22%] text-left bg-slate-50 ">
+                            <h1 class="text-3xl ">Basic</h1>
+                            <h3 class="text-md">$499/mo</h3> 
+                        </th>
+                        <th class="  w-[200px]  md:w-[22%] text-left bg-slate-50">
+                        <h1 class="text-3xl">Standard</h1> 
+                            <h3 class="text-md">$2499/mo</h3>
+                        </th>
+                        <th class="0  w-[200px] md:w-[32%] text-left bg-slate-50">
+                            <h1 class="text-3xl">Enterprise   </h1>
+                            <h3 class="text-md">Custom</h3>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            </div>
+            <div class="z-0">
+            <table class="w-[700px] md:w-full h-[800px] ">
+            
+                
+                <tbody>
+                    <tr>
+                        <th class="text-left pt-20 pb-6 left">Cloud Features</th>
+                    </tr>
+                    <tr>
+                        <td class="pb-6  w-[30%] md:w-[40%] left ">Native Builds</td>
+                        <td class="pl-5 pb-6  w-[22%] ">
+                            <i class="  fa-solid fa-check"></i></td>
+                        <td class="pl-5 pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5 pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Web Previews</td>
+                        <td class="pl-5  pb-6">
+                            <i class="  fa-solid fa-check"></i></td>
+                        <td class="pl-5 pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">App Store Publishing</td>
+                        <td class="pl-5  pb-6">
+                            <i class="  fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">Live Updates</td>
+                        <td class=" pb-6">25,000/mo</td>
+                        <td class=" pb-6">25,000/mo</td>
+                        <td class=" pb-6">25,000/mo</td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">Built-In Automations</td>
+                        <td class="pl-5  pb-6">
+                            4</td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">iOS Enterprise Certs</td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">User Permissions</td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">CI/CD Integration with <a href="text-blue-500">Cloud CLI</a> </td>
+                        <td class="pl-5 pb-6"></td>
+                        <td class="pl-5  pb-6 "><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6  left">GitLab Self-Managed Support</td>
+                        <td class="pl-5  pb-6"></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">GitHub Enterprise Cloud and Enterprise Server Support	</td>
+                        <td class="pl-5  pb-6"></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">Bitbucket Server Support	</td>
+                        <td class="pl-5  pb-6" ></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>   
+                    <tr>
+                        <td class="pb-6 left">Azure DevOps Support</td>
+                        <td class="pl-5  pb-6"></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>   
+                    <tr>
+                        <td class=" pb-6 left">Single Sign-On</td>
+                        <td class="pl-5  pb-6"></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                        <td class="pl-5  pb-6"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Environment Variables</td>
+                        <td class="pl-5  pb-6">3</td>
+                        <td class="pl-5  pb-6">100</td>
+                        <td class="pl-5  pb-6">custom</td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">Native Configs</td>
+                        <td class="pl-5  pb-6">3</td>
+                        <td class="pl-5  pb-6">100</td>
+                        <td class="pl-5  pb-6">custom</td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">Concurrent Builds</td>
+                        <td class="pl-5  pb-6">2</td>
+                        <td class="pl-5  pb-6">2</td>
+                        <td class="pl-5  pb-6">custom</td>
+                    </tr>
+                    <tr>
+                        <td class=" pb-6 left">Seats Included</td>
+                        <td class="pl-5  pb-6">5</td>
+                        <td class="pl-5  pb-6">5</td>
+                        <td class="pl-5  pb-6">custom</td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-left pb-6 left" >Premier Plugins & Solutions</th>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Secure biometrics with <a href="">Identity Vault</a> </td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6">Single app license</td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Single sign-on via <a href="">Auth Connect</a> </td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6">Single app license</td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left ">Ultra-fast <a href=""> Secure Storage</a></td>
+                        <td class="pb-6 "></td>
+                        <td class="pb-6">Single app license</td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Mobile payment collection with <a href=""> Payments</a></td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Access to Official 3rd-Party Integrations</td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+
+                    <tr>
+                        <th class="pb-6 text-left left">Support</th>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Community support on the Ionic Forum</td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Helpdesk Ticketing</td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Issue Resolution</td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Customer Success Manager</td>
+                        <td class="pb-6"></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="pb-6 left">Onboarding Assistancer</td>
+                        <td class="pb-6 "></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                        <td class="pb-6 pl-5"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- questions -->
+    <div class="container mx-auto max-w-3xl px-5 mb-36">
+        <h1 class="text-3xl font-bold text-center">Have a question?</h1>
+        <div>     
+            <div class=" mt-5 mb-5">
+                <div onclick="text_h_f()" class="flex items-center justify-between mb-5 down">
+                    <div class="text-xl cursor-pointer font-bold">What is the Community plan and who is it for?</div>
+                    <div class="down-icon cursor-pointer">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="hidden up-icon ">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <p class="hidden  duration-100 text para">
+                    The Community plan is a deeply discounted subscription for Ionic community members who are using Ionic for personal use, or as part of a very small business or early stage startup with less than USD $500,000 in annual revenue or total funds raised. This includes students, hobbyists, entrepreneurs, and professional developers working on side projects. The Community plan may not be used by businesses with more than USD $500,000 in annual revenue. For more information, check out our dedicated Community Plan FAQ page.
+                </p>
+            </div>
+            <hr class="border-1 border-slate-500">
+        </div>
+        <div>     
+            <div class=" mt-5 mb-5">
+                <div onclick="text_h_f1()" class="flex items-center justify-between mb-5 down">
+                    <div class="text-xl cursor-pointer font-bold max-w-2xl">Which plans include access to native solutions like Identity Vault, Auth Connect, and Secure Storage?</div>
+                    <div class="down-icon1 cursor-pointer">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="hidden up-icon1 ">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <p class="hidden  duration-100 text1 ">
+                    The Basic plan does not include access to these solutions. The Standard plan provides access to Identity Vault, Auth Connect, and Secure Storage only, and is limited to one app per solution. If you would like to purchase additional licenses for more than one app, contact our Sales team to customize your plan. The Enterprise plan includes access to all of our native solutions, including Payments, and premier integrations, such as Microsoft Intune, Couchbase, and more. If you would like access to these solutions, contact our team about purchasing an Enterprise plan. Or, build your own custom plan with our custom plan builder.
+                </p>
+            </div>
+            <hr class="border-1 border-slate-500">
+        </div>
+        <div>     
+            <div class=" mt-5 mb-5">
+                <div onclick="text_h_f2()" class="flex items-center justify-between mb-5 down">
+                    <div class="text-xl cursor-pointer font-bold max-w-lg">How do Live Update limits scale?</div>
+                    <div class="down-icon2 cursor-pointer">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="hidden up-icon2 ">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <p class="hidden  duration-100 text2 ">
+                    Appflow allows you to push hot code updates directly to your users’ devices for any modifications to your web code.
+                    A single Live Update is one code update to one device. If you send one update to 200 devices, that counts as 200 Live Updates. If you send two updates to 200 devices, that counts as 400 Live Updates.
+                    
+                    For most customers, Live Update quantity isn't an issue. If you believe that you might need a very large quantity of updates please reach out to our Sales team to discuss the best way to scale your growth. Basic and Standard plans start at 25,000 Live Updates per month. Any further increase must be a custom package as we also take into account the size (and "shape") of your updates.
+            </div>
+            <hr class="border-1 border-slate-500">
+        </div>
+        <div>     
+            <div class=" mt-5 mb-5">
+                <div onclick="text_h_f3()" class="flex items-center justify-between mb-5 down">
+                    <div class="text-xl cursor-pointer font-bold max-w-lg">How can I use Appflow with my own CI/CD Tool?</div>
+                    <div class="down-icon3 cursor-pointer">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="hidden up-icon3 ">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <p class="hidden  duration-100 text3 ">
+                    For teams and businesses that wish to integrate Appflow with their existing CI/CD platform, the Standard and Enterprise plans include access to the Cloud CLI to kick off builds and deployments as steps in your own CI/CD tool. This allows you to use the powerful CI/CD tooling you already use, while offloading the complexity of mobile DevOps on to Appflow. The Cloud CLI can be installed in any CI/CD tool like Travis, Jenkins, CircleCI, Azure DevOps, Gitlab CI, BitBucket Server, etc.
+                </p>
+            </div>
+            <hr class="border-1 border-slate-500">
+        </div>
+    </div>
+
+<!-- footer -->
+
+<div class="grid grid-cols-2 border-2 py-28   px-5 md:px-20 gap-5 md:grid-cols-3 lg:grid-cols-6">
+    <!-- logo -->
+    <div>
+        <img class="w-20" src="../assets/image/ionic dark logotype black.png" alt="">
+    </div>
+    <div>
+        <ul class="space-y-3">
+            <li class="font-bold ">The Platform</li>
+            <li class="text-slate-600 cursor-pointer">Overview</li>
+            <li class="text-slate-600 cursor-pointer">Build</li>
+            <li class="text-slate-600 cursor-pointer">Secure</li>
+            <li class="text-slate-600 cursor-pointer">Deliver</li>
+            <li class="text-slate-600 cursor-pointer">Why Ionic?</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="space-y-3">
+            <li class="font-bold">Products</li>
+            <li class="text-slate-600 cursor-pointer">Framework</li>
+            <li class="text-slate-600 cursor-pointer">Capacitor</li>
+            <li class="text-slate-600 cursor-pointer">Appflow</li>
+            <li class="text-slate-600 cursor-pointer">Identity Vault</li>
+            <li class="text-slate-600 cursor-pointer">Secure Storage</li>
+            <li class="text-slate-600 cursor-pointer">Auth Connect</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="space-y-3">
+            <li class="font-bold">Resources</li>
+            <li class="text-slate-600 cursor-pointer">Resorce Center</li>
+            <li class="text-slate-600 cursor-pointer">Blog</li>
+            <li class="text-slate-600 cursor-pointer">Articles</li>
+            <li class="text-slate-600 cursor-pointer">Webinars</li>
+            <li class="text-slate-600 cursor-pointer">Case Studies</li>
+            <li class="text-slate-600 cursor-pointer">Videos</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="space-y-3">
+            <li class="font-bold">Company</li>
+            <li class="text-slate-600 cursor-pointer">About us</li>
+            <li class="text-slate-600 cursor-pointer">Customers</li>
+            <li class="text-slate-600 cursor-pointer">Brand</li>
+            <li class="text-slate-600 cursor-pointer">Contact</li>
+            <li class="text-slate-600 cursor-pointer">Careers</li>
+            <li class="text-slate-600 cursor-pointer">Privacy</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="space-y-3">
+            <li class="font-bold">Support</li>
+            <li class="text-slate-600 cursor-pointer">Help Center</li>
+            <li class="text-slate-600 cursor-pointer">Partners</li>
+            <li class="text-slate-600 cursor-pointer">Advisory</li>
+            <li class="text-slate-600 cursor-pointer">Enterprise Guide</li>
+        </ul>
+    </div>
+   
+
+</div>
+<div class="flex justify-between px-5 md:px-20 mb-10">
+    <div>
+        <ul class="flex justify-between text-sm gap-3  text-slate-500 ">
+            <li class="cursor-pointer">Copyright © 2023 Ionic</li>
+            <li class="cursor-pointer">Terms</li>
+            <li class="cursor-pointer">Privacy</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="flex gap-3">
+            <li class=""><i  class="text-slate-500 hover:text-slate-800 fa-brands fa-twitter "></i></li>
+            <li><i class="fa-brands fa-github text-slate-500 hover:text-slate-800"></i></li>
+            <li><i class="fa-brands fa-facebook text-slate-500 hover:text-slate-800"></i></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- javascript -->
+    <script>
+         let Down = document.querySelector(".down");
+        function text_h_f(){
+            let Text = document.querySelector(".text")
+            let downIcon = document.querySelector(".down-icon");
+            let upIcon = document.querySelector(".up-icon")
+         if(Text.style.display ==="none" && downIcon.style.display === "flex" ){
+                Text.style.display = "flex";
+                downIcon.style.display = "none";
+                upIcon.style.display ="flex"
+         }else{
+            Text.style.display = "none";
+            downIcon.style.display = "flex";
+                upIcon.style.display ="none"
+         }
+        }
+        function text_h_f1(){
+            let Text1 = document.querySelector(".text1")
+            let downIcon1 = document.querySelector(".down-icon1");
+            let upIcon1 = document.querySelector(".up-icon1")
+         if(Text1.style.display ==="none" && downIcon1.style.display === "flex" ){
+                Text1.style.display = "flex";
+                downIcon1.style.display = "none";
+                upIcon1.style.display ="flex"
+         }else{
+            Text1.style.display = "none";
+            downIcon1.style.display = "flex";
+            upIcon1.style.display ="none"
+         }
+        }
+        function text_h_f2(){
+            let Text2 = document.querySelector(".text2")
+            let downIcon2 = document.querySelector(".down-icon2");
+            let upIcon2 = document.querySelector(".up-icon2")
+         if(Text2.style.display ==="none" && downIcon2.style.display === "flex" ){
+                Text2.style.display = "flex";
+                downIcon2.style.display = "none";
+                upIcon2.style.display ="flex"
+         }else{
+            Text2.style.display = "none";
+            downIcon2.style.display = "flex";
+            upIcon2.style.display ="none"
+         }
+        }
+        function text_h_f3(){
+            let Text3 = document.querySelector(".text3")
+            let downIcon3 = document.querySelector(".down-icon3");
+            let upIcon3 = document.querySelector(".up-icon3")
+         if(Text3.style.display ==="none" && downIcon3.style.display === "flex" ){
+                Text3.style.display = "flex";
+                downIcon3.style.display = "none";
+                upIcon3.style.display ="flex"
+         }else{
+            Text3.style.display = "none";
+            downIcon3.style.display = "flex";
+            upIcon3.style.display ="none"
+         }
+        }
+        //  Down.addEventListener("click",()=>{
+        //     Text.style.display="none"
+        //  })
+        //  Down.addEventListener("click",()=>{
+        //     Text.style.display="flex"
+        //  })
+        //  Down.addEventListener("click",()=>{
+        //     Text.classList.add("Para")
+        //  })
+
+        
+
+    </script>
 
 </body>
 </html>
