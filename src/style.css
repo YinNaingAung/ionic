@@ -84,14 +84,36 @@ background:linear-gradient(270deg, rgb(255, 255, 2) , rgba(203, 27, 27,0.1) , rg
     
     
 }
+@media(max-width:280px){
+    .margintop{
+        top:150px
+    }
+}
 
 @media (max-width:300px) {
     .email-w{
         width:120px;
     }
+    
 }
 @media (max-width:400px) {
    
+}
+@media (max-width:640px) {
+  
+}
+
+@media(max-width:1280px){
+    .mb_300px { 
+        margin-bottom:300px;
+    }
+
+
+@media(max-width:1536px){
+    .mb_300px{
+        margin-bottom:400px;
+    }
+}
 }
 .list-bar:before{
     background-color: gray;
