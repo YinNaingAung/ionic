@@ -120,9 +120,9 @@ background:linear-gradient(270deg, rgb(255, 255, 2) , rgba(203, 27, 27,0.1) , rg
     content: "";
     display: inline-block;
     height: 0.75rem;
-    -webkit-margin-end: 0.5rem;
+    -webkit-margin-end: 0.2rem;
     /* margin-inline-end: 3rem; */
-    -webkit-margin-start: 0.5rem;
+    -webkit-margin-start: 0.2rem;
     /* margin-inline-start: 0.5rem; */
     width: 1px;
     /* content: "";
