@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
 <body>
-   <div class="container mx-auto px-5 py-3  border-b-2 flex justify-between ">
+   <div class="container hidden mx-auto px-5 py-3  border-b-2 flex justify-between ">
      <div>
         <img class="w-20" src="../assets/image/ionic dark logotype black.png" alt="">
     </div>
@@ -22,11 +22,11 @@
         </ul>
     </div>
    </div>
-   <div class="flex justify-between  px-10 py-8 z-10">
+   <div class="flex  justify-between  px-10 py-8 z-10">
         <div>
             Blog
         </div>
-        <div>
+        <div >
             <ul class="hidden md:flex justify-between space-x-10  ">
                 <li class="cursor-pointer">
                     <img class="w-5" src="../blg-assets/search-interface-symbol.png" alt="">
@@ -58,7 +58,7 @@
         </div>
    </div>
 
-   <div class="flex flex-col items-start md:flex-row md:justify-between md:items-center px-10 pt-14">
+   <div class="flex hidden flex-col items-start md:flex-row md:justify-between md:items-center px-10 pt-14">
         <div class="text-xl font-bold">The Latest from Ionic</div>
         <button class="relative flex flex-row items-center ">
             <div class="absolute left-2 text-slate-400">
@@ -71,28 +71,33 @@
    
 
    <!-- photo -->
-   <div class="container relative  group  mx-auto mt-10 ">
-        <div class="px-5 p-h  md:px-5 xl:px-5 resp-w">
-            <div class="rounded-3xl relative overflow-hidden     bg-slate-500">
+   <div class="relative    mt-10 ">
+        <div class="px-5  ">
+            <div class="relative w-full overflow-hidden rounded-3xl ">
                 <div class="absolute z-10 w-full   bg-gradient-to-b from-blue-800  h-28 top-0"></div>
                 <img class="-z-10  " width="2560" height="1120" alt="progressive web apps" decoding="async" data-srcset="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png 2240w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-300x150.png 300w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1024x512.png 1024w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-768x384.png 768w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1536x768.png 1536w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-2048x1024.png 2048w" data-src="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png" data-sizes="(max-width: 2240px) 100vw, 2240px" class="card-lg__bg-image wp-post-image ls-is-cached lazyloaded" src="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png" sizes="(max-width: 2240px) 100vw, 2240px" srcset="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png 2240w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-300x150.png 300w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1024x512.png 1024w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-768x384.png 768w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1536x768.png 1536w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-2048x1024.png 2048w">
             </div>
         </div>
-        <div class="absolute  leading-10  margintop ps-b  left-5 group gp-hover    md:left-16 text-slate-900 ">
-            <div  class=" overflow-hidden  h-7   text-ellipsis ellipsis-w date sm:max-w-none whitespace-nowrap   text-xs font-size md:text-white lg:text-xl lg:text-white ">
+        <div class=" para absolute md:bottom-40   lg:bottom-52 xl:bottom-96 mx-5 md:mx-24 ">
+            <!-- date -->
+            <div  class=" lg:text-xl mb-2 fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 ellispsis-w367 ellispsis-w476 whitespace-nowrap overflow-hidden ">
                 <span class="inline-block whitespace-nowrap md:text-slate-300 ">March 6, 2023</span>
-                <span class=" inline-block  list-bar  bg-slate-500 ml-2 mr-2"></span>
+                <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                 <ul class="inline-block">
-                    <li class="inline-block md:text-slate-300">All</li>   <span class="w-1 h-5  inline-block  list-bar  bg-slate-500 ml-2 mr-2"></span>
-                    <li class="inline-block md:text-slate-300">perspectives</li>   <span class="w-1 h-5  inline-block  list-bar  bg-slate-500 ml-2 mr-2"></span>
+                    <li class="inline-block md:text-slate-300">All</li>   <span class="  inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                    <li class="inline-block md:text-slate-300">perspectives</li>   <span class="  inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                 </ul>
                 <ul class="inline-block ">
-                    <li  class="inline-block md:text-slate-300 ">Capacitor</li> <span class="w-1 h-5  inline-block  list-bar  bg-slate-500 ml-2 mr-2"></span>
+                    <li  class="inline-block md:text-slate-300 ">Capacitor</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                     <li class="inline-block md:text-slate-300   ">react</li>
                 </ul>
             </div>
-            <h1 class="text-lg md:text-2xl md:text-white lg:text-3xl xl:text-5xl 2xl:text-6xl  lg:text-white font-bold text-size ">Take Your Web App Further with Capacitor</h1>
-            <div class="flex items-center mt-2 gap-1 ">
+            <!-- date -->
+            <!-- Title -->
+            <h1 class="fs-w768   font-bold mb-3  ">Take Your Web App Further with Capacitor</h1>
+            <!-- Title -->
+            <!-- name -->
+            <div class=" flex gap-3 ">
                 <div class="rounded-full w-10 h-10 overflow-hidden">
                     <img src="../blg-assets/jacklin.png" alt="">
                 </div>
@@ -101,6 +106,7 @@
                     <h2 class="text-sm text-slate-300">Product Team</h2>
                 </div>
             </div>
+            <!-- name -->
         </div>
    </div>
 
@@ -112,7 +118,7 @@
                     <img class="" src="../blg-assets/1.png" alt="">
                 </div>
             </div>
-            <div class="absolute mt-5 ">
+            <!-- <div class="absolute mt-5  ">
                 <ul class="flex justify-between  text-slate-400 gap-2 text-xs">
                     <li class="">March 9, 2023 </li>|
                     <li>All</li>|
@@ -129,7 +135,7 @@
                         <h2 class="text-sm text-slate-300">Product Team</h2>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 
@@ -140,22 +146,23 @@
                     <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
                     <img class="w-full" src="../blg-assets/2.png" alt="">
                 </div>
-                <div class="absolute mt-5   ">
-                    <div  class=" text-sm  overflow-hidden text-ellipsis ellipsis-w  sm:max-w-none max-w-[300px] lg:max-w-none whitespace-nowrap   text-xs">
+                <div class="absolute mt-5 ">
+                    <div  class=" text-sm  overflow-hidden text-ellipsis ellipsis-w fs-mw-317 whitespace-nowrap   ">
                         <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
+                        <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                         <ul class="inline-block ">
-                            <li class="inline-block list-bar">All</li>
-                            <li class="inline-block list-bar">perspectives</li>
+                            <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                         </ul>
                         <ul class="inline-block">
-                            <li  class="inline-block list-bar">Capacitor</li>  
-                            <li class="inline-block list-bar  ">react</li>
+                            <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <li class="inline-block   ">react</li><span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                         </ul>
                     </div>
-                
+                   
                         
                     
-                    <h1 class="text-lg md:text-xl font-bold  max-w-[600px]">Building Native Mobile apps with React DOM</h1>
+                    <h1 class="text-lg md:text-xl font-bold fs-w768  mx-w-280 ">Building Native Mobile apps with React DOM</h1>
                     <div class="flex items-center mt-2 gap-1 ">
                         <div class="rounded-full w-10 h-10 overflow-hidden">
                             <img src="../blg-assets/mack.jpg" alt="">
