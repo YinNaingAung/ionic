@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="/dist/output.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="blog.css">
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
 <body>
    <div class="container hidden mx-auto px-5 py-3  border-b-2 flex justify-between ">
@@ -22,7 +22,7 @@
         </ul>
     </div>
    </div>
-   <div class="flex  justify-between  px-10 py-8 z-10">
+   <div class="flex  justify-between  px-5 py-8 z-10">
         <div>
             Blog
         </div>
@@ -78,9 +78,10 @@
                 <img class="-z-10  " width="2560" height="1120" alt="progressive web apps" decoding="async" data-srcset="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png 2240w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-300x150.png 300w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1024x512.png 1024w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-768x384.png 768w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1536x768.png 1536w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-2048x1024.png 2048w" data-src="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png" data-sizes="(max-width: 2240px) 100vw, 2240px" class="card-lg__bg-image wp-post-image ls-is-cached lazyloaded" src="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png" sizes="(max-width: 2240px) 100vw, 2240px" srcset="https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image.png 2240w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-300x150.png 300w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1024x512.png 1024w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-768x384.png 768w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-1536x768.png 1536w, https://ionic.io/blog/wp-content/uploads/2023/03/pwas-feature-image-2048x1024.png 2048w">
             </div>
         </div>
-        <div class=" para absolute md:bottom-40   lg:bottom-52 xl:bottom-96 mx-5 md:mx-24 ">
+        <!-- lg:bottom-52 xl:bottom-96 -->
+        <div class=" para absolute -bottom-36  md:bottom-40 lg:bottom-52 xl:bottom-96  mx-5 md:mx-24 ">
             <!-- date -->
-            <div  class=" lg:text-xl mb-2 fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 ellispsis-w367 ellispsis-w476 whitespace-nowrap overflow-hidden ">
+            <div  class=" lg:text-xl mb-2 fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 ellispsis-w380 ellispsis-w476 whitespace-nowrap overflow-hidden ">
                 <span class="inline-block whitespace-nowrap md:text-slate-300 ">March 6, 2023</span>
                 <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                 <ul class="inline-block">
@@ -110,7 +111,7 @@
         </div>
    </div>
 
-   <div class="grid mt-[160px] md:mt-14 md:grid-cols-2 gap-44  md:gap-16  px-5 xl:px-10">
+   <div class="grid mt-[160px] md:mt-14 md:grid-cols-2 gap-44  md:gap-16  px-5 ">
         <div class="relative ">
             <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
                 <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
@@ -118,13 +119,25 @@
                     <img class="" src="../blg-assets/1.png" alt="">
                 </div>
             </div>
-            <!-- <div class="absolute mt-5  ">
-                <ul class="flex justify-between  text-slate-400 gap-2 text-xs">
+            <div class="absolute mt-5  ">
+                <!-- <ul class="flex justify-between  text-slate-400 gap-2 text-xs">
                     <li class="">March 9, 2023 </li>|
                     <li>All</li>|
                     <li class="text-ellipsis overflow-hidden">Announcements</li>|
                     <li class="text-ellipsis overflow-hidden whitespace-nowrap">Iconic show</li>    
-                </ul>
+                </ul> -->
+                <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 eli-w-767 eli-w-768 eli-w-971  whitespace-nowrap overflow-hidden  ">
+                    <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
+                    <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                    <ul class="inline-block ">
+                        <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                        <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                    </ul>
+                    <ul class="inline-block">
+                        <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                        <li class="inline-block   ">react</li>
+                    </ul>
+                </div>
                 <h1 class="text-lg md:text-xl font-bold ">Q1 Ionic Show Recap</h1>
                 <div class="flex items-center mt-2 gap-1 ">
                     <div class="rounded-full w-10 h-10 overflow-hidden">
@@ -135,7 +148,7 @@
                         <h2 class="text-sm text-slate-300">Product Team</h2>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
 
 
@@ -147,7 +160,7 @@
                     <img class="w-full" src="../blg-assets/2.png" alt="">
                 </div>
                 <div class="absolute mt-5 ">
-                    <div  class=" text-sm  overflow-hidden text-ellipsis ellipsis-w fs-mw-317 whitespace-nowrap   ">
+                    <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 eli-w-767 eli-w-768 eli-w-971  whitespace-nowrap overflow-hidden  ">
                         <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
                         <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                         <ul class="inline-block ">
@@ -156,13 +169,13 @@
                         </ul>
                         <ul class="inline-block">
                             <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
-                            <li class="inline-block   ">react</li><span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <li class="inline-block   ">react</li>
                         </ul>
                     </div>
                    
                         
                     
-                    <h1 class="text-lg md:text-xl font-bold fs-w768  mx-w-280 ">Building Native Mobile apps with React DOM</h1>
+                    <h1 class="text-lg md:text-xl font-bold fs-w1024build  mx-w-280 ">Building Native Mobile apps with React DOM</h1>
                     <div class="flex items-center mt-2 gap-1 ">
                         <div class="rounded-full w-10 h-10 overflow-hidden">
                             <img src="../blg-assets/mack.jpg" alt="">
@@ -183,7 +196,7 @@
         <div class="text-lg text-left md:text-xl   font-bold"><span class="text-slate-400 md:text-slate-900"> Never miss an update.</span> <br>
             Join our newsletter!
         </div>
-        <div class="flex gap-2">
+        <div class="flex gap-2 emailbox-w-280">
             <div class="relative items-center flex">
                 <div class="absolute left-2 text-slate-400">
                     <i class="fa-solid fa-envelope"></i>
@@ -196,103 +209,107 @@
 </div>
 
 <!-- Card Section -->
-<div>
-        <div class="grid mt-[70px] md:mt-14 md:grid-cols-2 gap-44   md:gap-16  px-5 xl:px-10">
-            <div class="relative">
-                <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
-                    <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
-                        <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
-                        <img class="" src="../blg-assets/1.png" alt="">
-                    </div>
-                </div>
-                <div class="absolute mt-5   ">
-                    <div  class=" bg-slate-500 text-xs  overflow-hidden text-ellipsis ellipsis-w  sm:max-w-none max-w-[300px] lg:max-w-none whitespace-nowrap    ">
-                        <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
-                        <ul class="inline-block ">
-                            <li class="inline-block list-bar">All</li>
-                            <li class="inline-block list-bar">perspectives</li>
-                        </ul>
-                        <ul class="inline-block">
-                            <li  class="inline-block list-bar">Capacitor</li>  
-                            <li class="inline-block list-bar  ">react</li>
-                        </ul>
-                    </div>
-                
-                        
-                    
-                    <h1 class="text-lg md:text-xl font-bold  max-w-[600px]">Building Native Mobile apps with React DOM</h1>
-                    <div class="flex items-center mt-2 gap-1 ">
-                        <div class="rounded-full w-10 h-10 overflow-hidden">
-                            <img src="../blg-assets/mack.jpg" alt="">
+        <div>
+                <div class="grid mt-[70px] md:mt-14 md:grid-cols-2 gap-44   md:gap-16  px-5 ">
+                    <div class="relative">
+                        <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
+                            <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                                <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                                <img class="" src="../blg-assets/1.png" alt="">
+                            </div>
                         </div>
-                        <div class="">
-                            <h1 class="text-md font-bold">Jacklin Altman</h1>
-                            <h2 class="text-sm text-slate-300">Product Team</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        
-        
-            <div class="relative ">
-                    <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
-
-                        <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
-                            <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
-                            <img class="w-full" src="../blg-assets/2.png" alt="">
-                        </div>
-
-                        <div class="absolute mt-5   ">
-                            <div  class=" bg-slate-500 text-xs overflow-hidden text-ellipsis ellipsis-w  sm:max-w-none max-w-[300px] lg:max-w-none whitespace-nowrap   text-md ">
+                        <div class="absolute mt-5 ">
+                            <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 eli-w-767 eli-w-768 eli-w-971  whitespace-nowrap overflow-hidden  ">
                                 <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
+                                <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                                 <ul class="inline-block ">
-                                    <li class="inline-block list-bar">All</li>
-                                    <li class="inline-block list-bar">perspectives</li>
+                                    <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                    <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                                 </ul>
                                 <ul class="inline-block">
-                                    <li  class="inline-block list-bar">Capacitor</li>  
-                                    <li class="inline-block list-bar  ">react</li>
+                                    <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                    <li class="inline-block   ">react</li>
                                 </ul>
                             </div>
-                    
-                            
                         
+                                
+                            
                             <h1 class="text-lg md:text-xl font-bold  max-w-[600px]">Building Native Mobile apps with React DOM</h1>
                             <div class="flex items-center mt-2 gap-1 ">
-                                    <div class="rounded-full w-10 h-10 overflow-hidden">
-                                        <img src="../blg-assets/mack.jpg" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h1 class="text-md font-bold">Jacklin Altman</h1>
-                                        <h2 class="text-sm text-slate-300">Product Team</h2>
-                                    </div>
+                                <div class="rounded-full w-10 h-10 overflow-hidden">
+                                    <img src="../blg-assets/mack.jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h1 class="text-md font-bold">Jacklin Altman</h1>
+                                    <h2 class="text-sm text-slate-300">Product Team</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>  
-            </div>
-</div>
+                
+                
+                
+                    <div class="relative ">
+                            <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
 
-        <!-- Cards container -->
-        <div class="mt-48 md:mt-56">
+                                <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                                    <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                                    <img class="w-full" src="../blg-assets/2.png" alt="">
+                                </div>
+
+                                <div class="absolute mt-5   ">
+                                    <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 eli-w-767 eli-w-768 eli-w-971  whitespace-nowrap overflow-hidden  ">
+                                        <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
+                                        <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                        <ul class="inline-block ">
+                                            <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                            <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                        </ul>
+                                        <ul class="inline-block">
+                                            <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                            <li class="inline-block   ">react</li>
+                                        </ul>
+                                    </div>
+                            
+                                    
+                                
+                                    <h1 class="text-lg md:text-xl font-bold  max-w-[600px]">Building Native Mobile apps with React DOM</h1>
+                                    <div class="flex items-center mt-2 gap-1 ">
+                                            <div class="rounded-full w-10 h-10 overflow-hidden">
+                                                <img src="../blg-assets/mack.jpg" alt="">
+                                            </div>
+                                            <div class="">
+                                                <h1 class="text-md font-bold">Jacklin Altman</h1>
+                                                <h2 class="text-sm text-slate-300">Product Team</h2>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+        </div>
+
+        <!-- Cards container1 -->
+        <div class="mt-36 md:mt-56">
             <div class="grid gap-24 md:gap-4 md:grid-cols-3 px-5  ">
                 <div class="relative">
-                    <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
+                    <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
                         <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
                             <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
                             <img class="" src="../blg-assets/1.png" alt="">
                         </div>
                     </div>
                     <div class="absolute mt-5   ">
-                        <div  class=" bg-slate-500 text-[10px]  overflow-hidden text-ellipsis ellipsis-w  sm:max-w-none max-w-[300px] lg:max-w-none whitespace-nowrap   text-md ">
-                            <span class="inline-block  whitespace-nowrap">February 6, 2023</span>
+                        <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768 min-w-1200  whitespace-nowrap overflow-hidden  ">
+                            <span class="inline-block  whitespace-nowrap">March 1, 2023</span>
+                            <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                             <ul class="inline-block ">
-                                <li class="inline-block list-bar">All</li>
-                                <li class="inline-block list-bar">Appflow</li>
+                                <li class="inline-block ">Announcements/li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block ">Framework/li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                             </ul>
                             <ul class="inline-block">
-                                <li  class="inline-block list-bar"> testing</li> 
+                                <li  class="inline-block  ">iconic 6</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block   ">release</li>
                             </ul>
                         </div>
                         <h1 class="text-md  font-bold  max-w-[600px]">Deploying Mobile Apps to Test Devices</h1>
@@ -300,7 +317,7 @@
                 </div>
             
                 <div class="relative mt-28px ">
-                        <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
+                        <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
     
                             <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
                                 <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
@@ -308,14 +325,15 @@
                             </div>
     
                             <div class="absolute mt-5   ">
-                                <div  class=" bg-slate-500 text-[10px] overflow-hidden text-ellipsis ellipsis-w  sm:max-w-none max-w-[300px] lg:max-w-none whitespace-nowrap   text-md ">
+                                <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200 whitespace-nowrap overflow-hidden  ">
                                     <span class="inline-block  whitespace-nowrap">February 27, 2023</span>
+                                    <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                                     <ul class="inline-block ">
-                                        <li class="inline-block list-bar">Perspectives </li>
-                                        <li class="inline-block list-bar">PWA</li>
+                                        <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                        <li class="inline-block ">PWA</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                                     </ul>
                                     <ul class="inline-block">
-                                        <li  class="inline-block list-bar">Safari</li>  
+                                        <li  class="inline-block  ">Safari</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                                     </ul>
                                 </div>
                                 <h1 class="text-md  font-bold  max-w-[600px]">Safari… Catches Up?</h1>
@@ -331,16 +349,17 @@
                             <img class="" src="../blg-assets/1.png" alt="">
                         </div>
                     </div>
-                    <div class="absolute mt-5  max-w-xs  ">
-                        <div  class=" bg-slate-500 text-[10px]   overflow-hidden text-ellipsis ellipsis-w  sm:max-w-none max-w-[300px] lg:max-w-none whitespace-nowrap   text-md ">
-                            <span class="inline-block  whitespace-nowrap">February 28, 2023 </span>
+                    <div class="absolute mt-5  max-w-sm  ">
+                        <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200 whitespace-nowrap overflow-hidden ">
+                            <span class="inline-block  whitespace-nowrap">March 6, 2023</span>
+                            <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                             <ul class="inline-block ">
-                                <li class="inline-block list-bar">All</li>
-                                <li class="inline-block list-bar">Perspectives</li>
+                                <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
                             </ul>
                             <ul class="inline-block">
-                                <li  class="inline-block list-bar">Capacitor</li>  
-                                <li class="inline-block list-bar">Ionic</li>
+                                <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block   ">react</li>
                             </ul>
                         </div>
                         <h1 class="text-md  font-bold  max-w-[600px]">You Already Have What You Need to Build a Native Mobile App</h1>
@@ -349,6 +368,165 @@
                 </div>
 
                 
+            </div>
+        </div>
+        <!-- Cards container2 -->
+        <div class="mt-36 md:mt-32">
+            <div class="grid gap-24 md:gap-4 md:grid-cols-3 px-5  ">
+                <div class="relative">
+                    <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
+                        <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                            <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                            <img class="" src="../blg-assets/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute mt-5   ">
+                        <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200  whitespace-nowrap overflow-hidden  ">
+                            <span class="inline-block  whitespace-nowrap">February 23, 2023</span>
+                            <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <ul class="inline-block ">
+                                <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            </ul>
+                            <ul class="inline-block">
+                                <li  class="inline-block  ">Capacitor</li>  <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block   ">iconic</li>
+                            </ul>
+                        </div>
+                        <h1 class="text-md  font-bold  max-w-[600px]">You Already Have What You Need to Build a Native Mobile App</h1>
+                    </div>
+                </div>
+            
+                <div class="relative mt-28px ">
+                        <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
+    
+                            <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                                <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                                <img class="w-full" src="../blg-assets/2.png" alt="">
+                            </div>
+    
+                            <div class="absolute mt-5   ">
+                                <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200 whitespace-nowrap overflow-hidden  ">
+                                    <span class="inline-block  whitespace-nowrap">February 22, 2023</span>
+                                    <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                    <ul class="inline-block ">
+                                        <li class="inline-block ">Tutorials</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                        <li class="inline-block ">Capacitor</li>
+                                    </ul>
+                                  
+                                </div>
+                                <h1 class="text-md  font-bold  max-w-[600px]">Building And Releasing Your Capacitor iOS App</h1>
+                            </div>
+                        </div>
+                </div>  
+
+
+                <div class="relative">
+                    <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
+                        <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                            <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                            <img class="" src="../blg-assets/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute mt-5  max-w-sm  ">
+                        <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200  min-w-1200 whitespace-nowrap overflow-hidden  ">
+                            <span class="inline-block  whitespace-nowrap">March 15, 2023</span>
+                            <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <ul class="inline-block ">
+                                <li class="inline-block ">Tutorials</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block ">Android</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            </ul>
+                            <ul class="inline-block">
+                                <li  class="inline-block  ">Appflow</li>  
+                            </ul>
+                        </div>
+                        <h1 class="text-md  font-bold  max-w-[600px]">Building And Releasing Your Capacitor Android App</h1>
+                      
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <!-- Cards container3 -->
+        <div class="mt-36 md:mt-32">
+            <div class="grid gap-24 md:gap-4 md:grid-cols-3 px-5  ">
+                <div class="relative">
+                    <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
+                        <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                            <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                            <img class="" src="../blg-assets/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute mt-5   ">
+                        <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200 whitespace-nowrap overflow-hidden  ">
+                            <span class="inline-block  whitespace-nowrap">February 14, 2023</span>
+                            <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <ul class="inline-block ">
+                                <li class="inline-block ">Engineering</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block ">Framework</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            </ul>
+                            <ul class="inline-block">
+                                <li  class="inline-block  "> Svelte</li>  
+                            </ul>
+                        </div>
+                        <h1 class="text-md  font-bold  max-w-[600px]">Blazing fast PWAs with SEO power using SvelteKit and Ionic</h1>
+                    </div>
+                </div>
+            
+                <div class="relative mt-28px ">
+                        <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
+    
+                            <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                                <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                                <img class="w-full" src="../blg-assets/2.png" alt="">
+                            </div>
+    
+                            <div class="absolute mt-5   ">
+                                <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200 whitespace-nowrap overflow-hidden  ">
+                                    <span class="inline-block  whitespace-nowrap">February 10, 2023</span>
+                                    <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                    <ul class="inline-block ">
+                                        <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                        <li class="inline-block ">perspectives</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                    </ul>
+                                    <ul class="inline-block">
+                                        <li  class="inline-block  ">Capacitor</li>  
+                                       
+                                    </ul>
+                                </div>
+                                <h1 class="text-md  font-bold  max-w-[600px]">Capacitor: Everything You’ve Ever Wanted to Know</h1>
+                            </div>
+                        </div>
+                </div>  
+
+
+                <div class="relative">
+                    <div class="overflow-hidden rounded-3xl md:rounded-xl transition duration-700 cursor-pointer">
+                        <div class=" relative hover:scale-110 transition duration-300 overflow-hidden">
+                            <div class="w-full h-full  hover:bg-slate-200 hover:opacity-10 absolute"></div>
+                            <img class="" src="../blg-assets/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute mt-5  max-w-sm  ">
+                        <div  class=" fs-mw-367 fs-mw-317 bg-slate-500 text-ellipsis ellispsis-w317 eli-w-313 eli-w-380 eli-w-476 minw-text-768 min-w-768  min-w-1200 whitespace-nowrap overflow-hidden  ">
+                            <span class="inline-block  whitespace-nowrap">February 8, 2023</span>
+                            <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            <ul class="inline-block ">
+                                <li class="inline-block ">All</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                                <li class="inline-block ">Announcements</li> <span class=" inline-block  list-bar  bg-slate-400 ml-2 mr-2"></span>
+                            </ul>
+                            <ul class="inline-block">
+                                <li  class="inline-block  ">Appflow</li>  
+                            </ul>
+                        </div>
+                        <h1 class="text-md  font-bold  max-w-[600px]">Appflow adds GitHub Enterprise support</h1>
+                      
+                    </div>
+                </div>
+
+                
+            </div>
         </div>
 
 </body>
