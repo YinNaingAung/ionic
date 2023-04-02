@@ -75,9 +75,7 @@
     margin-right:10px;
     margin-left:20px;
   }
-  .list-bar:before{
-    margin-inline-start: 20px;
-  }
+
   
 }
 @media(max-width:768px){
@@ -208,4 +206,11 @@
         width:auto
     }
 }
-
+.list-bar1{
+        width:2px;
+        height:10px;
+}
+.hvr-img:hover img{
+    transform: scale(1.05);
+    
+}
