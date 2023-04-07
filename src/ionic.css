@@ -28,7 +28,15 @@
     }
     .codebase-padding{
         padding:0
-    }
-
-    
+    } 
+}
+/* ionic for enterprise */
+.hvr-text-img:hover img{
+    width:60px;
+   
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition-duration: 0.2s;
+    transition-property: all;
+   
+   
 }
