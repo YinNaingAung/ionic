@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="ionic.css">
 </head>
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
                 <li class="cursor-default hover:bg-slate-200 px-2 py-1 rounded-md">Resources</li>
                 <li class="cursor-default hover:bg-slate-200 px-2 py-1 rounded-md">Developers</li>
                 <li class="cursor-default hover:bg-slate-200 px-2 py-1 rounded-md">Blog</li>
-                    <li class="cursor-default hover:bg-slate-200 px-2 py-1 rounded-md">Pricing</li>
+                <li class="cursor-default hover:bg-slate-200 px-2 py-1 rounded-md">Pricing</li>
             </ul>
         </div>
         <div class="space-x-4">
@@ -50,7 +51,7 @@
 
         
     </div>
-    <div class="container mx-auto text-center px-5 mb-10 text-xl">
+    <div class="container mx-auto text-center mb-10 text-2xl">
         <h1>Powering mission-critical apps for the world’s best companies</h1>
     </div>
     <div class=" px-5 py-20 relative hidden">
@@ -73,9 +74,9 @@
     </div>
    </section>
    
-   <section class="mt-32 mb-32  container mx-auto ">
-        <div class="px-5 gap-5  md:grid md:grid-cols-2 ">
-            <div class=" row-span-2 mb-5 md:mb-0 w-full rounded-xl cursor-pointer hover:shadow-lg border border-1 border-slate-300 p-5">
+   <section class="mt-32 mb-32 container mx-auto px-5">
+        <div class="grid grid-cols-2 gap-4">
+            <div class=" row-span-2 w-full rounded-xl cursor-pointer hover:shadow-lg border border-1 border-slate-300 p-5">
                 <div>
                     <img class="rounded-lg" src="../assets/thumbnail/latest-tile-architecting-secure-mobile-apps.webp" alt="">
                 </div>
@@ -160,6 +161,58 @@
         </div>
     </div>
 </Section>
+
+<section class="mb-32 container mx-auto">
+    <div>
+            <div class="grid  grid-cols-3 px-5  gap-8 container mx-auto ">
+                
+               
+             
+            </div>
+        <div class="grid  grid-cols-3 enterprise-grid gap-5 mt-10 px-5">
+
+            <div class="col-span-2 rounded-xl overflow-hidden">
+                <img class="h-full" src="../assets/thumbnail/color.webp" alt="">
+                </div>
+                
+            
+            
+                <div class="border border-slate-300 enterprise-feature-w group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer    py-5 px-5 rounded-2xl max-w-sm">
+                    <div class=" h-[260px] overflow-hidden feature-container ">
+                        <img class="w-28  " src="../assets/thumbnail/native build.webp" alt="">
+                        <h5 class="mt-10">NATIVE BUILD</h1>
+                        <h2 class="text-2xl font-bold">Combile native binaries for Andriod and iOS <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
+                    </div>
+                </div>
+
+                <div class="border border-slate-300 enterprise-feature-w group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer    py-5 px-5 rounded-2xl ">
+                    <div class=" h-[260px] overflow-hidden feature-container ">
+                        <img class="w-28  " src="../assets/thumbnail/native build.webp" alt="">
+                        <h5 class="mt-10">NATIVE BUILD</h1>
+                        <h2 class="text-2xl font-bold">Combile native binaries for Andriod and iOS <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
+                    </div>
+                </div>
+                <div class="border group hover:shadow-xl hover:skew-1 enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl ">
+                    <div class=" h-[260px] overflow-hidden feature-container">
+                        <img class="w-28 " src="../assets/thumbnail/app pubilshing.webp" alt="">
+                        <h5 class="mt-10">App publishing</h1>
+                        <h2 class="text-2xl font-bold">Public to Apple and Google App Stores <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Publish directly to the App stores from a secure cloud enviroment</p>
+                    </div>
+                </div>
+                <div class="border group hover:shadow-xl  enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl ">
+                    <div class=" h-[260px] overflow-hidden ease-in-out transition-all feature-container">
+                        <img class="w-28 " src="../assets/thumbnail/cloud.webp" alt="">
+                        <h5 class="mt-10">Cloud CLI</h1>
+                        <h2 class="text-2xl font-bold">Integrate your existing CI/CD infrastructure<i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Build continuously, release instantly, publish as often as you like.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 <!-- mobile frontend -->
 <section class="mb-32 px-5 mobile-padding container mx-auto ">
         <div class="relative bg-[url('../assets/thumbnail/portals-bg.webp')] w-full bg-cover h-[700px] rounded-3xl">
@@ -169,6 +222,7 @@
                 </h1>
                 <p class="max-w-lg mb-5">Increase productivity and scale development with mobile micro frontends. Portals makes it easy to add web-based experiences to any iOS or Android mobile app, with deep native integrations and seamless integration that’s invisible to users.</p>
                 <button class="bg-slate-600  rounded-3xl text-lg px-5 py-2 font-bold text-white">Learn how <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
             </div>
         </div>
 </section>
@@ -212,9 +266,10 @@
                 <p class="mt-5">Build continuously, release instantly, publish as often as you like.</p>
             </div>
         </div>
-       
-    </div>
+                </div>
+        </div>
 </section>
+
 <!-- services -->
 <section class="mb-32 container mx-auto px-5">
     <h1 class="text-2xl font-bold">Go even further with Ionic expert services.</h1>
@@ -236,9 +291,10 @@
             <span class="">
                 <img class=" h-64  lg:translate-x-20 feature-img  " src="../assets/thumbnail/ionic traning.webp" alt="">
             </span>
-        </div>
+                
     </div>
 </section>
+
 
 
 <!-- one codebase -->
