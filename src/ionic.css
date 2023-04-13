@@ -90,3 +90,42 @@
         margin-top:30px;
     }
 }
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+@media(max-width:639px){
+    .code-demo-btn{
+      margin-right:10px
+    }
+}
+.h1-box:after{
+    content:"";
+   display:inline-block;
+    position:absolute;
+    width:30px;
+    height:50px;
+    background-color:grey;
+    margin-top:10px;
+    animation:blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation{
+    to{
+        visibility:hidden
+    }
+}
+.mt-bobcat{
+    margin-top:150px;
+}
+@media(max-width:401px){
+    .mt-bobcat{
+        margin-top:100px;
+    }
+}
+@media(max-width:286px){
+    .mt-bobcat{
+        margin-top:50px;
+    }
+}

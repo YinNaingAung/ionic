@@ -288,12 +288,12 @@
 <!-- Build for developers -->
 <section class="bg-slate-700 pt-60 pb-60 container relative  mx-auto px-5 ">
 
-    <div class="mb-32 flex ">
+    <div class="mb-32 flex flex-col md:flex-row ">
 
-        <div class="">
+        <div class=" mb-10">
 
             <h5 class="mb-10 text-white font-bold tracking-widest">Built for developer</h1>
-            <h1 class="text-5xl tracking-wider font-bold text-white max-w-md">A developer-first platform. Built on open source</h1>
+            <h1 class="text-5xl tracking-wider font-bold text-white max-w-md h1-box ">A developer-first platform. Built on open source</h1>
             <div class="">
                 <div class="flex gap-5 text-white text-lg mt-5">
                     <div><i class="fa-solid fa-check"></i></div>
@@ -327,16 +327,16 @@
         </div>
 
          <!--code-demo  -->
-         <div class="   px-10 overflow-hidden  max-w-xl  bg-rose-500 -mt-32 ">
+         <div class="  px-0 md:px-10 overflow-hidden  max-w-xl xl:ml-32 lg:-mt-10 ">
             <!-- code -->
-            <div class="flex justify-center space-x-5">
-                <button class="bg-slate-100 rounded-full  py-2 px-5"> <i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>  Code</button>
-                <button class="bg-slate-100 rounded-full  py-2 px-5"><i class="fa-sharp fa-solid fa-eye"></i> Demo</button>
+            <div class="flex justify-center sm:space-x-5 ">
+                <button class="bg-slate-100 rounded-full code-demo-btn py-2 px-5 whitespace-nowrap"> <i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>  Code</button>
+                <button class="bg-slate-100 rounded-full  py-2 px-5 whitespace-nowrap"><i class="fa-sharp fa-solid fa-eye"></i> Demo</button>
             </div>
             <!-- language  -->
             <div class=" bg-slate-800  overflow-hidden max-w-lg rounded-3xl px-10  py-5 mt-5">
             <!-- languageicon -->
-                <div class=" mt-5 flex  gap-5 overflow-x-scroll overscroll-none  overflow-hidden">
+                <div class=" mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
                     
                         <div class="bg-slate-200 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
                             <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
@@ -808,7 +808,33 @@
     </div>
 </section>
 
-
+<!-- 1000's of customers -->
+<section class="container mx-auto mb-32">
+    <div class="text-center max-w-sm mx-auto mb-24">
+        <h1 class="text-sm tracking-wider">1000's OF CUSTOMERS</h1>
+        <h1 class="text-4xl font-bold ">Loved by developers. Trusted by enterprise.</h1>
+    </div>
+    <div>
+        <ul>
+            <li class="max-w-xl relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
+                <img class=" bg-contain" src="../assets/thumbnail/bg-bobcat.webp" alt="">
+                
+                    <div class="px-5 absolute mt-bobcat top-0 ">
+                        <img src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
+                        <div class="mt-10">
+                            <p class="text-white">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
+                            <button class="text-white whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    
+                </div>
+              
+            </li>
+        </ul>
+     
+       
+    </div>
+   
+</section>
 
 <!-- one codebase -->
 <section class="mb-32 px-5 codebase-padding container mx-auto">
@@ -823,6 +849,8 @@
         </div>
     </div>
 </section>
+ 
 
-</body>
+
+</bdy>
 </html>
