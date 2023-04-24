@@ -135,6 +135,14 @@
 
         </div>
    </Section>
+
+
+
+
+
+
+
+
        
     <!-- Cross platform SDK -->
     <section class="container mx-auto">
@@ -148,17 +156,17 @@
                     The only cross-platform mobile SDK built exclusively for the enterprise. Save time. Safeguard users. And rest easy knowing that our mobile experts are here every step of the way.
                 </h5>
                 <h5 class="max-w-md mt-10"><span class="underline">Build</span>  highly secure apps across iOS, Android, and the Web from a single codebase.</h5>
-                <div class="flex gap-5 mt-10">
-                    <div class="flex items-center flex-col gap-3 cursor-pointer">
-                        <div class="bg-slate-800 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/ios.webp" alt=""></div>
+                <div class="flex gap-5 mt-10 tab-container">
+                    <div class="tab active flex items-center flex-col gap-3 cursor-pointer">
+                        <div class="tab  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/ios.webp" alt=""></div>
                         <div>iOS</div>
                     </div>
-                    <div class="flex items-center flex-col gap-3 cursor-pointer">
-                        <div class="bg-slate-800 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/android.webp" alt=""></div>
+                    <div class="tab flex items-center flex-col gap-3 cursor-pointer">
+                        <div class="tab bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/android.webp" alt=""></div>
                         <div>Android</div>
                     </div>
-                    <div class="flex items-center flex-col gap-3 cursor-pointer">
-                        <div class="bg-slate-800 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10"  src="../assets/thumbnail/custom.webp" alt=""></div>
+                    <div class="tab flex items-center flex-col gap-3 cursor-pointer">
+                        <div class="tab bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10"  src="../assets/thumbnail/custom.webp" alt=""></div>
                         <div>Custom</div>
                     </div>
                     <div class="w-0.5  bg-slate-800  "></div>
@@ -178,6 +186,14 @@
             
         </div>
     </section>
+
+
+
+
+
+
+
+
 
    <!-- hybird vs native -->
 <Section>
@@ -850,7 +866,17 @@
     </div>
 </section>
  
+<script>
+            let tabs = document.querySelectorAll(".tab-container .tab");
+        tabs.forEach((tab,index)=>{
+            tab.addEventListener("click",()=>{
+                tabs.forEach((tab)=>{
+                    tab.classList.remove("active")
+                })
+                tabs[index].classList.add("active")
+            })
+        })
+</script>
 
-
-</bdy>
+</body>
 </html>

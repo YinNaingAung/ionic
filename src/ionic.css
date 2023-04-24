@@ -129,3 +129,11 @@
         margin-top:50px;
     }
 }
+
+.active .tab{
+    background-color:#1e293b;
+
+}
+.active:hover .tab{
+    background-color:#1e293b
+}
