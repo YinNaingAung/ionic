@@ -146,7 +146,7 @@
        
     <!-- Cross platform SDK -->
     <section class="container mx-auto">
-        <div class="  relative mx-auto flex flex-col lg:flex-row  items-start md:items-center md:justify-between px-5 w-full">
+        <div class="  relative mx-auto flex flex-col lg:flex-row  items-start lg:items-center md:justify-between px-5 w-full">
             <div class=" ">
                 <h6>Cross Platform SDK</h6>
                 <h1 class="text-6xl font-bold mb-4 max-w-lg">A modern, enterprise mobile SDK for iOS and Android apps.</h1>
@@ -156,32 +156,46 @@
                     The only cross-platform mobile SDK built exclusively for the enterprise. Save time. Safeguard users. And rest easy knowing that our mobile experts are here every step of the way.
                 </h5>
                 <h5 class="max-w-md mt-10"><span class="underline">Build</span>  highly secure apps across iOS, Android, and the Web from a single codebase.</h5>
-                <div class="flex gap-5 mt-10 tab-container">
-                    <div class="tab active flex items-center flex-col gap-3 cursor-pointer">
+                <div class="flex gap-5 mt-10 flex-wrap tab-container">
+                    <div id="tab1" class="tab  active flex items-center flex-col gap-3 cursor-pointer">
                         <div class="tab  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/ios.webp" alt=""></div>
                         <div>iOS</div>
                     </div>
-                    <div class="tab flex items-center flex-col gap-3 cursor-pointer">
+                    <div id="tab2" class="tab  flex items-center flex-col gap-3 cursor-pointer">
                         <div class="tab bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/android.webp" alt=""></div>
                         <div>Android</div>
                     </div>
-                    <div class="tab flex items-center flex-col gap-3 cursor-pointer">
+                    <div id="tab3" class="tab  flex items-center flex-col gap-3 cursor-pointer">
                         <div class="tab bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10"  src="../assets/thumbnail/custom.webp" alt=""></div>
                         <div>Custom</div>
                     </div>
                     <div class="w-0.5  bg-slate-800  "></div>
-                    
+                    <div>
+                        <button class="w-20 h-20 bg-blue-500 toggle-btn">toggle case</button>
+                    </div>
                 </div>
             </div>
-            <div class=" lg:-left-24 xl:-left-80 relative hidden  md:flex md:w-[] group">
+        <div class="">
+            <div class="lg:-left-24 xl:-left-80 relative light-image flex mw-634-img-container  group">
                 <span class=" w-full ">
-                    <img class="" src="../assets/thumbnail/imagelight-forios.webp" alt="">
+                    <img class="imageforios-light" src="../assets/thumbnail/imagelight-forios.webp" alt="">
                 </span>
-                <span class="left-56 top-16 -z-10 absolute w-96">
-                    <img src="../assets/thumbnail/musicImagelight-forios.webp" alt="">
+                <span class="left-56 max-w-330-left top-16 -z-10 absolute w-full">
+                    <img class="musicimage-light" src="../assets/thumbnail/musicImagelight-forios.webp" alt="">
                 </span> 
-               
             </div>
+            <div class=" lg:-left-24 xl:-left-80 relative hidden dark-image mw-634-img-container  group">
+                <span class=" w-full ">
+                    <img class="imageforios-dark" src="../assets/thumbnail/image-forios.webp" alt="">
+                </span>
+                <span class="max-w-330-left left-56 top-16 -z-10 absolute w-full">
+                    <img class="musicimage-dark" src="../assets/thumbnail/musicImage-forios.webp" alt="">
+                </span> 
+            </div>
+
+            
+        </div>
+        
     
             
         </div>
@@ -876,6 +890,43 @@
                 tabs[index].classList.add("active")
             })
         })
+
+        let tab1 = document.getElementById("tab1");
+        let tab2 = document.getElementById("tab2");
+        let tab3 = document.getElementById("tab3");
+
+        let imageforioslight =document.querySelector(".imageforios-light");
+        let musicimagelight =document.querySelector(".musicimage-light");
+        let imageforiosdark = document.querySelector(".imageforios-dark");
+        let musicimagedark = document.querySelector(".musicimage-dark")
+        tab1.addEventListener("click",_=>{
+            imageforioslight.src="../assets/thumbnail/imagelight-forios.webp";
+            musicimagelight.src="../assets/thumbnail/musicImagelight-forios.webp";
+            imageforiosdark.src="../assets/thumbnail/image-forios.webp";
+            musicimagedark.src="../assets/thumbnail/musicImage-forios.webp";
+        })
+        tab2.addEventListener("click",_=>{
+            imageforioslight.src="../assets/thumbnail/small-size-portfolio-light.webp";
+            musicimagelight.src="../assets/thumbnail/small-size-music-light.webp";
+            imageforiosdark.src="../assets/thumbnail/small-size-portfolio-dark.webp";
+            musicimagedark.src="../assets/thumbnail/small-size-music-dark.webp"
+        })
+
+        let togglebtn = document.querySelector(".toggle-btn");
+        let lightimage = document.querySelector(".light-image");
+        let darkimage = document.querySelector(".dark-image");
+
+        togglebtn.addEventListener("click",()=>{
+            if (lightimage.style.display === "block" && darkimage.style.display ==="none") {
+                lightimage.style.display = "none";
+                darkimage.style.display = "block"
+            }else{
+                lightimage.style.display = "block";
+                darkimage.style.display = "none "
+            }
+        })
+  
+
 </script>
 
 </body>

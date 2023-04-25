@@ -137,3 +137,18 @@
 .active:hover .tab{
     background-color:#1e293b
 }
+@media(max-width:634px){
+    .max-w-330-left{
+    margin-left:-100px
+    }
+}
+@media(max-width:634px){
+    .mw-634-img-container {
+        width:60%
+    }
+}
+@media(max-width:310px){
+    .max-w-330-left{
+    margin-left:-120px
+    }
+}
