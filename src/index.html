@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="ionic.css">
 </head>
  <style>
-   * {box-sizing: border-box;}
+   /* * {box-sizing: border-box;} */
 
 .checkbox {
   opacity: 0;
@@ -187,9 +187,9 @@
 
        
     <!-- Cross platform SDK -->
-    <section class="container mx-auto">
+    <section class="container mx-auto mt-32">
         <div class="  relative mx-auto flex flex-col lg:flex-row  items-start lg:items-center md:justify-between px-5 w-full">
-            <div class=" ">
+            <div class=" mb-10 ">
                 <h6>Cross Platform SDK</h6>
                 <h1 class="text-6xl font-bold mb-4 max-w-lg">A modern, enterprise mobile SDK for iOS and Android apps.</h1>
                 
@@ -216,13 +216,17 @@
                     <!-- dark mode light mode -->
                  
                         <!-- <button class="w-20 h-20 bg-blue-500 toggle-btn">toggle case</button> -->
-                        <div class="bg-slate-500  toggle-btn">
-                            <input type="checkbox" class="checkbox toggle-btn" id="checkbox">
-                            <label for="checkbox" class="checkbox-label  toggle-btn">
-                              <i class="fas fa-moon dk"></i>
-                              <i class="fas fa-sun lt"></i>
-                              <span class="ball dk" ></span>
-                            </label>
+                        <div class=" flex items-center  flex-col gap-3 cursor-pointer">
+                            <div class=" pt-5 pb-5">
+                                <input type="checkbox" class="checkbox toggle-btn" id="checkbox">
+                                <label for="checkbox" class="checkbox-label ">
+                                    <i class="fas fa-sun "></i>
+                                <i class="fas fa-moon"></i>
+                                
+                                <span class="ball " ></span>
+                                </label>
+                            </div>
+                            <div>Mode</div>
                           </div>
                       
                   
@@ -410,395 +414,845 @@
         </div>
 
          <!--code-demo  -->
-         <div class="  px-0 md:px-10 overflow-hidden  max-w-xl xl:ml-32 lg:-mt-10 ">
-            <!-- code -->
-            <div class="flex justify-center sm:space-x-5 ">
-                <button class="bg-slate-100 rounded-full code-demo-btn py-2 px-5 whitespace-nowrap"> <i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>  Code</button>
-                <button class="bg-slate-100 rounded-full  py-2 px-5 whitespace-nowrap"><i class="fa-sharp fa-solid fa-eye"></i> Demo</button>
+         <div class="code-demo  px-0 md:px-10 overflow-hidden  max-w-xl xl:ml-32 lg:-mt-10 ">
+            <!-- code and demo button -->
+            <div class="btn-code-demo flex  justify-center  sm:space-x-5 ">
+                <button class="active1 btn-c-d bg-slate-600  text-slate-300 hover:text-slate-100 rounded-full code-demo-btn py-2 px-5 whitespace-nowrap"> <i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>  Code</button>
+                <button class=" btn-c-d bg-slate-600  text-slate-300 hover:text-slate-100 rounded-full  py-2 px-5 whitespace-nowrap"><i class="fa-sharp fa-solid fa-eye"></i> Demo</button>
             </div>
-            <!-- language  -->
-            <div class=" bg-slate-800  overflow-hidden max-w-lg rounded-3xl px-10  py-5 mt-5">
-            <!-- languageicon -->
-                <div class=" mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
-                    
-                        <div class="bg-slate-200 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                            <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
-                            <div>React</div>
-                        </div>
-                        <div class="bg-slate-200 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                            <div class="text-4xl"><i class="fa-brands fa-angular"></i></div>
-                            <div>Angular</div>
-                        </div>
-                        <div class="bg-slate-200 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                            <div class="text-4xl"><i class="fa-brands fa-vuejs"></i></div>
-                            <div>Vue</div>
-                        </div>
-                        <div class="bg-slate-200 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                            <div class="text-4xl"><i class="fa-brands fa-js"></i></div>
-                            <div>Javascript</div>
-                        </div>
-                    
-                </div>
-            <!-- language container -->
-                <div class="max-w-md overflow-hidden  h-[550px]  ">
-                        <!-- React  -->
-                        <div class=" leading-8  py-10 overflow-x-scroll">
-                            <div class="whitespace-nowrap ">
-                                <span class="mr-5 text-white">1</span>
-                                <span>
-                                    <span class=text-white><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Discover</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
+            <!-- code and demo button end -->
+            
+            
+            <div class="code-demo-container">
+               
+                <!-- code -->
+                <div class=" language-container live code-demo  bg-slate-800  overflow-hidden max-w-lg rounded-3xl px-10  py-5 mt-5">
+                languageicon
+                    <div class="icon-container mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
+                        
+                            <div class="language-icon  bg-slate-800 text-slate-400 hover:text-slate-100 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
+                                <div>React</div>
                             </div>
-                            <div class="whitespace-nowrap ">
-                                <span class="mr-5 text-white">2</span>
-                                <span>
-                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                            <span class="text-sky-400">Top albums</span>
-                            <span><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                        </span>
-                       
+                            <div class="language-icon bg-slate-800 text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                <div class="text-4xl"><i class="fa-brands fa-angular"></i></div>
+                                <div>Angular</div>
                             </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-5 text-white">3</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                            <div class="language-icon bg-slate-800 text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                <div class="text-4xl"><i class="fa-brands fa-vuejs"></i></div>
+                                <div>Vue</div>
                             </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-8 text-white">4</span>
-                                <span class="text-white">{</span><span class="text-sky-300">albums</span><span class="text-yellow-300">.map</span class=text-white>(<span class="text-sky-300">album</span><span class="text-white">=></span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-11 text-white">5</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">IonItem</span class=text-emerald-300><span class="text-white"> key</span><span class="text-white">={</span><span></span><span class="text-emerald-300">album.id</span><span class="text-white">}></span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-14 text-white">6</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span class="text-white">"></span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-11 text-white">7</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-11 text-white">8</span>
-                                <span>      
-                                    <span class="white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-14 text-white">9</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                    <span class="text-sky-400">{{ album title }}</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-12 text-white">10</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
-                                    <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
-                                    <span><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class=text-white>></span>
-                                </span>
-                            
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-11 text-white">11</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                <span class="mr-8 text-white">12</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div class="whitespace-nowrap">
-                                    <span class="mr-8 text-white">13</span>
-                                    <span>      
-                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonItem</span><span class="text-white">></span>
-                                    </span>
-                            </div>
-                        <div>
-                                <span class="mr-8 text-white">14</span>
-                                <span class="text-white">)}</span>
-                        </div>
-                        <div>
-                                <span class="mr-8 text-white">15</span>
-                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonList</span><span class="text-white">></span>
-                        </div>
-                        </div>   
-                        <!-- angular -->
-                        <div class=" leading-8 py-10 whitespace-nowrap">
-                            <div>
-                                <span class="mr-5 text-white">1</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Discover</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div >
-                                <span class="mr-5 text-white">2</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Top albums</span>
-                                    <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-5 class-text-white">3</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-8 text-white">4</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">*ngfor</span><span class="text-white">="</span><span class="text-orange-300"></span><span class="text-orange-300">let album of albums; trackBy:trackAlbums</span> <span class="text-white">"></span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">5</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span></span> <span class="text-white">"></span>
-                            </div>
-                            <div>
-                                <span class="mr-14 text-white">6</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span></span> <span class="text-white">"></span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">7</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-11 class=text-white">8</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-14 text-white">9</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                    <span class="text-sky-400">{{ album title }}</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-12 text-white">10</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
-                                    <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">11</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-8 text-white">12</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                        <div>
-                            <span class="mr-8 text-white">13</span>
-                            <span>      
-                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
-                            </span>
-                        </div>
-                        </div>
-                        <!-- Vue  -->
-                        <div class=" leading-8 py-10 whitespace-nowrap">
-                            <div>
-                                <span class="mr-5 text-white">1</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Discover</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div >
-                                <span class="mr-5 text-white">2</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Top albums</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-5 text-white">3</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-8 text-white">4</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">v-for</span><span class="text-white">="</span><span class="text-orange-300">album in albums</span><span class="text-white">"</span><span class="text-sky-300"> :key</span><span class="text-white">="</span><span class="text-orange-300">album in Id</span> <span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">5</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-14 text-white">6</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">:src</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span>"</span> <span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">7</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">8</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-14 text-white">9</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                    <span class="text-sky-400">{{ album title }}</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-12 text-white">10</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
-                                    <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
-                                    <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">11</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-8 text-white">12</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                </span>
+                            <div class="language-icon bg-slate-800 text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                <div class="text-4xl"><i class="fa-brands fa-js"></i></div>
+                                <div>Javascript</div>
                             </div>
                         
-                        </div>
-                        <!-- javascript -->
-                        <div class=" leading-8 py-10">
+                    </div>
+                <!-- language container --> 
+                <!-- overflow-hidden  h-[550px] -->
+                    <div class="code-container max-w-md overflow-hidden h-[550px] "> 
+                            <!-- React  -->
+                            <div class="code-sentence  active leading-8 pr-10  py-10 overflow-x-scroll">
+                                <div class="whitespace-nowrap ">
+                                    <span class="mr-5 text-white">1</span>
+                                    <span>
+                                        <span class=text-white><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Discover</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div class="whitespace-nowrap ">
+                                    <span class="mr-5 text-white">2</span>
+                                    <span>
+                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                <span class="text-sky-400">Top albums</span>
+                                <span><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                            </span>
+                        
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-5 text-white">3</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-8 text-white">4</span>
+                                    <span class="text-white">{</span><span class="text-sky-300">albums</span><span class="text-yellow-300">.map</span class=text-white>(<span class="text-sky-300">album</span><span class="text-white">=></span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-11 text-white">5</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">IonItem</span class=text-emerald-300><span class="text-white"> key</span><span class="text-white">={</span><span></span><span class="text-emerald-300">album.id</span><span class="text-white">}></span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-14 text-white">6</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span class="text-white">"></span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-11 text-white">7</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-11 text-white">8</span>
+                                    <span>      
+                                        <span class="white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-14 text-white">9</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                        <span class="text-sky-400">{{ album title }}</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-12 text-white">10</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                        <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                        <span><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class=text-white>></span>
+                                    </span>
+                                
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-11 text-white">11</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                    <span class="mr-8 text-white">12</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div class="whitespace-nowrap">
+                                        <span class="mr-8 text-white">13</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonItem</span><span class="text-white">></span>
+                                        </span>
+                                </div>
                             <div>
-                                <span class="mr-5 text-white">1</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Discover</span>
-                                    <span class="text-white"><</span><span class=text-white>/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div >
-                                <span class="mr-5 text-white">2</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class=text-white>></span>
-                                    <span class="text-sky-400">Top albums</span>
-                                    <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class=text-white>></span>
-                                </span>
-                            
+                                    <span class="mr-8 text-white">14</span>
+                                    <span class="text-white">)}</span>
                             </div>
                             <div>
-                                <span class="mr-5 text-white">3</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    <span class="mr-8 text-white">15</span>
+                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonList</span><span class="text-white">></span>
                             </div>
-                            <div>
-                                <span class="mr-8 text-white">4</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">5</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-14 text-white">6</span>
-                                <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">src</span> <span class="text-white">="<span class="text-orange-300">/img/index/code-tabs/dawn-fm-the-weeknd.png</span>"</span> <span class="text-white">></span>
-                            </div>
-                            <div>
-                                <span class="mr-11  text-white">7</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">8</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-14 text-white">9</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Dawn FM</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-12 text-white">10</span>
-                                <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">The Weekend</span>
-                                    <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
-                            </div>
-                            <div>
-                                <span class="mr-11 text-white">11</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="mr-8 text-white">12</span>
-                                <span>      
-                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                </span>
-                            </div>
+                            </div>   
+                            <!-- angular -->
+                            <div class="code-sentence leading-8 py-10 whitespace-nowrap overflow-x-scroll">
+                                <div>
+                                    <span class="mr-5 text-white">1</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Discover</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div >
+                                    <span class="mr-5 text-white">2</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Top albums</span>
+                                        <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-5 class-text-white">3</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">4</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">*ngfor</span><span class="text-white">="</span><span class="text-orange-300"></span><span class="text-orange-300">let album of albums; trackBy:trackAlbums</span> <span class="text-white">"></span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">5</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span></span> <span class="text-white">"></span>
+                                </div>
+                                <div>
+                                    <span class="mr-14 text-white">6</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span></span> <span class="text-white">"></span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">7</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 class=text-white">8</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-14 text-white">9</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                        <span class="text-sky-400">{{ album title }}</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-12 text-white">10</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                        <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">11</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">12</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                    </span>
+                                </div>
                             <div>
                                 <span class="mr-8 text-white">13</span>
-                                <span class="text-sky-300"><span class=""><</span><span class="">!</span>  <span class=""> --- etc</span>  --- > </span>
-                            </div>
-                            <div>
-                                <span class="mr-5 text-white">14</span>
                                 <span>      
                                     <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
                                 </span>
                             </div>
-                        </div>   
+                            </div>
+                            <!-- Vue  -->
+                            <div class="code-sentence  leading-8 py-10 whitespace-nowrap overflow-x-scroll">
+                                <div>
+                                    <span class="mr-5 text-white">1</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Discover</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div >
+                                    <span class="mr-5 text-white">2</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Top albums</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-5 text-white">3</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">4</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">v-for</span><span class="text-white">="</span><span class="text-orange-300">album in albums</span><span class="text-white">"</span><span class="text-sky-300"> :key</span><span class="text-white">="</span><span class="text-orange-300">album in Id</span> <span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">5</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-14 text-white">6</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">:src</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span>"</span> <span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">7</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">8</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-14 text-white">9</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                        <span class="text-sky-400">{{ album title }}</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-12 text-white">10</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                        <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                        <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">11</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">12</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                            
+                            </div>
+                            <!-- javascript -->
+                            <div class="code-sentence leading-8 py-8 whitespace-nowrap overflow-x-scroll">
+                                <div>
+                                    <span class="mr-5 text-white">1</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Discover</span>
+                                        <span class="text-white"><</span><span class=text-white>/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div >
+                                    <span class="mr-5 text-white">2</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class=text-white>></span>
+                                        <span class="text-sky-400">Top albums</span>
+                                        <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class=text-white>></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-5 text-white">3</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">4</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">5</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-14 text-white">6</span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">src</span> <span class="text-white">="<span class="text-orange-300">/img/index/code-tabs/dawn-fm-the-weeknd.png</span>"</span> <span class="text-white">></span>
+                                </div>
+                                <div>
+                                    <span class="mr-11  text-white">7</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">8</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-14 text-white">9</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Dawn FM</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-12 text-white">10</span>
+                                    <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">The Weekend</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                </div>
+                                <div>
+                                    <span class="mr-11 text-white">11</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">12</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="mr-8 text-white">13</span>
+                                    <span class="text-sky-300"><span class=""><</span><span class="">!</span>  <span class=""> --- etc</span>  --- > </span>
+                                </div>
+                                <div>
+                                    <span class="mr-5 text-white">14</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                            </div>   
+                    </div>
+                <!-- language container end -->
+               
+                <!-- code -->
+                <div class=" language-container code-demo active1 bg-slate-800  overflow-hidden max-w-lg rounded-3xl px-10  py-5 mt-5">
+                    languageicon
+                        <div class="icon-container mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
+                            
+                                <div class="language-icon active bg-slate-800 text-slate-400 hover:text-slate-100 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                    <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
+                                    <div>React</div>
+                                </div>
+                                <div class="language-icon bg-slate-800 text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                    <div class="text-4xl"><i class="fa-brands fa-angular"></i></div>
+                                    <div>Angular</div>
+                                </div>
+                                <div class="language-icon bg-slate-800 text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                    <div class="text-4xl"><i class="fa-brands fa-vuejs"></i></div>
+                                    <div>Vue</div>
+                                </div>
+                                <div class="language-icon bg-slate-800 text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                    <div class="text-4xl"><i class="fa-brands fa-js"></i></div>
+                                    <div>Javascript</div>
+                                </div>
+                            
+                        </div>
+                    <!-- language container --> 
+                    <!-- overflow-hidden  h-[550px] -->
+                        <div class="code-container max-w-md overflow-hidden h-[550px] "> 
+                                <!-- React  -->
+                                <div class="code-sentence  active leading-8 pr-10  py-10 overflow-x-scroll">
+                                    <div class="whitespace-nowrap ">
+                                        <span class="mr-5 text-white">1</span>
+                                        <span>
+                                            <span class=text-white><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Discover</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div class="whitespace-nowrap ">
+                                        <span class="mr-5 text-white">2</span>
+                                        <span>
+                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    <span class="text-sky-400">Top albums</span>
+                                    <span><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                </span>
+                            
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-5 text-white">3</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-8 text-white">4</span>
+                                        <span class="text-white">{</span><span class="text-sky-300">albums</span><span class="text-yellow-300">.map</span class=text-white>(<span class="text-sky-300">album</span><span class="text-white">=></span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-11 text-white">5</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">IonItem</span class=text-emerald-300><span class="text-white"> key</span><span class="text-white">={</span><span></span><span class="text-emerald-300">album.id</span><span class="text-white">}></span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-14 text-white">6</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span class="text-white">"></span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-11 text-white">7</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-11 text-white">8</span>
+                                        <span>      
+                                            <span class="white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-14 text-white">9</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                            <span class="text-sky-400">{{ album title }}</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-12 text-white">10</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                            <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                            <span><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class=text-white>></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-11 text-white">11</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                        <span class="mr-8 text-white">12</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div class="whitespace-nowrap">
+                                            <span class="mr-8 text-white">13</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonItem</span><span class="text-white">></span>
+                                            </span>
+                                    </div>
+                                <div>
+                                        <span class="mr-8 text-white">14</span>
+                                        <span class="text-white">)}</span>
+                                </div>
+                                <div>
+                                        <span class="mr-8 text-white">15</span>
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonList</span><span class="text-white">></span>
+                                </div>
+                                </div>   
+                                <!-- angular -->
+                                <div class="code-sentence leading-8 py-10 whitespace-nowrap overflow-x-scroll">
+                                    <div>
+                                        <span class="mr-5 text-white">1</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Discover</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div >
+                                        <span class="mr-5 text-white">2</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Top albums</span>
+                                            <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-5 class-text-white">3</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">4</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">*ngfor</span><span class="text-white">="</span><span class="text-orange-300"></span><span class="text-orange-300">let album of albums; trackBy:trackAlbums</span> <span class="text-white">"></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">5</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span></span> <span class="text-white">"></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-14 text-white">6</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span></span> <span class="text-white">"></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">7</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 class=text-white">8</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-14 text-white">9</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                            <span class="text-sky-400">{{ album title }}</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-12 text-white">10</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                            <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">11</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">12</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                <div>
+                                    <span class="mr-8 text-white">13</span>
+                                    <span>      
+                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    </span>
+                                </div>
+                                </div>
+                                <!-- Vue  -->
+                                <div class="code-sentence  leading-8 py-10 whitespace-nowrap overflow-x-scroll">
+                                    <div>
+                                        <span class="mr-5 text-white">1</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Discover</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div >
+                                        <span class="mr-5 text-white">2</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Top albums</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-5 text-white">3</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">4</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">v-for</span><span class="text-white">="</span><span class="text-orange-300">album in albums</span><span class="text-white">"</span><span class="text-sky-300"> :key</span><span class="text-white">="</span><span class="text-orange-300">album in Id</span> <span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">5</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-14 text-white">6</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">:src</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span>"</span> <span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">7</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">8</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-14 text-white">9</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                            <span class="text-sky-400">{{ album title }}</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-12 text-white">10</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                            <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                            <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">11</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">12</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                
+                                </div>
+                                <!-- javascript -->
+                                <div class="code-sentence leading-8 py-8 whitespace-nowrap overflow-x-scroll">
+                                    <div>
+                                        <span class="mr-5 text-white">1</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Discover</span>
+                                            <span class="text-white"><</span><span class=text-white>/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div >
+                                        <span class="mr-5 text-white">2</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class=text-white>></span>
+                                            <span class="text-sky-400">Top albums</span>
+                                            <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class=text-white>></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-5 text-white">3</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">4</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">5</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-14 text-white">6</span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">src</span> <span class="text-white">="<span class="text-orange-300">/img/index/code-tabs/dawn-fm-the-weeknd.png</span>"</span> <span class="text-white">></span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11  text-white">7</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">8</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-14 text-white">9</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">Dawn FM</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-12 text-white">10</span>
+                                        <span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            <span class="text-sky-400">The Weekend</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        </span>
+                                    
+                                    </div>
+                                    <div>
+                                        <span class="mr-11 text-white">11</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">12</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-8 text-white">13</span>
+                                        <span class="text-sky-300"><span class=""><</span><span class="">!</span>  <span class=""> --- etc</span>  --- > </span>
+                                    </div>
+                                    <div>
+                                        <span class="mr-5 text-white">14</span>
+                                        <span>      
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                        </span>
+                                    </div>
+                                </div>   
+                        </div>
+                    <!-- language container end -->
                 </div>
-             <!-- language container end -->
-            </div>
+                <!-- code end --> 
 
-            
+                <!-- demo -->
+                <div class="language-container code-demo hidden bg-slate-800  overflow-hidden max-w-lg xl:w-[540px] rounded-3xl px-10  py-5 mt-5">
+                    <div class="h-[550px] bg-slate-200 rounded-xl max-w-full   overflow-hidden scrollbar-hide overflow-y-scroll ">
+                        <div class="px-5 py-5 rounded-xl overflow-hidden text-ellipsis">
+                            <h6 class="text-sm uppercase">Discover</h6>
+                            <h1 class="text-2xl  text-slate-900 font-bold">Top albums</h1>
+                            <div class="flex  items-center mt-10  whitespace-nowrap text-ellipsis overflow-hidden  gap-5">
+                                <img class="w-14" src="../assets/thumbnail/dawn-fm-the-weeknd.png" alt="">
+                                <div class="w-full  ellipsis-w-297 text-ellipsis overflow-hidden">
+                                    <h5 class="">Dawn FM</h5>
+                                    <h6 class="text-xs mb-3">The Weekend</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                            <div class="flex  items-center mt-5  gap-5 ">
+                                <img class="w-14" src="../assets/thumbnail/planet-her-doja-cat.png" alt="">
+                                <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                    <h5>Planet Her</h5>
+                                    <h6 class="text-xs mb-3">Doja Cat</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                            <div class="flex  items-center  mt-5  gap-5 ">
+                                <img class="w-14" src="../assets/thumbnail/sour-olivia-rodrigo.png" alt="">
+                                <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                    <h5>SOUR</h5>
+                                    <h6 class="text-xs mb-3">Olivia Rodrigo</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                            <div class="flex  items-center  mt-5  gap-5">
+                                <img class="w-14" src="../assets/thumbnail/montero-lil-nas-x.png" alt="">
+                                <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                    <h5>MONTERO</h5>
+                                    <h6 class="text-xs mb-3">Lil Nas X</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                            <div class="flex  items-center  mt-5 gap-5">
+                                <img class="w-14" src="../assets/thumbnail/yhlqmdlg-bad-bunny.png" alt="">
+                                <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                    <h5>YHLQMDYG</h5>
+                                    <h6 class="text-xs mb-3">Bad Bunny</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                            <div class="flex  items-center  mt-5 gap-5">
+                                <img class="w-14" src="../assets/thumbnail/future-nostalgia-dua-lipa.png" alt="">
+                                <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                    <h5>Future Nostalgia</h5>
+                                    <h6 class="text-xs mb-3">Dua Lipa</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                            <div class="flex  items-center  mt-5  gap-5">
+                                <img class="w-14" src="../assets/thumbnail/30-adele.png" alt="">
+                                <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                    <h5>30</h5>
+                                    <h6 class="text-xs mb-3">Adele</h6>
+                                    <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- demo end -->
+
+            </div> 
+
          </div>
-
-
+         </div>
     </div>
 
-   
 
     <!-- Developer resources -->
     <h1 class="text-white font-bold  text-2xl mb-10">Developer resoruces</h1>
@@ -981,24 +1435,23 @@
                 darkimage.style.display = "block"
             }else{
                 lightimage.style.display = "block";
-                darkimage.style.display = "none "
+                darkimage.style.display = "none"
             }
         })
   
 
-let lt = document.querySelector(".lt")
-lt.addEventListener("click",()=>{
-    if (lightimage.style.display === "block" && darkimage.style.display ==="none") {
-                lightimage.style.display = "none";
-                darkimage.style.display = "block"
-            }
-})
-let dk = document.querySelector(".dk")
-dk.addEventListener("click",()=>{
-    if(lightimage.style.display === "block" && darkimage.style.display ==="none"){
-        lightimage.style.display = "block";
-        darkimage.style.display = "none "
-    }
+// code and demo
+let btnCD = document.querySelectorAll(".btn-c-d");
+let codeDemo = document.querySelectorAll(".code-demo")
+btnCD.forEach((tab1,index1)=>{
+    tab1.addEventListener("click",()=>{
+        btnCD.forEach((tab1)=>{
+            tab1.classList.remove("active1")
+        })
+       
+        btnCD[index1].classList.add("active1")
+        
+    })
 })
 
 

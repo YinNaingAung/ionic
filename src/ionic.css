@@ -152,3 +152,15 @@
     margin-left:-120px
     }
 }
+
+.btn-code-demo .active1{
+    background-color:#f1f5f9;
+    color: #0d0e0e
+}
+
+.code-demo-container .code-demo{
+    display:none
+}
+.code-demo-container .live{
+    display:block;
+}
