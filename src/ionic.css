@@ -171,6 +171,15 @@
 }
 
 /* code => language icon and langauage container */
-.code-container .active2{
-    background-color:#f0ebeb
+.icon-container .active2{
+    background-color:#94a3b8;
+    color:#e2e8f0
+
 }
+.code-container .code-sentence{
+    display:none
+}
+.code-container .active2{
+    display:block
+}
+

@@ -430,7 +430,7 @@
                 <!-- languageicon -->
                     <div class="icon-container mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
                         
-                            <div class="language-icon  bg-slate-800 text-slate-400 hover:text-slate-100 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                            <div class="language-icon active2  bg-slate-800 text-slate-400 hover:text-slate-100 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
                                 <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
                                 <div>React</div>
                             </div>
@@ -452,7 +452,7 @@
                 <!-- overflow-hidden  h-[550px] -->
                     <div class="code-container max-w-md overflow-hidden h-[550px] "> 
                             <!-- React  -->
-                            <div class="code-sentence  active leading-8 pr-10  py-10 overflow-x-scroll">
+                            <div class="code-sentence  active2 leading-8 pr-10  py-10 overflow-x-scroll">
                                 <div class="whitespace-nowrap ">
                                     <span class="mr-5 text-white">1</span>
                                     <span>
@@ -802,6 +802,7 @@
                 <!-- language container end -->
                
                 </div>
+                <!-- code end -->
 
                 <!-- demo -->
                 <div class="language-container  bg-slate-800  overflow-hidden max-w-lg xl:w-[540px] rounded-3xl px-10  py-5 mt-5">
@@ -1081,7 +1082,21 @@ btnCD.forEach((tab1,index1)=>{
     })
 })
 
-
+//  language icon and langauage container 
+let languageIcon=document.querySelectorAll(".language-icon");
+let codeSentence = document.querySelectorAll(".code-sentence");
+languageIcon.forEach((tab2,index2)=>{
+    tab2.addEventListener("click",()=>{
+        languageIcon.forEach((tab2)=>{
+            tab2.classList.remove("active2")
+        })
+        codeSentence.forEach((content1)=>{
+            content1.classList.remove("active2")
+        })
+        languageIcon[index2].classList.add("active2");
+        codeSentence[index2].classList.add("active2")
+    })
+})
   
 
 </script>
