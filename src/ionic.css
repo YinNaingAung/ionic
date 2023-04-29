@@ -153,14 +153,24 @@
     }
 }
 
-.btn-code-demo .active1{
-    background-color:#f1f5f9;
-    color: #0d0e0e
-}
 
-.code-demo-container .code-demo{
+
+
+
+
+
+.code-demo-container .language-container{
     display:none
 }
-.code-demo-container .live{
+.code-demo-container .active1{
     display:block;
+}
+.btn-code-demo .active1{
+    background-color:white;
+    color:black
+}
+
+/* code => language icon and langauage container */
+.code-container .active2{
+    background-color:#f0ebeb
 }
