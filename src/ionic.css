@@ -183,3 +183,32 @@
     display:block
 }
 
+/* slider */
+
+.op-left{
+    position:absolute;
+    z-index:1;
+    inset:0px;
+    background:linear-gradient(270deg, rgba(253, 251, 251, 1) , rgba(203, 27, 27,0) , rgba(255, 255, 255, 0) , rgba(255, 255, 255, 0) , rgb(255, 255, 255) )
+    }
+    .op{
+        opacity:0.9;
+        
+    }
+    .op-left{
+        position:absolute;
+        z-index:1;
+        inset:0px;
+        background:linear-gradient(270deg, rgba(253, 251, 251, 1) , rgba(203, 27, 27,0) , rgba(255, 255, 255, 0) , rgba(255, 255, 255, 0) , rgb(255, 255, 255) )
+        }
+
+.slider{
+    animation:runslider 30s linear infinite
+}
+@keyframes runslider{
+ from{
+    transform: translateX(0);
+ }to{
+    transform:translateX(calc(-117px * 13))
+ }
+}

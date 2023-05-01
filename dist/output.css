@@ -797,6 +797,26 @@ video {
   margin-bottom: 9rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-80 {
+  margin-right: 20rem;
+}
+
+.mr-\[\] {
+  margin-right: ;
+}
+
+.mr-\[300px\] {
+  margin-right: 300px;
+}
+
+.mr-\[1000px\] {
+  margin-right: 1000px;
+}
+
 .block {
   display: block;
 }
@@ -969,6 +989,102 @@ video {
   width: 22%;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[00px\] {
+  width: 00px;
+}
+
+.w-\[4000px\] {
+  width: 4000px;
+}
+
+.w-\[5000px\] {
+  width: 5000px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[2000px\] {
+  width: 2000px;
+}
+
+.w-\[3000px\] {
+  width: 3000px;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[1\] {
+  width: 1;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
@@ -1033,6 +1149,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1091,6 +1211,30 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-48 {
+  gap: 12rem;
+}
+
+.gap-96 {
+  gap: 24rem;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[200px\] {
+  gap: 200px;
+}
+
+.gap-\[500px\] {
+  gap: 500px;
+}
+
+.gap-\[600px\] {
+  gap: 600px;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1618,6 +1762,11 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.hue-rotate-180 {
+  --tw-hue-rotate: hue-rotate(180deg);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
