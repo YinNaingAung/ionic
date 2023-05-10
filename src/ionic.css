@@ -227,3 +227,9 @@
     }
 }
 
+/* navbar */
+.app-publishing::after , .portals::after{
+    content: "New";
+    color:blue;
+    margin-left:20px;
+}
