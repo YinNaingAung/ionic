@@ -233,3 +233,23 @@
     color:blue;
     margin-left:20px;
 }
+.nav-btn:hover .content-container{
+    display:block;
+    transition-duration: 5s;
+    transition-delay:5s;
+    transition-property: opacity; 
+    transition: opacity 3s ease-in-out;
+    
+}
+/* .nav-btn:hover + .content-lar{
+   left:200px;
+    animation:moveright 0.3s ease 0.1s forwards;
+}
+@keyframes moveright{
+    0%{
+        left:0;
+    }
+    100%{
+        left:-300px;
+    }
+} */
