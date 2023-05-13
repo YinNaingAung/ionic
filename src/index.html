@@ -138,7 +138,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
         <div>
             <img class="w-40" src="../assets/image/ionic dark logotype black.png" alt="">
         </div>
-        <div>
+        <div class="hidden lg:flex">
             <ul class="flex justify-between  space-x-4 ">
                 <li class="cursor-default nav-btn hover:bg-slate-100 px-2 py-1 rounded-md">
                     <div>Platform</div>
@@ -423,10 +423,33 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                 </li>
             </ul>
         </div>
-        <div class="space-x-4">
+        <div class="gap-3 hidden lg:flex justify-center items-center ">
             <button>Sign in</button>
-            <button class="bg-slate-800 text-slate-50 px-2 py-1 rounded-lg">Get started <span><i class="fa-solid fa-arrow-right"></i></span></button>
+            <button class="bg-slate-800  text-slate-50 px-2 py-1  rounded-lg">Get started <span><i class="fa-solid fa-arrow-right"></i></span></button>
+            <!-- dark mode -->
+            <div class="">
+                <button id="dark-switch" onclick="toggleTheme()" class="shadow w-[65px] border flex items-center transition duration-200 rounded-full  bg-slate-800 p-1">
+                    <div id="dark-switch-icon" class="bg-slate-50 w-7 h-7 rounded-full transform transition duration-200 flex justify-center items-center">
+                        <i class="fa-regular fa-sun"></i>
+                    </div>
+                    <h6 id="dark-text" class="text-slate-200 dark:text-slate-900 translate-x-1">FF</h6>
+                </button>
+                <!-- <h1 id="dark-text-change" class="text-center text-3xl font-bold dark:text-slate-200">Light</h1> -->
+            </div>
+
         </div>
+
+ <!-- menu icon -->
+  <div class="flex lg:hidden">
+        <div class="menu" id="menu">
+            <div class="line-container">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
+
+ </div>
    </div>
    <!-- Hero section -->
    <section class="container mx-auto">
@@ -1652,6 +1675,81 @@ disableOnInteraction:false
 },
     
     });
+
+
+
+
+    // darkmode
+    const darkSwitchIcon = document.querySelector("#dark-switch-icon");
+        const darkSwitch = document.querySelector("#dark-switch")
+        const darkText = document.querySelector("#dark-text")
+        const darkChangeText = document.querySelector("#dark-text-change")
+        const html = document.documentElement;
+        let isDarkMode = false;
+
+        // Switch theme function
+        const toggleTheme = () => {
+            isDarkMode = !isDarkMode;
+            switchTheme()
+        }
+
+        const toDark = () => {
+            darkSwitchIcon.classList.add('translate-x-full', 'rotate-[360deg]','bg-slate-900')
+            darkSwitchIcon.innerHTML = `<i class="fa-solid fa-moon text-slate-100"></i>`
+            // darkChangeText.innerText = 'Dark'
+            darkSwitch.classList.remove('bg-slate-800')
+            darkSwitch.classList.add('bg-slate-100')
+            localStorage.setItem('data-theme', 'dark')
+            html.classList.add('dark')
+            darkText.classList.add('-translate-x-7')
+            darkText.innerText = 'ON'
+        }
+
+        const toLight = () => {
+            darkSwitchIcon.classList.remove('translate-x-full', 'bg-slate-900')
+            // darkChangeText.innerText = 'Light'
+            darkSwitch.classList.remove('bg-slate-100')
+            darkSwitch.classList.add('bg-slate-800')
+            localStorage.removeItem('data-theme')
+            html.classList.remove('dark')
+            darkText.classList.remove('-translate-x-7')
+            darkText.innerText = 'FF'
+            darkSwitchIcon.innerHTML = `<i class="fa-regular fa-sun"></i>`
+            setTimeout(() => {
+                darkSwitchIcon.classList.remove('rotate-[360deg]')
+            }, 200)
+        }
+
+        const switchTheme = () => {
+            isDarkMode ? toDark() : toLight()
+            // or
+            // if (isDarkMode) {
+            //     toDark()
+            // } else {
+            //     toLight()
+            // }
+        }
+
+
+        // If you do reload the webpage,
+        // doesn't change you choose theme.
+        // This `dataTheme` function save permentaly choose theme.
+
+        const dataTheme = localStorage.getItem('data-theme')
+
+        dataTheme === 'dark' ? toDark() : toLight();
+        // or
+        // if(dataTheme === 'dark') {
+        //     toDark()
+        // } else {
+        //     toLight()
+        // }
+
+        // menu icon
+        var menu = document.querySelector(".menu");
+        menu.addEventListener("click",()=>{
+            menu.classList.toggle("openmenu")
+        })
   </script>
 </body>
 </html>
