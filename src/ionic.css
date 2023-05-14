@@ -301,3 +301,13 @@
 .openmenu .line-2{
     width:0
 }
+
+
+/* mobile menu width */
+@media(max-width:500px){
+    
+    .menu-w-500{
+        width:100px;
+    }
+
+}
