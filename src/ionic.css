@@ -307,7 +307,11 @@
 @media(max-width:500px){
     
     .menu-w-500{
-        width:100px;
+        width:90%;
+        margin:0 auto;
+        right:0;
+        padding-left:10px;
+        overflow:hidden
     }
 
 }

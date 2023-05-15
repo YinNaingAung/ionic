@@ -424,13 +424,16 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
             </ul>
         </div>
         <!-- mobile navbar -->
-        <div class="absolute w-full  left-0 items-center top-0 mx-auto lg:hidden rounded-xl px-10 py-10 mr-10  bg-slate-500 min-h-full z-20">
+        <div class="absolute menu-w-500 w-full  left-0 items-center top-0 mx-auto lg:hidden rounded-xl px-10 py-10 mr-10  bg-slate-500 min-h-full z-20">
             <div>
                 <div>Platform</div>
                 <ul>
                     <li>
-                        <div class="font-bold text-lg">Features</div>
-                        <div class="flex flex-row gap-10 ">
+                        <div class="flex items-center justify-between">
+                            <div class="font-bold text-lg sm:text-3xl">Features</div>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="flex flex-row gap-10 sm:gap-52">
                             <ul>
                                 <li>Framework</li>
                                 <li>Appflow</li>
@@ -445,8 +448,19 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                         </div>
 
                     </li>
-                    <li class="font-bold text-lg">Why Ionic?</li>
-                    <li class="font-bold text-lg">Pricing</li>
+                    <li class="flex items-center justify-between">
+                        <div class="font-bold text-lg sm:text-3xl">
+                            Why Ionic?
+                        </div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <div class="font-bold text-lg sm:text-3xl">
+                            Pricing
+                        </div>
+                        <i class="fa-solid fa-angle-down"></i>
+
+                    </li>
                 </ul>
             </div>
             <hr>
