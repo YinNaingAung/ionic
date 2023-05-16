@@ -75,7 +75,7 @@
 }
 @media(max-width:1023px){
     .margin-topfor-native{
-        margin-top:80px;
+        margin-top:30px;
     }
     .native-container:hover .margin-topfor-native{
         margin-top:10px;
@@ -239,7 +239,7 @@
     transition-delay:5s;
     transition-property: opacity; 
     transition: opacity 3s ease-in-out;
-    
+
 }
 /* .nav-btn:hover + .content-lar{
    left:200px;
@@ -313,5 +313,37 @@
         padding-left:10px;
         overflow:hidden
     }
+    .w-500-padding {
+        padding:0px;
+    }
+}
+@media(max-width:400px){
+    .max-w-400-contact{
+       display:grid;
+       row-gap: 10px;
+    }
 
+}
+@media(max-width:290px){
+    .max-w-290-login{
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 20px;
+    }
+    .signup{
+        padding:10px;
+    }
+    .DL{
+        display:block
+    }
+}
+@media(max-width:400px){
+    .copyright-flex {
+        display:flex;
+        flex-direction: column;
+    }
+    .margin-top{
+        margin-top:20px
+    }
 }

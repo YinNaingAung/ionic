@@ -132,7 +132,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
 
  </style>
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
-<body>
+<body class="">
     <!-- navbar -->
    <div class=" container mx-auto px-5 py-5 relative flex justify-between items-center">
         <div>
@@ -424,175 +424,195 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
             </ul>
         </div>
         <!-- mobile navbar -->
-        <div class="absolute menu-w-500 w-full  left-0 items-center top-0 mx-auto lg:hidden rounded-xl px-10 py-10 mr-10  bg-slate-500 min-h-full z-20">
-            <div >
-                <div class="mb-5">Platform</div>
-                <ul class="">
-                    <li class="leading-10 mb-5">
-                        <div class="flex items-center justify-between">
-                            <div class="font-bold text-lg sm:text-3xl">Features</div>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <div class="flex flex-row gap-10 sm:gap-52">
-                            <ul>
-                                <li>Framework</li>
-                                <li>Appflow</li>
-                                <li>Secure Storage</li>
-                                <li>Advisory</li>
-                            </ul>
-                            <ul>
-                                <li>Capacitor</li>
-                                <li>Identity Value</li>
-                                <li>Auth Connect</li>
-                            </ul>
-                        </div>
+    
+        <div  class="absolute hidden menubox overflow-hidden w-500-padding  menu-w-500 w-full  left-0 items-center top-[100px] mx-auto lg:hidden rounded-xl  mr-10  bg-slate-100 min-h-full z-20">
+           <div class="px-5 py-5 h-[900px] overflow-hidden overflow-y-scroll ">
+                <div >
+                    <div class="mb-5">Platform</div>
+                    <ul class="">
+                        <li class="leading-10 mb-5">
+                            <div class="up-down  flex items-center justify-between">
+                                <div class="font-bold text-lg sm:text-3xl">Features</div>
+                                <i class="fa-solid fa-angle-down icon transition-all"></i>
+                            </div>
+                            <div class="show-hide flex transition-shadow ease-in-out delay-1000 duration-1000 flex-row gap-10 sm:gap-52 hidden">
+                                <ul>
+                                    <li>Framework</li>
+                                    <li>Appflow</li>
+                                    <li>Secure Storage</li>
+                                    <li>Advisory</li>
+                                </ul>
+                                <ul>
+                                    <li>Capacitor</li>
+                                    <li>Identity Value</li>
+                                    <li>Auth Connect</li>
+                                </ul>
+                            </div>
 
-                    </li>
-                    <li class="flex items-center justify-between mb-5">
-                        <div class="font-bold text-lg sm:text-3xl">
-                            Why Ionic?
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                    <li class="flex items-center justify-between mb-5">
-                        <div class="font-bold text-lg sm:text-3xl">
-                            Pricing
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-
-                    </li>
-                </ul>
-            </div>
-            <hr class="mt-5 mb-5">
-            <div>
-                <div class="mb-5">Resources</div>
-                <ul>
-                    <li class="mb-5">
-                        <div class="flex items-center justify-between">
+                        </li>
+                        <li class=" flex items-center justify-between mb-5">
+                            <div class=" font-bold text-lg sm:text-3xl">
+                                Why Ionic?
+                            </div>
+                            
+                        </li>
+                        <li class="flex items-center justify-between mb-5">
                             <div class="font-bold text-lg sm:text-3xl">
-                                Solutions
+                                Pricing
                             </div>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
+                           
 
-                        <div class="flex flex-row gap-10 sm:gap-52 leading-10">
-                            <ul>
-                                <li>App Creation</li>
-                                <li>Mobile Delivery</li>
-                                
-                            </ul>
-                            <ul>
-                                <li>Mobile Security</li>
-                            </ul>
-                        </div>
-                 
-                    </li>
-                    <li>
-                        <div class="flex items-center justify-between mb-5">
-                            <div class="font-bold text-lg sm:text-3xl ">
-                                Industries
-                            </div>
-                            <i class="fa-solid fa-angle-down"></i>
-
-                        </div>
-                        <div class="flex flex-row gap-10 sm:gap-52 leading-10 mb-5">
-                            <ul>
-                                <li>Banking </li>
-                                <li>Education</li>
-                                <li>Manufactoring</li>
-                                <li>Techology</li>
-                            </ul>
-                            <ul>
-                                <li>Health Care</li>
-                                <li>Insurace</li>
-                                <li>Retail</li>
-                                <li>Transportation</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-between mb-5">
-                        <div class="font-bold text-lg sm:text-3xl ">
-                            Resource Center
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                    <li class="flex items-center justify-between mb-5">
-                        <div class="font-bold text-lg sm:text-3xl">
-                            Customer Stories
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                </ul>
-            </div>
-            <hr class="mt-5 mb-5">
-            <div>
-                <div class="mb-5">Developers</div>
-                <ul>
-                    <li class="font-bold text-lg sm:text-3xl mb-5">Docs </li>
-                    <li>
-                        <div class="flex items-center justify-between mb-5">
-                            <div class="font-bold text-lg sm:text-3xl">
-                                Quickstart
-                            </div>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <div class="flex flex-row gap-10 leading-10 mb-5">
-                            <ul>
-                                <li>Ionic</li>
-                                <li>App Flow</li>
-                                <li>Secure Storage</li>
-                                <li>Premier Plugins</li>
-                                <li>Github</li>
-                            </ul>
-                            <ul>
-                                <li>Capacitor</li>
-                                <li>Identity Value</li>
-                                <li>Auth Connect</li>
-                                <li>Community</li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li>
-                        <div class="font-bold text-lg">
-                            <div class="flex items-center justify-between mb-5">
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mt-5 mb-5">
+                <div>
+                    <div class="mb-5">Resources</div>
+                    <ul>
+                        <li class="mb-5">
+                            <div class="up-down flex items-center justify-between">
                                 <div class="font-bold text-lg sm:text-3xl">
-                                    Ionic Open Source
+                                    Solutions
                                 </div>
-                                <i class="fa-solid fa-angle-down"></i>
+                                <i class="fa-solid fa-angle-down icon transition"></i>
                             </div>
-                        </div>
-                        <div class="flex flex-row gap-10 leading-10">
-                            <ul>
-                                <li>Ionic Framework</li>
-                                <li>Stencil</li>
-                            </ul>
-                            <ul>
-                                <li>Capacitor</li>
-                                <li>Ionicons</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <hr class="mt-5 mb-5">
-            <div>
-                <ul>
-                    <li class="font-bold text-lg sm:text-3xl mb-5">Blog</li>
-                    <li class="font-bold text-lg sm:text-3xl mb-5">Company</li>
-                    <li class="font-bold text-lg sm:text-3xl mb-5">Contact</li>
-                </ul>
-            </div>
-            <div class="flex flex-row justify-between bg-green-400 w-full py-10">
+
+                            <div class="show-hide flex hidden flex-row gap-10 sm:gap-52 leading-10">
+                                <ul>
+                                    <li>App Creation</li>
+                                    <li>Mobile Delivery</li>
+                                    
+                                </ul>
+                                <ul>
+                                    <li>Mobile Security</li>
+                                </ul>
+                            </div>
+                    
+                        </li>
+                        <li>
+                            <div class="up-down flex items-center justify-between mb-5">
+                                <div class="font-bold text-lg sm:text-3xl ">
+                                    Industries
+                                </div>
+                                <i class="fa-solid fa-angle-down icon transition"></i>
+
+                            </div>
+                            <div class="show-hide flex hidden flex-row gap-10 sm:gap-52 leading-10 mb-5">
+                                <ul>
+                                    <li>Banking </li>
+                                    <li>Education</li>
+                                    <li>Manufactoring</li>
+                                    <li>Techology</li>
+                                </ul>
+                                <ul>
+                                    <li>Health Care</li>
+                                    <li>Insurace</li>
+                                    <li>Retail</li>
+                                    <li>Transportation</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=" flex items-center justify-between mb-5">
+                            <div class="font-bold text-lg sm:text-3xl ">
+                                Resource Center
+                            </div>
+                           
+                        </li>
+                        <li class="flex items-center justify-between mb-5">
+                            <div class="font-bold text-lg sm:text-3xl">
+                                Customer Stories
+                            </div>
+                         
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mt-5 mb-5">
+                <div>
+                    <div class="mb-5">Developers</div>
+                    <ul>
+                        <li class="font-bold text-lg sm:text-3xl mb-5">Docs </li>
+                        <li>
+                            <div class="up-down flex items-center justify-between mb-5">
+                                <div class="font-bold text-lg sm:text-3xl">
+                                    Quickstart
+                                </div>
+                                <i class="fa-solid fa-angle-down icon transition"></i>
+                            </div>
+                            <div class="show-hide flex hidden flex-row gap-10 leading-10 mb-5">
+                                <ul>
+                                    <li>Ionic</li>
+                                    <li>App Flow</li>
+                                    <li>Secure Storage</li>
+                                    <li>Premier Plugins</li>
+                                    <li>Github</li>
+                                </ul>
+                                <ul>
+                                    <li>Capacitor</li>
+                                    <li>Identity Value</li>
+                                    <li>Auth Connect</li>
+                                    <li>Community</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="font-bold text-lg">
+                                <div class="up-down flex items-center justify-between mb-5">
+                                    <div class="font-bold text-lg sm:text-3xl">
+                                        Ionic Open Source
+                                    </div>
+                                    <i class="fa-solid  fa-angle-down icon transition"></i>
+                                </div>
+                            </div>
+                            <div class="show-hide flex hidden flex-row gap-10 leading-10">
+                                <ul>
+                                    <li>Ionic Framework</li>
+                                    <li>Stencil</li>
+                                </ul>
+                                <ul>
+                                    <li>Capacitor</li>
+                                    <li>Ionicons</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mt-5 mb-5">
+                <div>
+                    <ul>
+                        <li class="font-bold text-lg sm:text-3xl mb-5">Blog</li>
+                        <li class="font-bold text-lg sm:text-3xl mb-5">Company</li>
+                        <li class="font-bold text-lg sm:text-3xl mb-5">Contact</li>
+                    </ul>
+                </div>
+            </div> 
+                
+            <div class=" sticky max-w-400-contact flex flex-row justify-between items-center px-5  bg-slate-200 w-full py-5">
                 <div>
                     Contact Sales
                 </div>
-                <div>
-                    <button>Log in</button>
-                    <button>Sign up<i class="fa-solid fa-arrow-right"></i></button>
+                <div class="max-w-290-login flex gap-2">
+                    <div class="flex gap-2 ">
+
+                        <button>Log in</button>
+                        <button class="bg-white px-2 rounded-full gap-1  flex items-center signup ">Sign up<i class="fa-solid fa-arrow-right"></i></button>
+                
+                    </div>
+                    <div class="">
+                        <div class="font-bold mb-5 hidden DL">Dark and Light Mode</div>
+                        <button id="dark-switch1" onclick="toggleTheme1()" class="shadow w-[65px] border flex items-center transition duration-200 rounded-full  bg-slate-800 p-1">
+                            <div id="dark-switch-icon1" class="bg-slate-50 w-7 h-7 rounded-full transform transition duration-200 flex justify-center items-center">
+                                <i class="fa-regular fa-sun"></i>
+                            </div>
+                            <h6 id="dark-text1" class="text-slate-200 dark:text-slate-900 translate-x-1">FF</h6>
+                        </button>
+                        <!-- <h1 id="dark-text-change1" class="text-center text-3xl font-bold dark:text-slate-200">Light</h1> -->
+                    </div>
                 </div>
             </div>
         </div>
+         <!-- mobile navbar end -->
+       
 
         <div class="gap-3 hidden lg:flex justify-center items-center ">
             <button>Sign in</button>
@@ -612,7 +632,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
 
  <!-- menu icon -->
   <div class="flex lg:hidden">
-        <div class="menu" id="menu">
+        <div onclick="menuIcon()" class="menu" id="menuicon">
             <div class="line-container">
                 <span class="line-1"></span>
                 <span class="line-2"></span>
@@ -622,6 +642,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
 
  </div>
    </div>
+   <!-- mobile navbar end -->
    <!-- Hero section -->
    <section class="container mx-auto">
     <div class=" overflow-hidden relative mx-auto flex flex-col md:flex-row  items-start md:items-center md:justify-start px-5 w-full">
@@ -642,7 +663,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
 
         
     </div>
-    <div class="container mx-auto text-center  text-2xl">
+    <div class="container mx-auto text-center mt-10  text-2xl">
         <h1>Powering mission-critical apps for the world’s best companies</h1>
     </div>
     <div class=" px-5 py-20 relative overflow-hidden container ">
@@ -929,7 +950,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                 <div class="    border-slate-300 group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer  py-5 px-5 rounded-2xl   ">
                     <div class="  h-[340px] overflow-hidden  ">
                         <img class="w-40  " src="../assets/thumbnail/update.webp" alt="">
-                        <div class="mt-32 margin-topfor-native  lg:mt-36">
+                        <div class="mt-20 margin-topfor-native  ">
                             <h5 class="">NATIVE BUILD</h1>
                             <h2 class="text-2xl font-bold">Combile native binaries for Andriod and iOS <i class="fa-solid fa-arrow-right"></i></h2>
                             <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
@@ -1589,7 +1610,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
    
 </section>
 
-<section class="mb-32  items-center container mx-auto  flex justify-center px-5">
+<section class="mb-24  items-center  mx-auto  flex justify-center px-5">
 
 <div class="swiper swipercontainer   mySwiper   swiper-h">
     <div class="swiper-wrapper mt-20">
@@ -1703,13 +1724,13 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
 </div>
 </section>
 
-<section class="container ">
+<section class="container mx-auto ">
     <p class="text-center text-blue-600">Meet our customers <i class="fa-solid fa-arrow-right"></i></p>
 </section>
 
 
 <!-- one codebase -->
-<section class="mb-32 px-5 mt-96 codebase-padding container mx-auto">
+<section class="mb-32 px-5 mt-32 codebase-padding container mx-auto">
     <div class="relative prefooter flex items-center justify-center bg-[url('../assets/thumbnail/prefooter-bg.png')] w-full bg-cover h-[300px] rounded-3xl">
         <div class=" text-center ">
             <h1 class="text-5xl font-bold text-white mb-2 codebase-text">One codebase.Any platform.</h1>
@@ -1722,6 +1743,87 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
     </div>
 </section>
 
+
+ <!-- footer -->
+ <section class="container mx-auto px-5">
+    <div class="grid grid-cols-2  py-28    gap-5 md:grid-cols-3 lg:grid-cols-6">
+        <!-- logo -->
+        <div>
+            <img class="w-20" src="../assets/image/ionic dark logotype black.png" alt="">
+        </div>
+        <div>
+            <ul class="space-y-3">
+                <li class="font-bold ">The Platform</li>
+                <li class="text-slate-600 cursor-pointer">Overview</li>
+                <li class="text-slate-600 cursor-pointer">Build</li>
+                <li class="text-slate-600 cursor-pointer">Secure</li>
+                <li class="text-slate-600 cursor-pointer">Deliver</li>
+                <li class="text-slate-600 cursor-pointer">Why Ionic?</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="space-y-3">
+                <li class="font-bold">Products</li>
+                <li class="text-slate-600 cursor-pointer">Framework</li>
+                <li class="text-slate-600 cursor-pointer">Capacitor</li>
+                <li class="text-slate-600 cursor-pointer">Appflow</li>
+                <li class="text-slate-600 cursor-pointer">Identity Vault</li>
+                <li class="text-slate-600 cursor-pointer">Secure Storage</li>
+                <li class="text-slate-600 cursor-pointer">Auth Connect</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="space-y-3">
+                <li class="font-bold">Resources</li>
+                <li class="text-slate-600 cursor-pointer">Resorce Center</li>
+                <li class="text-slate-600 cursor-pointer">Blog</li>
+                <li class="text-slate-600 cursor-pointer">Articles</li>
+                <li class="text-slate-600 cursor-pointer">Webinars</li>
+                <li class="text-slate-600 cursor-pointer">Case Studies</li>
+                <li class="text-slate-600 cursor-pointer">Videos</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="space-y-3">
+                <li class="font-bold">Company</li>
+                <li class="text-slate-600 cursor-pointer">About us</li>
+                <li class="text-slate-600 cursor-pointer">Customers</li>
+                <li class="text-slate-600 cursor-pointer">Brand</li>
+                <li class="text-slate-600 cursor-pointer">Contact</li>
+                <li class="text-slate-600 cursor-pointer">Careers</li>
+                <li class="text-slate-600 cursor-pointer">Privacy</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="space-y-3">
+                <li class="font-bold">Support</li>
+                <li class="text-slate-600 cursor-pointer">Help Center</li>
+                <li class="text-slate-600 cursor-pointer">Partners</li>
+                <li class="text-slate-600 cursor-pointer">Advisory</li>
+                <li class="text-slate-600 cursor-pointer">Enterprise Guide</li>
+            </ul>
+        </div>
+    
+
+    </div>
+    <!-- Copyright -->
+    <div class="flex justify-between copyright-flex py-5   mt-5 mb-5">
+        <div>
+            <ul class="flex justify-between text-sm gap-3  text-slate-500 ">
+                <li class="cursor-pointer">Copyright © 2023 Ionic</li>
+                <li class="cursor-pointer">Terms</li>
+                <li class="cursor-pointer">Privacy</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex gap-3 margin-top">
+                <li class=""><i  class="text-slate-500 hover:text-slate-800 fa-brands fa-twitter "></i></li>
+                <li><i class="fa-brands fa-github text-slate-500 hover:text-slate-800"></i></li>
+                <li><i class="fa-brands fa-facebook text-slate-500 hover:text-slate-800"></i></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
@@ -1916,11 +2018,107 @@ disableOnInteraction:false
         //     toLight()
         // }
 
+     
+
+
+
+
+
+
+
+        // darkmode
+    const darkSwitchIcon1 = document.querySelector("#dark-switch-icon1");
+        const darkSwitch1 = document.querySelector("#dark-switch1")
+        const darkText1 = document.querySelector("#dark-text1")
+        const darkChangeText1 = document.querySelector("#dark-text-change1")
+        const html1 = document.documentElement;
+        let isDarkMode1 = false;
+
+        // Switch theme function
+        const toggleTheme1 = () => {
+            isDarkMode1 = !isDarkMode1;
+            switchTheme1()
+        }
+
+        const toDark1 = () => {
+            darkSwitchIcon1.classList.add('translate-x-full', 'rotate-[360deg]','bg-slate-900')
+            darkSwitchIcon1.innerHTML = `<i class="fa-solid fa-moon text-slate-100"></i>`
+            // darkChangeText.innerText = 'Dark'
+            darkSwitch1.classList.remove('bg-slate-800')
+            darkSwitch1.classList.add('bg-slate-100')
+            localStorage.setItem('data-theme', 'dark')
+            html1.classList.add('dark')
+            darkText1.classList.add('-translate-x-7')
+            darkText1.innerText = 'ON'
+        }
+
+        const toLight1 = () => {
+            darkSwitchIcon1.classList.remove('translate-x-full', 'bg-slate-900')
+            // darkChangeText.innerText = 'Light'
+            darkSwitch1.classList.remove('bg-slate-100')
+            darkSwitch1.classList.add('bg-slate-800')
+            localStorage.removeItem('data-theme')
+            html1.classList.remove('dark')
+            darkText1.classList.remove('-translate-x-7')
+            darkText1.innerText = 'FF'
+            darkSwitchIcon1.innerHTML = `<i class="fa-regular fa-sun"></i>`
+            setTimeout(() => {
+                darkSwitchIcon1.classList.remove('rotate-[360deg]')
+            }, 200)
+        }
+
+        const switchTheme1 = () => {
+            isDarkMode1 ? toDark1() : toLight1()
+            // or
+            // if (isDarkMode) {
+            //     toDark()
+            // } else {
+            //     toLight()
+            // }
+        }
+
+
+        // If you do reload the webpage,
+        // doesn't change you choose theme.
+        // This `dataTheme` function save permentaly choose theme.
+
+        const dataTheme1 = localStorage.getItem('data-theme')
+
+        dataTheme1 === 'dark' ? toDark1() : toLight1();
+        // or
+        // if(dataTheme === 'dark') {
+        //     toDark()
+        // } else {
+        //     toLight()
+        // }
+
         // menu icon
-        var menu = document.querySelector(".menu");
-        menu.addEventListener("click",()=>{
-            menu.classList.toggle("openmenu")
+        var menu1 = document.querySelector(".menu");
+        menu1.addEventListener("click",()=>{
+            menu1.classList.toggle("openmenu")
         })
+
+
+        // menu box up-down and show-hide
+        var updown = document.querySelectorAll(".up-down");
+        var showhide = document.querySelectorAll(".show-hide");
+        var icon = document.querySelectorAll(".icon")
+
+        updown.forEach((loop1, repeat2)=>
+    {
+        loop1.addEventListener("click",()=>{
+            showhide[repeat2].classList.toggle("hidden");
+            icon[repeat2].classList.toggle("rotate-180")
+        })
+    })
+
+        var menuBox =document.querySelector(".menubox");
+        // var menuIocn = document.getElementById("menuicon")
+        const menuIcon =()=>{
+            menuBox.classList.toggle("hidden")
+        }
+
+
   </script>
 </body>
 </html>
