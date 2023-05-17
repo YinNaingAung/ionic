@@ -8,9 +8,22 @@
 </head>
 <link rel="stylesheet" href="/dist/output.css">
 <link rel="stylesheet" href="blog.css">
+
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
+<style>
+    *{
+    font-family: 'Wix Madefor Display', sans-serif;
+
+    }
+</style>
 <body>
-   <div class="container hidden mx-auto px-5 py-3  border-b-2 flex justify-between ">
+ 
+   <div class="container  mx-auto px-5 py-3  border-b-2 flex justify-between ">
      <div>
         <img class="w-20" src="../assets/image/ionic dark logotype black.png" alt="">
     </div>
@@ -20,9 +33,11 @@
             <li>Contact</li>
             <li>Login</li>
         </ul>
+
     </div>
    </div>
-   <div class="flex  justify-between  px-5 py-8 z-10">
+
+   <div class="flex navbar-sticky z-30 bg-slate-100 container mx-auto  justify-between  px-10 py-8 ">
         <div>
             Blog
         </div>
@@ -32,7 +47,7 @@
                     <img class="w-5" src="../blg-assets/search-interface-symbol.png" alt="">
                 </li>
                 <li class="cursor-pointer hvr relative ">Categries <i class="fa-solid fa-angle-down"></i> 
-                    <ul class=" absolute hidden bg-red-500 px-3 z-20 rounded-xl leading-10">
+                    <ul class=" absolute hidden bg-slate-100 px-3 z-20 rounded-xl leading-10">
                         <li>All</li>
                         <li>Announcements
                         </li>
@@ -45,7 +60,7 @@
                     </ul>
                 </li>
                 <li class="cursor-pointer relative hvr">Products <i class="fa-solid fa-angle-down"></i>
-                <ul  class=" absolute hidden bg-red-500 z-20 px-3 rounded-xl leading-10">
+                <ul  class=" absolute hidden bg-slate-100 z-20 px-3 rounded-xl leading-10">
                     <li>Appflow</li>
                     <li>Capacitor</li>
                     <li>Frmaework</li>
@@ -55,6 +70,47 @@
                 </li>
                 <li class="cursor-pointer">RSS</li>
             </ul>
+            <div onclick="openMenu()" class="flex md:hidden open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="absolute hidden menu-contact duration-1000 transition md:hidden left-10 z-30 bg-slate-200 w-[80%] rounded-xl p-5">
+                <div class="mb-5">
+                    <h1 class=" text-xl font-bold mb-3">Categories</h1>
+                    <div class="flex flex-row gap-16 menu-item sm:gap-40 "> 
+                            <ul class="leading-8">
+                                <li>All</li>
+                                <li>Announcements</li>
+                                <li>Business</li>
+                                <li>Engineering</li>
+                            </ul>
+                            <ul class="leading-8">
+                                <li>Perspective</li>
+                                <li>Products</li>
+                                <li>Stencil</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h1 class="text-xl font-bold mb-3">Products</h1>
+                    <div class="flex flex-row gap-16 menu-item sm:gap-52">
+                        <ul class="leading-8">
+                            <li>AppFlow</li>
+                            <li>Capacitor</li>
+                            <li>Framework</li>
+                        </ul>
+                        <ul class="leading-8">
+                            <li>Enterprise SDK</li>
+                            <li>Portals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold mb-3">RSS</h1>
+                </div>
+                <div  class="w-8 top-5 close-menu t right-5 absolute h-8 text-2xl flex items-center justify-center rounded-full border border-slate-900">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
         </div>
    </div>
 
@@ -657,5 +713,20 @@
                         </div>
                     </div>
     </section>
+
+    <script>
+        let openmenu =document.querySelector(".open-menu");
+        let menucontact = document.querySelector(".menu-contact");
+        let closemenu = document.querySelector(".close-menu");
+
+        const openMenu = ()=>{
+            menucontact.style.display="block"
+        }
+        closemenu.addEventListener("click",_=>{
+            menucontact.style.display="none"
+        }
+        )
+
+    </script>
 </body>
 </html>

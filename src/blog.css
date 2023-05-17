@@ -223,3 +223,17 @@
         margin-top:20px
     }
 }
+/* menu-contact */
+@media(max-width:390px){
+    .menu-item{
+        display:flex;
+        flex-direction: column;
+        gap:0;
+    }
+}
+.navbar-sticky{
+    position:sticky;
+    top:-2px;
+    box-shadow: 10px solid gray;;
+    /* border-color: rgb(147, 155, 162); */
+}
