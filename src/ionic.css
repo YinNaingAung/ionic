@@ -347,3 +347,17 @@
         margin-top:20px
     }
 }
+
+
+
+/* crossplatform */
+@media(max-width:330px){
+    .w-330-size-platform{
+        font-size: 30px;
+    }
+}
+@media(max-width:330px){
+    .w-330-size-developer{
+        font-size:40px;
+    }
+}
