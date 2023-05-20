@@ -8,8 +8,29 @@
     <title>Enterprise: Grade App Development Pricing Plan - ionic</title>
 </head>
 <link rel="icon" href="">
-<link rel="stylesheet" href="/dist/output.css">
-<link rel="stylesheet" href="../src/style.css">
+<link rel="stylesheet" href="build.css">
+<link rel="stylesheet" href="../src/pricing.css">
+
+
+   <!-- Metatag -->
+    <!-- Primary Meta Tags -->
+    <title>Enterprise: Grade App Development Pricing Plan - ionic</title>
+    <meta name="title" content="Enterprise: Grade App Development Pricing Plan - ionic ">
+    <meta name="description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Github.com/">
+    <meta property="og:title" content="Enterprise: Grade App Development Pricing Plan - ionic">
+    <meta property="og:description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+    <meta property="og:image" content="../assets/image/fb.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://GitHub.com">
+    <meta property="twitter:title" content="Enterprise: Grade App Development Pricing Plan - ionic ">
+    <meta property="twitter:description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+    <meta property="twitter:image" content="../assets/image/fb.png">
 
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +42,83 @@
     
         *{
        font-family: 'Wix Madefor Display', sans-serif;
-    
-    }
+         }
+
+         .loader{
+            width:100%;
+            height:100vh;
+            background-color:#fff;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            position:fixed;
+            z-index: 50;
+         }
+         .loading {
+ --speed-of-animation: 0.9s;
+ --gap: 6px;
+ --first-color: #4c86f9;
+ --second-color: #49a84c;
+ --third-color: #f6bb02;
+ --fourth-color: #f6bb02;
+ --fifth-color: #2196f3;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100px;
+ gap: 6px;
+ height: 100px;
+}
+
+.loading span {
+ width: 4px;
+ height: 50px;
+ background: var(--first-color);
+ animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+ background: var(--second-color);
+ animation-delay: -0.8s;
+}
+
+.loading span:nth-child(3) {
+ background: var(--third-color);
+ animation-delay: -0.7s;
+}
+
+.loading span:nth-child(4) {
+ background: var(--fourth-color);
+ animation-delay: -0.6s;
+}
+
+.loading span:nth-child(5) {
+ background: var(--fifth-color);
+ animation-delay: -0.5s;
+}
+
+@keyframes scale {
+ 0%, 40%, 100% {
+  transform: scaleY(0.05);
+ }
+
+ 20% {
+  transform: scaleY(1);
+ }
+}
 </style>
 <body>
-    
+    <div class="loader">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </div>
 
     <!-- navbar2 -->
  <div class="dark:bg-slate-900 px-10 py-5  bg-slate-100 border-b-2 z-30">
@@ -761,7 +854,10 @@
         //  })
 
         
-
+            // loader
+            window.addEventListener('load',()=>{
+                document.querySelector('.loader').style.display= 'none'
+            })
     </script>
 
 </body>

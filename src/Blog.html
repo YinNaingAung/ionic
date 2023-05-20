@@ -9,8 +9,35 @@
         ionic.io 
     </title>
 </head>
-<link rel="stylesheet" href="/dist/output.css">
+<link rel="stylesheet" href="build.css">
 <link rel="stylesheet" href="blog.css">
+
+
+    <!-- Metatag -->
+    <!-- Primary Meta Tags -->
+    <title>Ionic Blog: Build amazing and progressive web app with the...
+        ionic.io </title>
+    <meta name="title" content="Ionic Blog: Build amazing and progressive web app with the...
+    ionic.io ">
+    <meta name="description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Github.com/">
+    <meta property="og:title" content="Ionic Blog: Build amazing and progressive web app with the...
+    ionic.io ">
+    <meta property="og:description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+    <meta property="og:image" content="../assets/image/fb.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://GitHub.com">
+    <meta property="twitter:title" content="Ionic Blog: Build amazing and progressive web app with the...
+    ionic.io ">
+    <meta property="twitter:description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+    <meta property="twitter:image" content="../assets/image/fb.png">
+    
+
 
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,116 +48,206 @@
 <style>
     *{
     font-family: 'Wix Madefor Display', sans-serif;
-
     }
+    .loading{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:#fff;
+    z-index:80;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+    .loader {
+        transform: rotateZ(45deg);
+        perspective: 1000px;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        color: #17e3cc;
+      }
+        .loader:before,
+        .loader:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+          transform: rotateX(70deg);
+          animation: 1s spin linear infinite;
+        }
+        .loader:after {
+          color: #e81926;
+          transform: rotateY(70deg);
+          animation-delay: .4s;
+        }
+
+      @keyframes rotate {
+        0% {
+          transform: translate(-50%, -50%) rotateZ(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotateZ(360deg);
+        }
+      }
+
+      @keyframes rotateccw {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg);
+        }
+      }
+
+      @keyframes spin {
+        0%,
+        100% {
+          box-shadow: .2em 0px 0 0px currentcolor;
+        }
+        12% {
+          box-shadow: .2em .2em 0 0 currentcolor;
+        }
+        25% {
+          box-shadow: 0 .2em 0 0px currentcolor;
+        }
+        37% {
+          box-shadow: -.2em .2em 0 0 currentcolor;
+        }
+        50% {
+          box-shadow: -.2em 0 0 0 currentcolor;
+        }
+        62% {
+          box-shadow: -.2em -.2em 0 0 currentcolor;
+        }
+        75% {
+          box-shadow: 0px -.2em 0 0 currentcolor;
+        }
+        87% {
+          box-shadow: .2em -.2em 0 0 currentcolor;
+        }
+      }
+   
 </style>
 <body>
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
  
-   <div class="container  mx-auto px-5 py-3  border-b-2 flex justify-between ">
-     <div>
-        <img class="w-20" src="../assets/image/ionic dark logotype black.png" alt="">
-    </div>
-    <div>
-        <ul class="flex justify-between gap-4">
-            <li>Support </li>
-            <li>Contact</li>
-            <li>Login</li>
-        </ul>
-
-    </div>
-   </div>
-
-   <div class="flex navbar-sticky z-30 bg-slate-100 container mx-auto  justify-between  px-10 py-8 ">
+    <div class="container  mx-auto px-5 py-3  border-b-2 flex justify-between ">
         <div>
-            Blog
+            <img class="w-20" src="../assets/image/ionic dark logotype black.png" alt="">
         </div>
-        <div >
-            <ul class="hidden md:flex justify-between space-x-10  ">
-                <li class="cursor-pointer">
-                    <img class="w-5" src="../blg-assets/search-interface-symbol.png" alt="">
-                </li>
-                <li class="cursor-pointer hvr relative ">Categries <i class="fa-solid fa-angle-down"></i> 
-                    <ul class=" absolute hidden bg-slate-100 px-3 z-20 rounded-xl leading-10">
-                        <li>All</li>
-                        <li>Announcements
-                        </li>
-                        <li>Business</li>
-                        <li>Engineering</li>
-                        <li>Perspective</li>
-                        <li>Products</li>
-                        <li>Stencil</li>
-                        <li>Tutorials</li>
-                    </ul>
-                </li>
-                <li class="cursor-pointer relative hvr">Products <i class="fa-solid fa-angle-down"></i>
-                <ul  class=" absolute hidden bg-slate-100 z-20 px-3 rounded-xl leading-10">
-                    <li>Appflow</li>
-                    <li>Capacitor</li>
-                    <li>Frmaework</li>
-                    <li>Enterprise SDK</li>
-                    <li>Portals</li>
-                </ul>
-                </li>
-                <li class="cursor-pointer">RSS</li>
+        <div>
+            <ul class="flex justify-between gap-4">
+                <li>Support </li>
+                <li>Contact</li>
+                <li>Login</li>
             </ul>
-            <div onclick="openMenu()" class="flex md:hidden open-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div class="absolute hidden menu-contact duration-1000 transition md:hidden left-10 z-30 bg-slate-200 w-[80%] rounded-xl p-5">
-                <div class="mb-5">
-                    <h1 class=" text-xl font-bold mb-3">Categories</h1>
-                    <div class="flex flex-row gap-16 menu-item sm:gap-40 "> 
-                            <ul class="leading-8">
-                                <li>All</li>
-                                <li>Announcements</li>
-                                <li>Business</li>
-                                <li>Engineering</li>
-                            </ul>
-                            <ul class="leading-8">
-                                <li>Perspective</li>
-                                <li>Products</li>
-                                <li>Stencil</li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="mb-5">
-                    <h1 class="text-xl font-bold mb-3">Products</h1>
-                    <div class="flex flex-row gap-16 menu-item sm:gap-52">
-                        <ul class="leading-8">
-                            <li>AppFlow</li>
-                            <li>Capacitor</li>
-                            <li>Framework</li>
-                        </ul>
-                        <ul class="leading-8">
-                            <li>Enterprise SDK</li>
-                            <li>Portals</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h1 class="text-xl font-bold mb-3">RSS</h1>
-                </div>
-                <div  class="w-8 top-5 close-menu t right-5 absolute h-8 text-2xl flex items-center justify-center rounded-full border border-slate-900">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-        </div>
-   </div>
 
-   <div class="flex hidden flex-col items-start md:flex-row md:justify-between md:items-center px-10 pt-14">
-        <div class="text-xl font-bold">The Latest from Ionic</div>
-        <button class="relative flex flex-row items-center ">
-            <div class="absolute left-2 text-slate-400">
-                <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+
+    <div class="flex navbar-sticky z-30 bg-slate-100 container mx-auto  justify-between  px-10 py-8 ">
+            <div>
+                Blog
             </div>
-        <input type="text" class=" rounded-lg px-10 py-2 text-sm" placeholder="youremail.com">
-        <div class="absolute left-44 text-slate-400 bg-white text-sm">Subscribe</div>
-        </button>
-   </div>
+            <div >
+                <ul class="hidden md:flex justify-between space-x-10  ">
+                    <li class="cursor-pointer">
+                        <img class="w-5" src="../blg-assets/search-interface-symbol.png" alt="">
+                    </li>
+                    <li class="cursor-pointer hvr relative ">Categries <i class="fa-solid fa-angle-down"></i> 
+                        <ul class=" absolute hidden bg-slate-100 px-3 z-20 rounded-xl leading-10">
+                            <li>All</li>
+                            <li>Announcements
+                            </li>
+                            <li>Business</li>
+                            <li>Engineering</li>
+                            <li>Perspective</li>
+                            <li>Products</li>
+                            <li>Stencil</li>
+                            <li>Tutorials</li>
+                        </ul>
+                    </li>
+                    <li class="cursor-pointer relative hvr">Products <i class="fa-solid fa-angle-down"></i>
+                    <ul  class=" absolute hidden bg-slate-100 z-20 px-3 rounded-xl leading-10">
+                        <li>Appflow</li>
+                        <li>Capacitor</li>
+                        <li>Frmaework</li>
+                        <li>Enterprise SDK</li>
+                        <li>Portals</li>
+                    </ul>
+                    </li>
+                    <li class="cursor-pointer">RSS</li>
+                </ul>
+                <div onclick="openMenu()" class="flex md:hidden open-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="absolute hidden menu-contact duration-1000 transition md:hidden left-10 z-30 bg-slate-200 w-[80%] rounded-xl p-5">
+                    <div class="mb-5">
+                        <h1 class=" text-xl font-bold mb-3">Categories</h1>
+                        <div class="flex flex-row gap-16 menu-item sm:gap-40 "> 
+                                <ul class="leading-8">
+                                    <li>All</li>
+                                    <li>Announcements</li>
+                                    <li>Business</li>
+                                    <li>Engineering</li>
+                                </ul>
+                                <ul class="leading-8">
+                                    <li>Perspective</li>
+                                    <li>Products</li>
+                                    <li>Stencil</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="text-xl font-bold mb-3">Products</h1>
+                        <div class="flex flex-row gap-16 menu-item sm:gap-52">
+                            <ul class="leading-8">
+                                <li>AppFlow</li>
+                                <li>Capacitor</li>
+                                <li>Framework</li>
+                            </ul>
+                            <ul class="leading-8">
+                                <li>Enterprise SDK</li>
+                                <li>Portals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold mb-3">RSS</h1>
+                    </div>
+                    <div  class="w-8 top-5 close-menu t right-5 absolute h-8 text-2xl flex items-center justify-center rounded-full border border-slate-900">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+            </div>
+    </div>
+
+    <div class="flex hidden flex-col items-start md:flex-row md:justify-between md:items-center px-10 pt-14">
+            <div class="text-xl font-bold">The Latest from Ionic</div>
+            <button class="relative flex flex-row items-center ">
+                <div class="absolute left-2 text-slate-400">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            <input type="text" class=" rounded-lg px-10 py-2 text-sm" placeholder="youremail.com">
+            <div class="absolute left-44 text-slate-400 bg-white text-sm">Subscribe</div>
+            </button>
+    </div>
    
 
    <!-- photo -->
-   <section class="container mx-auto">
+    <section class="container mx-auto">
         <div class="relative  cursor-pointer group hvr-img  mt-10 ">
                 <div class="px-5  ">
                     <div class="relative w-full overflow-hidden rounded-3xl ">
@@ -171,6 +288,7 @@
                 </div>
         </div>
     </section>
+
     <!-- second section -->
     <section class="container mx-auto">
             <div class="grid mt-[160px] md:mt-14 md:grid-cols-2 gap-44  md:gap-16  px-5 ">
@@ -250,7 +368,8 @@
                     </div>  
             </div>
     </section>
-<!-- email box -->
+
+    <!-- email box -->
     <section class="container mx-auto">
             <div class="mt-52 md:mt-56 px-5 md:px-10 ">
                 <div class="flex flex-dir  text-left sm:flex-row gap-5 sm:justify-between items-center border  px-5 py-10 rounded-xl ">
@@ -270,8 +389,8 @@
             </div>
     </section>
 
-<!-- Card Section -->
-    <section class="container mx-auto">
+    <!-- Card Section -->
+     <section class="container mx-auto">
                 <div class="grid mt-[70px] md:mt-14 md:grid-cols-2 gap-44   md:gap-16  px-5 ">
                     <div class="relative">
                         <div class="overflow-hidden rounded-3xl transition duration-700 cursor-pointer">
@@ -349,10 +468,10 @@
                             </div>
                         </div>  
                     </div>
-    </section>
+     </section>
 
         <!-- Cards container1 -->
-    <section class="container mx-auto">
+        <section class="container mx-auto">
             <div class="mt-36 md:mt-56">
                 <div class="grid gap-24 md:gap-4 md:grid-cols-3 px-5  ">
                     <div class="relative">
@@ -433,9 +552,9 @@
                     
                 </div>
             </div>
-    </section>
+        </section>
         <!-- Cards container2 -->
-    <section class="container mx-auto">
+        <section class="container mx-auto">
                     <div class="mt-36 md:mt-32">
                         <div class="grid gap-24 md:gap-4 md:grid-cols-3 px-5  ">
                             <div class="relative">
@@ -596,7 +715,7 @@
                         
                     </div>
                 </div>
-    </section>
+        </section>
         <!-- line -->
         <!-- <div class="w-full h-1 bg-slate-400 mt-32"></div> -->
         <div class="container mx-auto px-5 mt-32">
@@ -715,7 +834,7 @@
                             </ul>
                         </div>
                     </div>
-    </section>
+        </section>
 
     <script>
         let openmenu =document.querySelector(".open-menu");
@@ -729,6 +848,12 @@
             menucontact.style.display="none"
         }
         )
+
+        // loader
+        const loading = document.querySelector('.loading');
+        window.addEventListener('load',()=>{
+            loading.style.display = 'none';
+        })
 
     </script>
 </body>

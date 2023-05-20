@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="../assets/image/logo ionic.png">
     <title>Ionic: Enterprise App Platform</title>
-    <link rel="stylesheet" href="/dist/output.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="pricing.css">
     <link rel="stylesheet" href="ionic.css">
+
+
+    <!-- Metatag -->
+    <!-- Primary Meta Tags -->
+<title>Ionic: Enterprise App Platform</title>
+<meta name="title" content="Ionic: Enterprise App Platform">
+<meta name="description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Github.com/">
+<meta property="og:title" content="Ionic: Enterprise App Platform">
+<meta property="og:description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+<meta property="og:image" content="../assets/image/fb.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://GitHub.com">
+<meta property="twitter:title" content="Ionic: Enterprise App Platform">
+<meta property="twitter:description" content="Deliver incredible mobile, desktop, & web apps faster than ever, with your existing web talent.">
+<meta property="twitter:image" content="../assets/image/fb.png">
+
+
+<!-- Dark Mode Url bar -->
+<meta name="theme-color" content="#dc2626"/>
+
+
 
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,6 +177,67 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
         box-shadow: 0px 1px 10px  rgb(27, 25, 25);
     }
 
+/* loading */
+.loading{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:#fff;
+    z-index:80;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid red;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
  </style>
  <!-- animate css -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -158,6 +246,12 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://kit.fontawesome.com/485af02044.js" crossorigin="anonymous"></script>
 <body class="">
+
+    <!-- loader -->
+    <div class="loading">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
     <!-- navbar -->
     <div class="dark:bg-slate-300">
             <div id=" " class=" w-full animate__animated animate__fadeInDown w-m navbar-control container mx-auto px-5 py-5 relative flex justify-between items-center">
@@ -484,7 +578,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                                     </li>
                                     <li class="flex items-center justify-between mb-5">
                                         <div class="font-bold text-lg sm:text-3xl">
-                                            Pricing
+                                           <a href="pricing.html">Pricing</a>
                                         </div>
                                     
 
@@ -606,7 +700,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                             <hr class="mt-5 mb-2">
                             <div>
                                 <ul>
-                                    <li class="font-bold text-lg sm:text-3xl mb-5">Blog</li>
+                                    <li class="font-bold text-lg sm:text-3xl mb-5"><a href="Blog.html">Blog</a> </li>
                                     <li class="font-bold text-lg sm:text-3xl mb-5">Company</li>
                                     <li class="font-bold text-lg sm:text-3xl mb-5">Contact</li>
                                 </ul>
@@ -670,6 +764,7 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
             </div>
     </div>
    <!-- mobile navbar end -->
+
    <!-- Hero section -->
    <section  class="dark:bg-slate-800 ">
             <div class="container mx-auto ">
@@ -788,8 +883,6 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                 </div>
             </div>
    </section>
-
-  
    
    <section id="section" class="dark:bg-slate-800 dark:border-none dark:border-slate-800" >
         <div class="pt-32 pb-32 container mx-auto px-5">
@@ -856,1021 +949,1017 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
                 </div>
             </div>
    </Section>
-
-
-       
+ 
     <!-- Cross platform SDK -->
-<section class="dark:bg-slate-800 -z-30">
-    <div class="container mx-auto ">
-        <div class="  relative mx-auto flex flex-col lg:flex-row  items-start lg:items-center md:justify-between px-5 w-full">
-            <div class=" mb-10 ">
-                <h6 class="reveal_up_down mb-10 dark:text-slate-100">Cross Platform SDK</h6>
-                <h1 class="reveal_up_down text-6xl font-bold mb-4 max-w-lg dark:text-slate-100 w-330-size-platform">A modern, enterprise mobile SDK for iOS and Android apps.</h1>
-                
-                
-                <h5 class="reveal_up_down max-w-md dark:text-slate-300">
-                    The only cross-platform mobile SDK built exclusively for the enterprise. Save time. Safeguard users. And rest easy knowing that our mobile experts are here every step of the way.
-                </h5>
-                <h5 class="reveal_up_down max-w-md mt-10 dark:text-slate-300"><span class="underline">Build</span>  highly secure apps across iOS, Android, and the Web from a single codebase.</h5>
-                <div class="flex gap-5 mt-10 flex-wrap tab-container">
-                    <div id="tab1" class="reveal_up_down dark:text-slate-100 tab  active flex items-center flex-col gap-3 cursor-pointer">
-                        <div class="tab dark:bg-slate-900 dark:hover:shadow-[0_0px_20px_0px_#F4F6F7]  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/ios.webp" alt=""></div>
-                        <div>iOS</div>
-                    </div>
-                    <div id="tab2" class="reveal_up_down dark:text-slate-100 tab  flex items-center flex-col gap-3 cursor-pointer">
-                        <div class="tab dark:bg-slate-900 dark:hover:shadow-[0_0px_20px_0px_#F4F6F7]  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/android.webp" alt=""></div>
-                        <div>Android</div>
-                    </div>
-                    <div id="tab3" class="reveal_up_down dark:text-slate-100 tab  flex items-center flex-col gap-3 cursor-pointer">
-                        <div class="tab dark:bg-slate-900 dark:hover:shadow-[0_0px_20px_0px_#F4F6F7]  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10"  src="../assets/thumbnail/custom.webp" alt=""></div>
-                        <div>Custom</div>
-                    </div>
-                    <div class="w-0.5  bg-slate-800 reveal_up_down "></div>
+    <section class="dark:bg-slate-800 -z-30">
+        <div class="container mx-auto ">
+            <div class="  relative mx-auto flex flex-col lg:flex-row  items-start lg:items-center md:justify-between px-5 w-full">
+                <div class=" mb-10 ">
+                    <h6 class="reveal_up_down mb-10 dark:text-slate-100">Cross Platform SDK</h6>
+                    <h1 class="reveal_up_down text-6xl font-bold mb-4 max-w-lg dark:text-slate-100 w-330-size-platform">A modern, enterprise mobile SDK for iOS and Android apps.</h1>
+                    
+                    
+                    <h5 class="reveal_up_down max-w-md dark:text-slate-300">
+                        The only cross-platform mobile SDK built exclusively for the enterprise. Save time. Safeguard users. And rest easy knowing that our mobile experts are here every step of the way.
+                    </h5>
+                    <h5 class="reveal_up_down max-w-md mt-10 dark:text-slate-300"><span class="underline">Build</span>  highly secure apps across iOS, Android, and the Web from a single codebase.</h5>
+                    <div class="flex gap-5 mt-10 flex-wrap tab-container">
+                        <div id="tab1" class="reveal_up_down dark:text-slate-100 tab  active flex items-center flex-col gap-3 cursor-pointer">
+                            <div class="tab dark:bg-slate-900 dark:hover:shadow-[0_0px_20px_0px_#F4F6F7]  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/ios.webp" alt=""></div>
+                            <div>iOS</div>
+                        </div>
+                        <div id="tab2" class="reveal_up_down dark:text-slate-100 tab  flex items-center flex-col gap-3 cursor-pointer">
+                            <div class="tab dark:bg-slate-900 dark:hover:shadow-[0_0px_20px_0px_#F4F6F7]  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10" src="../assets/thumbnail/android.webp" alt=""></div>
+                            <div>Android</div>
+                        </div>
+                        <div id="tab3" class="reveal_up_down dark:text-slate-100 tab  flex items-center flex-col gap-3 cursor-pointer">
+                            <div class="tab dark:bg-slate-900 dark:hover:shadow-[0_0px_20px_0px_#F4F6F7]  bg-slate-300 transition hover:bg-slate-400 rounded-xl h-16 w-16 flex items-center justify-center"><img class="w-10"  src="../assets/thumbnail/custom.webp" alt=""></div>
+                            <div>Custom</div>
+                        </div>
+                        <div class="w-0.5  bg-slate-800 reveal_up_down "></div>
 
-                    <!-- dark mode light mode -->
-                 
-                        <!-- <button class="w-20 h-20 bg-blue-500 toggle-btn">toggle case</button> -->
-                        <div class="reveal_up_down flex items-center  flex-col gap-3 cursor-pointer">
-                            <div class=" pt-5 pb-5">
-                                <input type="checkbox" class="checkbox toggle-btn" id="checkbox">
-                                <label for="checkbox" class="checkbox-label ">
-                                    <i class="fas fa-sun "></i>
-                                <i class="fas fa-moon"></i>
-                                
-                                <span class="ball " ></span>
-                                </label>
+                        <!-- dark mode light mode -->
+                    
+                            <!-- <button class="w-20 h-20 bg-blue-500 toggle-btn">toggle case</button> -->
+                            <div class="reveal_up_down flex items-center  flex-col gap-3 cursor-pointer">
+                                <div class=" pt-5 pb-5">
+                                    <input type="checkbox" class="checkbox toggle-btn" id="checkbox">
+                                    <label for="checkbox" class="checkbox-label ">
+                                        <i class="fas fa-sun "></i>
+                                    <i class="fas fa-moon"></i>
+                                    
+                                    <span class="ball " ></span>
+                                    </label>
+                                </div>
+                                <div class="dark:text-slate-100">Mode</div>
                             </div>
-                            <div class="dark:text-slate-100">Mode</div>
-                          </div>
-                      
-                  
+                        
+                    
+                    </div>
                 </div>
-            </div>
-        <div class="">
-            <div class="reveal_up_down lg:-left-24 xl:-left-80 relative light-image flex mw-634-img-container  group">
-                <span class=" w-full z-20">
-                    <img class="imageforios-light" src="../assets/thumbnail/imagelight-forios.webp" alt="">
-                </span>
-                <span class="reveal_up_down left-56 z-10 max-w-330-left top-16  absolute w-full">
-                    <img class="musicimage-light" src="../assets/thumbnail/musicImagelight-forios.webp" alt="">
-                </span> 
-            </div>
-            <div class=" lg:-left-24 xl:-left-80 relative hidden dark-image mw-634-img-container  group">
-                <span class=" w-full z-20">
-                    <img class="imageforios-dark" src="../assets/thumbnail/image-forios.webp" alt="">
-                </span>
-                <span class="max-w-330-left z-10 left-56 top-16   absolute w-full">
-                    <img class="musicimage-dark" src="../assets/thumbnail/musicImage-forios.webp" alt="">
-                </span> 
-            </div>
+            <div class="">
+                <div class="reveal_up_down lg:-left-24 xl:-left-80 relative light-image flex mw-634-img-container  group">
+                    <span class=" w-full z-20">
+                        <img class="imageforios-light" src="../assets/thumbnail/imagelight-forios.webp" alt="">
+                    </span>
+                    <span class="reveal_up_down left-56 z-10 max-w-330-left top-16  absolute w-full">
+                        <img class="musicimage-light" src="../assets/thumbnail/musicImagelight-forios.webp" alt="">
+                    </span> 
+                </div>
+                <div class=" lg:-left-24 xl:-left-80 relative hidden dark-image mw-634-img-container  group">
+                    <span class=" w-full z-20">
+                        <img class="imageforios-dark" src="../assets/thumbnail/image-forios.webp" alt="">
+                    </span>
+                    <span class="max-w-330-left z-10 left-56 top-16   absolute w-full">
+                        <img class="musicimage-dark" src="../assets/thumbnail/musicImage-forios.webp" alt="">
+                    </span> 
+                </div>
 
+                
+            </div>
             
-        </div>
         
-    
-            
+                
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
    <!-- hybird vs native -->
-<Section class="dark:bg-slate-800">
-    <div class="flex  items-center flex-col sm:flex-row container mx-auto gap-10 pt-32 pb-32 px-5">
-        <div class="reveal_up_down">
-            <img src="../assets/thumbnail/hybird vs native.webp" alt="">
+    <Section class="dark:bg-slate-800">
+        <div class="flex  items-center flex-col sm:flex-row container mx-auto gap-10 pt-32 pb-32 px-5">
+            <div class="reveal_up_down">
+                <img src="../assets/thumbnail/hybird vs native.webp" alt="">
+            </div>
+            <div>
+                <p class="reveal_up_down text-3xl font-bold max-w-md mb-5 dark:text-slate-500"><span class="text-slate-600 dark:text-slate-100"> Learn the differences between hybrid and native.</span> We break down all the myths and misconceptions.</p>
+                <button class="reveal_up_down rounded-full border bg-black text-slate-50 px-5 py-1 font-bold">Read the free ebook. <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
         </div>
-        <div>
-            <p class="reveal_up_down text-3xl font-bold max-w-md mb-5 dark:text-slate-500"><span class="text-slate-600 dark:text-slate-100"> Learn the differences between hybrid and native.</span> We break down all the myths and misconceptions.</p>
-            <button class="reveal_up_down rounded-full border bg-black text-slate-50 px-5 py-1 font-bold">Read the free ebook. <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-    </div>
 
-</Section>
+    </Section>
 <!-- mobile Ci/cd -->
-<Section class="dark:bg-slate-800">
-    <div class="pb-32 container mx-auto">
-        <h1 class="reveal_up_down px-5 mb-5 dark:text-slate-300">Mobile CI/Cd</h1>
-        <div class="flex flex-col sm:flex-row gap-5 items-center px-5 dark:text-slate-100">
-            <div>
-                <h1 class="reveal_up_down text-5xl font-bold">Build, deploy, and manage all your apps in a secure cloud workspace.</h1>
-            </div>
-            <div>
-                <h5 class="mb-5 reveal_up_down">Spend more time on what matters. Start in seconds and scale to millions with a suite of powerful cloud tools and services for every type of app.</h5>
-                <button class="reveal_up_down font-bold">Explore Ionic Appflow <i class="fa-solid fa-arrow-right"></i></button>
+    <Section class="dark:bg-slate-800">
+        <div class="pb-32 container mx-auto">
+            <h1 class="reveal_up_down px-5 mb-5 dark:text-slate-300">Mobile CI/Cd</h1>
+            <div class="flex flex-col sm:flex-row gap-5 items-center px-5 dark:text-slate-100">
+                <div>
+                    <h1 class="reveal_up_down text-5xl font-bold">Build, deploy, and manage all your apps in a secure cloud workspace.</h1>
+                </div>
+                <div>
+                    <h5 class="mb-5 reveal_up_down">Spend more time on what matters. Start in seconds and scale to millions with a suite of powerful cloud tools and services for every type of app.</h5>
+                    <button class="reveal_up_down font-bold">Explore Ionic Appflow <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
         </div>
-    </div>
-</Section>
+    </Section>
 
-<section class="dark:bg-slate-800">
-    <div class="pb-32 container mx-auto ">
-            
-        <div class="grid grid-cols-1 md:grid-cols-3  gap-5 px-5 ">
-            <div class="reveal_up_down relative dark:border-0  dark:shadow-[0_0px_20px_0px_#020617]  border flex  col-span-2 rounded-xl overflow-hidden h-96">
-                <div class="">
-                    <span><img class="h-full w-full absolute -z-20" src="../assets/thumbnail/color.webp" alt=""><span>
-                    <span>
-                        <img class="absolute left-[70%]  z-0" src="../assets/thumbnail/appflow.webp" alt="">
-                    </span>
-                </div>
-                    <div class="absolute top-5  z-30 px-5 ">
-                        <img class="" src="../assets/thumbnail/cloudd.webp" alt="">
-                        <h6 class="mt-6 text-slate-100 font-bold">IONIC APPFLOW</h6>
-                        <h2 class="mt-2 text-white md:text-2xl max-w-sm">Fully managed cloud app delivery at the speed of development.</h2>
-                        <h5 class=" text-white md:text-xl mt-3">Build, publish, and scale your apps with ease.</h5>
-                        <button class="mt-4 bg-slate-600 text-white font-bold px-4 py-2  rounded-3xl flex items-center justify-center "><span class="mr-3">learn more</span> <i class="fa-solid fa-arrow-right"></i> </button>
+    <section class="dark:bg-slate-800">
+        <div class="pb-32 container mx-auto ">
+                
+            <div class="grid grid-cols-1 md:grid-cols-3  gap-5 px-5 ">
+                <div class="reveal_up_down relative dark:border-0  dark:shadow-[0_0px_20px_0px_#020617]  border flex  col-span-2 rounded-xl overflow-hidden h-96">
+                    <div class="">
+                        <span><img class="h-full w-full absolute -z-20" src="../assets/thumbnail/color.webp" alt=""><span>
+                        <span>
+                            <img class="absolute left-[70%]  z-0" src="../assets/thumbnail/appflow.webp" alt="">
+                        </span>
                     </div>
+                        <div class="absolute top-5  z-30 px-5 ">
+                            <img class="" src="../assets/thumbnail/cloudd.webp" alt="">
+                            <h6 class="mt-6 text-slate-100 font-bold">IONIC APPFLOW</h6>
+                            <h2 class="mt-2 text-white md:text-2xl max-w-sm">Fully managed cloud app delivery at the speed of development.</h2>
+                            <h5 class=" text-white md:text-xl mt-3">Build, publish, and scale your apps with ease.</h5>
+                            <button class="mt-4 bg-slate-600 text-white font-bold px-4 py-2  rounded-3xl flex items-center justify-center "><span class="mr-3">learn more</span> <i class="fa-solid fa-arrow-right"></i> </button>
+                        </div>
+                </div>
+                
+                <div class="reveal_up_down    border-slate-300 group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer  py-5 px-5 rounded-2xl   ">
+                        <div class="  h-[340px] overflow-hidden  ">
+                            <img class="w-40  " src="../assets/thumbnail/update.webp" alt="">
+                            <div class="mt-20 margin-topfor-native dark:text-slate-100 ">
+                                <h5 class="">NATIVE BUILD</h1>
+                                <h2 class="text-2xl font-bold">Combile native binaries for Andriod and iOS <i class="fa-solid fa-arrow-right"></i></h2>
+                                <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
+                            </div>
+                        </div>
+                </div>
             </div>
-            
-            <div class="reveal_up_down    border-slate-300 group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer  py-5 px-5 rounded-2xl   ">
-                    <div class="  h-[340px] overflow-hidden  ">
-                        <img class="w-40  " src="../assets/thumbnail/update.webp" alt="">
-                        <div class="mt-20 margin-topfor-native dark:text-slate-100 ">
-                            <h5 class="">NATIVE BUILD</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 enterprise-grid gap-5 mt-5 px-5">
+
+                    <div class="reveal_up_down dark:shadow-[0_0px_20px_0px_#020617] dark:border-none border border-slate-300 enterprise-feature-w group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer    py-5 px-5 rounded-2xl ">
+                        <div class=" h-[260px] overflow-hidden feature-container dark:text-slate-100">
+                            <img class="w-28  " src="../assets/thumbnail/native build.webp" alt="">
+                            <h5 class="mt-10">NATIVE BUILD</h1>
                             <h2 class="text-2xl font-bold">Combile native binaries for Andriod and iOS <i class="fa-solid fa-arrow-right"></i></h2>
                             <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
                         </div>
                     </div>
-            </div>
+                    <div class="reveal_up_down dark:shadow-[0_0px_20px_0px_#020617] dark:border-none border group hover:shadow-xl hover:skew-1 enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl ">
+                        <div class=" h-[260px] overflow-hidden feature-container dark:text-slate-100">
+                            <img class="w-28 " src="../assets/thumbnail/app pubilshing.webp" alt="">
+                            <h5 class="mt-10">App publishing</h1>
+                            <h2 class="text-2xl font-bold">Public to Apple and Google App Stores <i class="fa-solid fa-arrow-right"></i></h2>
+                            <p class="mt-5">Publish directly to the App stores from a secure cloud enviroment</p>
+                        </div>
+                    </div>
+                    <div class="reveal_up_down dark:shadow-[0_0px_20px_0px_#020617] dark:border-none border group hover:shadow-xl  enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl ">
+                        <div class=" h-[260px] overflow-hidden ease-in-out transition-all feature-container dark:text-slate-100">
+                            <img class="w-28 " src="../assets/thumbnail/cloud.webp" alt="">
+                            <h5 class="mt-10">Cloud CLI</h1>
+                            <h2 class="text-2xl font-bold">Integrate your existing CI/CD infrastructure<i class="fa-solid fa-arrow-right"></i></h2>
+                            <p class="mt-5">Build continuously, release instantly, publish as often as you like.</p>
+                        </div>
+                    </div>
+                </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 enterprise-grid gap-5 mt-5 px-5">
-
-                <div class="reveal_up_down dark:shadow-[0_0px_20px_0px_#020617] dark:border-none border border-slate-300 enterprise-feature-w group hover:shadow-xl hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer    py-5 px-5 rounded-2xl ">
-                    <div class=" h-[260px] overflow-hidden feature-container dark:text-slate-100">
-                        <img class="w-28  " src="../assets/thumbnail/native build.webp" alt="">
-                        <h5 class="mt-10">NATIVE BUILD</h1>
-                        <h2 class="text-2xl font-bold">Combile native binaries for Andriod and iOS <i class="fa-solid fa-arrow-right"></i></h2>
-                        <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
-                    </div>
-                </div>
-                <div class="reveal_up_down dark:shadow-[0_0px_20px_0px_#020617] dark:border-none border group hover:shadow-xl hover:skew-1 enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl ">
-                    <div class=" h-[260px] overflow-hidden feature-container dark:text-slate-100">
-                        <img class="w-28 " src="../assets/thumbnail/app pubilshing.webp" alt="">
-                        <h5 class="mt-10">App publishing</h1>
-                        <h2 class="text-2xl font-bold">Public to Apple and Google App Stores <i class="fa-solid fa-arrow-right"></i></h2>
-                        <p class="mt-5">Publish directly to the App stores from a secure cloud enviroment</p>
-                    </div>
-                </div>
-                <div class="reveal_up_down dark:shadow-[0_0px_20px_0px_#020617] dark:border-none border group hover:shadow-xl  enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl ">
-                    <div class=" h-[260px] overflow-hidden ease-in-out transition-all feature-container dark:text-slate-100">
-                        <img class="w-28 " src="../assets/thumbnail/cloud.webp" alt="">
-                        <h5 class="mt-10">Cloud CLI</h1>
-                        <h2 class="text-2xl font-bold">Integrate your existing CI/CD infrastructure<i class="fa-solid fa-arrow-right"></i></h2>
-                        <p class="mt-5">Build continuously, release instantly, publish as often as you like.</p>
-                    </div>
-                </div>
-            </div>
-    </div>
-</section>
+    </section>
 <!-- mobile frontend -->
-<section class="bg-slate-800">
-    <div class="pb-32 pt-32 px-5 mobile-padding container mx-auto ">
-        <div class="relative bg-[url('../assets/thumbnail/portals-bg.webp')] w-full bg-cover h-[700px] rounded-3xl">
-            <div class="mobile-micro absolute bottom-32 left-5 md:left-[40%] lg:left-[50%] text-white max-w-lg px-5 ">
-                <h6 class="mb-5 reveal_up_down ">MOBILE MICRO FRONTENDS</h6>
-                <h1 class="reveal_up_down text-5xl font-bold max-w-lg mb-5 micro-text">Embed micro frontend experiences into any native app.
-                </h1>
-                <p class="reveal_up_down max-w-lg mb-5">Increase productivity and scale development with mobile micro frontends. Portals makes it easy to add web-based experiences to any iOS or Android mobile app, with deep native integrations and seamless integration that’s invisible to users.</p>
-                <button class="reveal_up_down bg-slate-600  rounded-3xl text-lg px-5 py-2 font-bold text-white">Learn how <i class="fa-solid fa-arrow-right"></i></button>
+    <section class="dark:bg-slate-800">
+        <div class="pb-32 pt-32 px-5 mobile-padding container mx-auto ">
+            <div class="relative bg-[url('../assets/thumbnail/portals-bg.webp')] w-full bg-cover h-[700px] rounded-3xl">
+                <div class="mobile-micro absolute bottom-32 left-5 md:left-[40%] lg:left-[50%] text-white max-w-lg px-5 ">
+                    <h6 class="mb-5 reveal_up_down ">MOBILE MICRO FRONTENDS</h6>
+                    <h1 class="reveal_up_down text-5xl font-bold max-w-lg mb-5 micro-text">Embed micro frontend experiences into any native app.
+                    </h1>
+                    <p class="reveal_up_down max-w-lg mb-5">Increase productivity and scale development with mobile micro frontends. Portals makes it easy to add web-based experiences to any iOS or Android mobile app, with deep native integrations and seamless integration that’s invisible to users.</p>
+                    <button class="reveal_up_down bg-slate-600  rounded-3xl text-lg px-5 py-2 font-bold text-white">Learn how <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- Build for developers -->
-<section class="dark:bg-slate-800">
-    <div class="bg-slate-700 dark:bg-slate-800 pt-60 pb-32 container relative  mx-auto px-5 ">
-        <div class="mb-32 flex flex-col md:flex-row ">
+    <section class="dark:bg-slate-800">
+        <div class="bg-slate-700 dark:bg-slate-800 pt-60 pb-32 container relative  mx-auto px-5 ">
+            <div class="mb-32 flex flex-col md:flex-row ">
 
-            <div class=" mb-10">
+                <div class=" mb-10">
 
-                <h5 class="reveal_up_down mb-10 text-white font-bold tracking-widest">Built for developer</h1>
-                <h1 class="reveal_up_down text-5xl tracking-wider font-bold text-white max-w-md h1-box w-330-size-developer">A developer-first platform. Built on open source</h1>
-                <div class="">
-                    <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
-                        <div><i class="fa-solid fa-check"></i></div>
-                        <div>World-class Documentation</div>
-                    </div>
-                    <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
-                        <div><i class="fa-solid fa-check"></i></div>
-                        <div>100% open source Mobile SDK</div>
-                    </div>
-                    <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
-                        <div><i class="fa-solid fa-check"></i></div>
-                        <div>A CLI for building and testing</div>
-                    </div>
-                    <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
-                        <div><i class="fa-solid fa-check"></i></div>
-                        <div>Cross-platform native bridge</div>
-                    </div>
-                    <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
-                        <div><i class="fa-solid fa-check"></i></div>
-                        <div>React, Angular, & Vue integrations</div>
-                    </div>
-                    <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
-                        <div><i class="fa-solid fa-check"></i></div>
-                        <div>World-wide developer Community</div>
-                    </div>
-                </div>
-            
-        
-                <button class="reveal_up_down bg-slate-200 rounded-full px-4 py-2 mt-5">Start building <i class="fa-solid fa-arrow-right-long"></i></button>
-        
-            </div>
-
-            <!--code-demo  -->
-            <div class="code-demo  px-0 md:px-10 overflow-hidden  max-w-xl xl:ml-32 lg:-mt-10 ">
-                <!-- code and demo button -->
-                <div class="btn-code-demo flex  justify-center  sm:space-x-5 ">
-                    <button class="reveal_up_down active1 btn-c-d bg-slate-600  text-slate-300 hover:text-slate-100 rounded-full code-demo-btn py-2 px-5 whitespace-nowrap"> <i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>  Code</button>
-                    <button class="reveal_up_down btn-c-d bg-slate-600  text-slate-300 hover:text-slate-100 rounded-full  py-2 px-5 whitespace-nowrap"><i class="fa-sharp fa-solid fa-eye"></i> Demo</button>
-                </div>
-                <!-- code and demo button end -->
-                
-                
-                <div class="reveal_up_down code-demo-container">
-                
-                    <!-- code -->
-                    <div class=" language-container active1 dark:bg-slate-900 bg-slate-800  overflow-hidden max-w-lg rounded-3xl px-10  py-5 mt-5">
-                    <!-- languageicon -->
-                        <div class="icon-container mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
-                            
-                                <div class="language-icon active2 dark:hover:shadow-[0_0px_20px_0px_#020617]  bg-slate-800 text-slate-400 hover:text-slate-100 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                                    <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
-                                    <div>React</div>
-                                </div>
-                                <div class="language-icon bg-slate-800 dark:hover:shadow-[0_0px_20px_0px_#020617] text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                                    <div class="text-4xl"><i class="fa-brands fa-angular"></i></div>
-                                    <div>Angular</div>
-                                </div>
-                                <div class="language-icon bg-slate-800 dark:hover:shadow-[0_0px_20px_0px_#020617] text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                                    <div class="text-4xl"><i class="fa-brands fa-vuejs"></i></div>
-                                    <div>Vue</div>
-                                </div>
-                                <div class="language-icon bg-slate-800 dark:hover:shadow-[0_0px_20px_0px_#020617] text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
-                                    <div class="text-4xl"><i class="fa-brands fa-js"></i></div>
-                                    <div>Javascript</div>
-                                </div>
-                            
+                    <h5 class="reveal_up_down mb-10 text-white font-bold tracking-widest">Built for developer</h1>
+                    <h1 class="reveal_up_down text-5xl tracking-wider font-bold text-white max-w-md h1-box w-330-size-developer">A developer-first platform. Built on open source</h1>
+                    <div class="">
+                        <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div>World-class Documentation</div>
                         </div>
-                    <!-- language container --> 
-                    <!-- overflow-hidden  h-[550px] -->
-                        <div class="code-container max-w-md overflow-hidden h-[550px] "> 
-                                <!-- React  -->
-                                <div class="code-sentence  active2 leading-8 pr-10  py-10 overflow-x-scroll">
-                                    <div class="whitespace-nowrap ">
-                                        <span class="mr-5 text-white">1</span>
-                                        <span>
-                                            <span class=text-white><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Discover</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
+                        <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div>100% open source Mobile SDK</div>
+                        </div>
+                        <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div>A CLI for building and testing</div>
+                        </div>
+                        <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div>Cross-platform native bridge</div>
+                        </div>
+                        <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div>React, Angular, & Vue integrations</div>
+                        </div>
+                        <div class="reveal_up_down flex gap-5 text-white text-lg mt-5">
+                            <div><i class="fa-solid fa-check"></i></div>
+                            <div>World-wide developer Community</div>
+                        </div>
+                    </div>
+                
+            
+                    <button class="reveal_up_down bg-slate-200 rounded-full px-4 py-2 mt-5">Start building <i class="fa-solid fa-arrow-right-long"></i></button>
+            
+                </div>
+
+                <!--code-demo  -->
+                <div class="code-demo  px-0 md:px-10 overflow-hidden  max-w-xl xl:ml-32 lg:-mt-10 ">
+                    <!-- code and demo button -->
+                    <div class="btn-code-demo flex  justify-center  sm:space-x-5 ">
+                        <button class="reveal_up_down active1 btn-c-d bg-slate-600  text-slate-300 hover:text-slate-100 rounded-full code-demo-btn py-2 px-5 whitespace-nowrap"> <i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>  Code</button>
+                        <button class="reveal_up_down btn-c-d bg-slate-600  text-slate-300 hover:text-slate-100 rounded-full  py-2 px-5 whitespace-nowrap"><i class="fa-sharp fa-solid fa-eye"></i> Demo</button>
+                    </div>
+                    <!-- code and demo button end -->
+                    
+                    
+                    <div class="reveal_up_down code-demo-container">
+                    
+                        <!-- code -->
+                        <div class=" language-container active1 dark:bg-slate-900 bg-slate-800  overflow-hidden max-w-lg rounded-3xl px-10  py-5 mt-5">
+                        <!-- languageicon -->
+                            <div class="icon-container mt-5 flex  gap-5 overflow-x-scroll  scrollbar-hide overflow-hidden">
+                                
+                                    <div class="language-icon active2 dark:hover:shadow-[0_0px_20px_0px_#020617]  bg-slate-800 text-slate-400 hover:text-slate-100 w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                        <div class="text-4xl"><i class="fa-brands fa-react"></i></div>
+                                        <div>React</div>
                                     </div>
-                                    <div class="whitespace-nowrap ">
-                                        <span class="mr-5 text-white">2</span>
-                                        <span>
-                                    <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                    <span class="text-sky-400">Top albums</span>
-                                    <span><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                </span>
-                            
+                                    <div class="language-icon bg-slate-800 dark:hover:shadow-[0_0px_20px_0px_#020617] text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                        <div class="text-4xl"><i class="fa-brands fa-angular"></i></div>
+                                        <div>Angular</div>
                                     </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-5 text-white">3</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                    <div class="language-icon bg-slate-800 dark:hover:shadow-[0_0px_20px_0px_#020617] text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                        <div class="text-4xl"><i class="fa-brands fa-vuejs"></i></div>
+                                        <div>Vue</div>
                                     </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-8 text-white">4</span>
-                                        <span class="text-white">{</span><span class="text-sky-300">albums</span><span class="text-yellow-300">.map</span class=text-white>(<span class="text-sky-300">album</span><span class="text-white">=></span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-11 text-white">5</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">IonItem</span class=text-emerald-300><span class="text-white"> key</span><span class="text-white">={</span><span></span><span class="text-emerald-300">album.id</span><span class="text-white">}></span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-14 text-white">6</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span class="text-white">"></span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-11 text-white">7</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-11 text-white">8</span>
-                                        <span>      
-                                            <span class="white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-14 text-white">9</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                            <span class="text-sky-400">{{ album title }}</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-12 text-white">10</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
-                                            <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
-                                            <span><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class=text-white>></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-11 text-white">11</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                        <span class="mr-8 text-white">12</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div class="whitespace-nowrap">
-                                            <span class="mr-8 text-white">13</span>
-                                            <span>      
-                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonItem</span><span class="text-white">></span>
-                                            </span>
-                                    </div>
-                                <div>
-                                        <span class="mr-8 text-white">14</span>
-                                        <span class="text-white">)}</span>
-                                </div>
-                                <div>
-                                        <span class="mr-8 text-white">15</span>
-                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonList</span><span class="text-white">></span>
-                                </div>
-                                </div>   
-                                <!-- angular -->
-                                <div class="code-sentence leading-8 py-10 whitespace-nowrap overflow-x-scroll">
-                                    <div>
-                                        <span class="mr-5 text-white">1</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Discover</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div >
-                                        <span class="mr-5 text-white">2</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Top albums</span>
-                                            <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-5 class-text-white">3</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-8 text-white">4</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">*ngfor</span><span class="text-white">="</span><span class="text-orange-300"></span><span class="text-orange-300">let album of albums; trackBy:trackAlbums</span> <span class="text-white">"></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">5</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span></span> <span class="text-white">"></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-14 text-white">6</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span></span> <span class="text-white">"></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">7</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 class=text-white">8</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-14 text-white">9</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                            <span class="text-sky-400">{{ album title }}</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-12 text-white">10</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
-                                            <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">11</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-8 text-white">12</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                <div>
-                                    <span class="mr-8 text-white">13</span>
-                                    <span>      
-                                        <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
-                                    </span>
-                                </div>
-                                </div>
-                                <!-- Vue  -->
-                                <div class="code-sentence  leading-8 py-10 whitespace-nowrap overflow-x-scroll">
-                                    <div>
-                                        <span class="mr-5 text-white">1</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Discover</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div >
-                                        <span class="mr-5 text-white">2</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Top albums</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-5 text-white">3</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-8 text-white">4</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">v-for</span><span class="text-white">="</span><span class="text-orange-300">album in albums</span><span class="text-white">"</span><span class="text-sky-300"> :key</span><span class="text-white">="</span><span class="text-orange-300">album in Id</span> <span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">5</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-14 text-white">6</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">:src</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span>"</span> <span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">7</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">8</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-14 text-white">9</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                            <span class="text-sky-400">{{ album title }}</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-12 text-white">10</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
-                                            <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
-                                            <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">11</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-8 text-white">12</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                        </span>
+                                    <div class="language-icon bg-slate-800 dark:hover:shadow-[0_0px_20px_0px_#020617] text-slate-400 hover:text-slate-100  w-20 rounded-xl cursor-pointer flex flex-col justify-center items-center px-5 py-2">
+                                        <div class="text-4xl"><i class="fa-brands fa-js"></i></div>
+                                        <div>Javascript</div>
                                     </div>
                                 
-                                </div>
-                                <!-- javascript -->
-                                <div class="code-sentence leading-8 py-8 whitespace-nowrap overflow-x-scroll">
+                            </div>
+                        <!-- language container --> 
+                        <!-- overflow-hidden  h-[550px] -->
+                            <div class="code-container max-w-md overflow-hidden h-[550px] "> 
+                                    <!-- React  -->
+                                    <div class="code-sentence  active2 leading-8 pr-10  py-10 overflow-x-scroll">
+                                        <div class="whitespace-nowrap ">
+                                            <span class="mr-5 text-white">1</span>
+                                            <span>
+                                                <span class=text-white><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Discover</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div class="whitespace-nowrap ">
+                                            <span class="mr-5 text-white">2</span>
+                                            <span>
+                                        <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                        <span class="text-sky-400">Top albums</span>
+                                        <span><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                    </span>
+                                
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-5 text-white">3</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-8 text-white">4</span>
+                                            <span class="text-white">{</span><span class="text-sky-300">albums</span><span class="text-yellow-300">.map</span class=text-white>(<span class="text-sky-300">album</span><span class="text-white">=></span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-11 text-white">5</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">IonItem</span class=text-emerald-300><span class="text-white"> key</span><span class="text-white">={</span><span></span><span class="text-emerald-300">album.id</span><span class="text-white">}></span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-14 text-white">6</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span class="text-white">"></span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-11 text-white">7</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-11 text-white">8</span>
+                                            <span>      
+                                                <span class="white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-14 text-white">9</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                                <span class="text-sky-400">{{ album title }}</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-12 text-white">10</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                                <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                                <span><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class=text-white>></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-11 text-white">11</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                            <span class="mr-8 text-white">12</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class=text-white>/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div class="whitespace-nowrap">
+                                                <span class="mr-8 text-white">13</span>
+                                                <span>      
+                                                    <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonItem</span><span class="text-white">></span>
+                                                </span>
+                                        </div>
                                     <div>
-                                        <span class="mr-5 text-white">1</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Discover</span>
-                                            <span class="text-white"><</span><span class=text-white>/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div >
-                                        <span class="mr-5 text-white">2</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class=text-white>></span>
-                                            <span class="text-sky-400">Top albums</span>
-                                            <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class=text-white>></span>
-                                        </span>
-                                    
+                                            <span class="mr-8 text-white">14</span>
+                                            <span class="text-white">)}</span>
                                     </div>
                                     <div>
-                                        <span class="mr-5 text-white">3</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                            <span class="mr-8 text-white">15</span>
+                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">IonList</span><span class="text-white">></span>
                                     </div>
-                                    <div>
-                                        <span class="mr-8 text-white">4</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">5</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-14 text-white">6</span>
-                                        <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">src</span> <span class="text-white">="<span class="text-orange-300">/img/index/code-tabs/dawn-fm-the-weeknd.png</span>"</span> <span class="text-white">></span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11  text-white">7</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">8</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-14 text-white">9</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">Dawn FM</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-12 text-white">10</span>
-                                        <span>
-                                            <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                            <span class="text-sky-400">The Weekend</span>
-                                            <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
-                                        </span>
-                                    
-                                    </div>
-                                    <div>
-                                        <span class="mr-11 text-white">11</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-8 text-white">12</span>
-                                        <span>      
-                                            <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
-                                        </span>
-                                    </div>
+                                    </div>   
+                                    <!-- angular -->
+                                    <div class="code-sentence leading-8 py-10 whitespace-nowrap overflow-x-scroll">
+                                        <div>
+                                            <span class="mr-5 text-white">1</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Discover</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div >
+                                            <span class="mr-5 text-white">2</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Top albums</span>
+                                                <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-5 class-text-white">3</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">4</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">*ngfor</span><span class="text-white">="</span><span class="text-orange-300"></span><span class="text-orange-300">let album of albums; trackBy:trackAlbums</span> <span class="text-white">"></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">5</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span></span> <span class="text-white">"></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-14 text-white">6</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">[src]</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span></span> <span class="text-white">"></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">7</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 class=text-white">8</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-14 text-white">9</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                                <span class="text-sky-400">{{ album title }}</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-12 text-white">10</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                                <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">11</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">12</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
                                     <div>
                                         <span class="mr-8 text-white">13</span>
-                                        <span class="text-sky-300"><span class=""><</span><span class="">!</span>  <span class=""> --- etc</span>  --- > </span>
-                                    </div>
-                                    <div>
-                                        <span class="mr-5 text-white">14</span>
                                         <span>      
                                             <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
                                         </span>
                                     </div>
-                                </div>   
-                        </div>
-                    <!-- language container end -->
-                
-                    </div>
-                    <!-- code end -->
-
-                    <!-- demo -->
-                    <div class="language-container  bg-slate-800  overflow-hidden max-w-lg xl:w-[540px] rounded-3xl px-10  py-5 mt-5">
-                        <div class="h-[550px] bg-slate-200 rounded-xl max-w-full   overflow-hidden scrollbar-hide overflow-y-scroll ">
-                            <div class="px-5 py-5 rounded-xl overflow-hidden text-ellipsis">
-                                <h6 class="text-sm uppercase">Discover</h6>
-                                <h1 class="text-2xl  text-slate-900 font-bold">Top albums</h1>
-                                <div class="flex  items-center mt-10  whitespace-nowrap text-ellipsis overflow-hidden  gap-5">
-                                    <img class="w-14" src="../assets/thumbnail/dawn-fm-the-weeknd.png" alt="">
-                                    <div class="w-full  ellipsis-w-297 text-ellipsis overflow-hidden">
-                                        <h5 class="">Dawn FM</h5>
-                                        <h6 class="text-xs mb-3">The Weekend</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
                                     </div>
-                                </div>
-                                <div class="flex  items-center mt-5  gap-5 ">
-                                    <img class="w-14" src="../assets/thumbnail/planet-her-doja-cat.png" alt="">
-                                    <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
-                                        <h5>Planet Her</h5>
-                                        <h6 class="text-xs mb-3">Doja Cat</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                    <!-- Vue  -->
+                                    <div class="code-sentence  leading-8 py-10 whitespace-nowrap overflow-x-scroll">
+                                        <div>
+                                            <span class="mr-5 text-white">1</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Discover</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div >
+                                            <span class="mr-5 text-white">2</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Top albums</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-5 text-white">3</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">4</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-sky-300 ">v-for</span><span class="text-white">="</span><span class="text-orange-300">album in albums</span><span class="text-white">"</span><span class="text-sky-300"> :key</span><span class="text-white">="</span><span class="text-orange-300">album in Id</span> <span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">5</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-14 text-white">6</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">:src</span> <span class="text-white">="<span class="text-orange-300">album.artwork</span>"</span> <span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">7</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">8</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-14 text-white">9</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                                <span class="text-sky-400">{{ album title }}</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h2</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-12 text-white">10</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">p</span><span class="text-white">></span>
+                                                <span class="text-sky-400">{{ album.artist }}, {{ album.year }}</span>
+                                                <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">p</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">11</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class=text-white>></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">12</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                    
                                     </div>
-                                </div>
-                                <div class="flex  items-center  mt-5  gap-5 ">
-                                    <img class="w-14" src="../assets/thumbnail/sour-olivia-rodrigo.png" alt="">
-                                    <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
-                                        <h5>SOUR</h5>
-                                        <h6 class="text-xs mb-3">Olivia Rodrigo</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
-                                    </div>
-                                </div>
-                                <div class="flex  items-center  mt-5  gap-5">
-                                    <img class="w-14" src="../assets/thumbnail/montero-lil-nas-x.png" alt="">
-                                    <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
-                                        <h5>MONTERO</h5>
-                                        <h6 class="text-xs mb-3">Lil Nas X</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
-                                    </div>
-                                </div>
-                                <div class="flex  items-center  mt-5 gap-5">
-                                    <img class="w-14" src="../assets/thumbnail/yhlqmdlg-bad-bunny.png" alt="">
-                                    <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
-                                        <h5>YHLQMDYG</h5>
-                                        <h6 class="text-xs mb-3">Bad Bunny</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
-                                    </div>
-                                </div>
-                                <div class="flex  items-center  mt-5 gap-5">
-                                    <img class="w-14" src="../assets/thumbnail/future-nostalgia-dua-lipa.png" alt="">
-                                    <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
-                                        <h5>Future Nostalgia</h5>
-                                        <h6 class="text-xs mb-3">Dua Lipa</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
-                                    </div>
-                                </div>
-                                <div class="flex  items-center  mt-5  gap-5">
-                                    <img class="w-14" src="../assets/thumbnail/30-adele.png" alt="">
-                                    <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
-                                        <h5>30</h5>
-                                        <h6 class="text-xs mb-3">Adele</h6>
-                                        <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
-                                    </div>
-                                </div>
+                                    <!-- javascript -->
+                                    <div class="code-sentence leading-8 py-8 whitespace-nowrap overflow-x-scroll">
+                                        <div>
+                                            <span class="mr-5 text-white">1</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Discover</span>
+                                                <span class="text-white"><</span><span class=text-white>/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div >
+                                            <span class="mr-5 text-white">2</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class=text-white>></span>
+                                                <span class="text-sky-400">Top albums</span>
+                                                <span class=text-white><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class=text-white>></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-5 text-white">3</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">4</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">5</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">ion-thumbnail</span>  <span class="text-sky-300">slot</span> <span class="text-white">="<span class="text-orange-300">start</span>"</span> <span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-14 text-white">6</span>
+                                            <span class="text-white"><</span><span class="text-emerald-300">img</span>  <span class="text-sky-300">src</span> <span class="text-white">="<span class="text-orange-300">/img/index/code-tabs/dawn-fm-the-weeknd.png</span>"</span> <span class="text-white">></span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11  text-white">7</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-thumbnail</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">8</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-14 text-white">9</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">Dawn FM</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-12 text-white">10</span>
+                                            <span>
+                                                <span class="text-white"><</span><span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                                <span class="text-sky-400">The Weekend</span>
+                                                <span class="text-white"><</span><span class="text-white">/</span> <span class="text-emerald-300">h4</span><span class="text-white">></span>
+                                            </span>
+                                        
+                                        </div>
+                                        <div>
+                                            <span class="mr-11 text-white">11</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-label</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">12</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-item</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-8 text-white">13</span>
+                                            <span class="text-sky-300"><span class=""><</span><span class="">!</span>  <span class=""> --- etc</span>  --- > </span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-5 text-white">14</span>
+                                            <span>      
+                                                <span class="text-white"><</span><span class="text-white">/</span><span class="text-emerald-300">ion-list</span><span class="text-white">></span>
+                                            </span>
+                                        </div>
+                                    </div>   
                             </div>
-                            
+                        <!-- language container end -->
+                    
                         </div>
-                    </div>
-                    <!-- demo end -->
+                        <!-- code end -->
 
-                </div> 
+                        <!-- demo -->
+                        <div class="language-container  bg-slate-800  overflow-hidden max-w-lg xl:w-[540px] rounded-3xl px-10  py-5 mt-5">
+                            <div class="h-[550px] bg-slate-200 rounded-xl max-w-full   overflow-hidden scrollbar-hide overflow-y-scroll ">
+                                <div class="px-5 py-5 rounded-xl overflow-hidden text-ellipsis">
+                                    <h6 class="text-sm uppercase">Discover</h6>
+                                    <h1 class="text-2xl  text-slate-900 font-bold">Top albums</h1>
+                                    <div class="flex  items-center mt-10  whitespace-nowrap text-ellipsis overflow-hidden  gap-5">
+                                        <img class="w-14" src="../assets/thumbnail/dawn-fm-the-weeknd.png" alt="">
+                                        <div class="w-full  ellipsis-w-297 text-ellipsis overflow-hidden">
+                                            <h5 class="">Dawn FM</h5>
+                                            <h6 class="text-xs mb-3">The Weekend</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex  items-center mt-5  gap-5 ">
+                                        <img class="w-14" src="../assets/thumbnail/planet-her-doja-cat.png" alt="">
+                                        <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                            <h5>Planet Her</h5>
+                                            <h6 class="text-xs mb-3">Doja Cat</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex  items-center  mt-5  gap-5 ">
+                                        <img class="w-14" src="../assets/thumbnail/sour-olivia-rodrigo.png" alt="">
+                                        <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                            <h5>SOUR</h5>
+                                            <h6 class="text-xs mb-3">Olivia Rodrigo</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex  items-center  mt-5  gap-5">
+                                        <img class="w-14" src="../assets/thumbnail/montero-lil-nas-x.png" alt="">
+                                        <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                            <h5>MONTERO</h5>
+                                            <h6 class="text-xs mb-3">Lil Nas X</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex  items-center  mt-5 gap-5">
+                                        <img class="w-14" src="../assets/thumbnail/yhlqmdlg-bad-bunny.png" alt="">
+                                        <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                            <h5>YHLQMDYG</h5>
+                                            <h6 class="text-xs mb-3">Bad Bunny</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex  items-center  mt-5 gap-5">
+                                        <img class="w-14" src="../assets/thumbnail/future-nostalgia-dua-lipa.png" alt="">
+                                        <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                            <h5>Future Nostalgia</h5>
+                                            <h6 class="text-xs mb-3">Dua Lipa</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex  items-center  mt-5  gap-5">
+                                        <img class="w-14" src="../assets/thumbnail/30-adele.png" alt="">
+                                        <div class="w-full whitespace-nowrap text-ellipsis overflow-hidden ellipsis-w-297">
+                                            <h5>30</h5>
+                                            <h6 class="text-xs mb-3">Adele</h6>
+                                            <hr class="text-green-500 bg-slate-500 w-full h-[3px]">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- demo end -->
 
+                    </div> 
+
+                </div>
+                
             </div>
-            
+            <!-- Developer resources -->
+            <h1 class="reveal_up_down text-white font-bold  text-2xl mb-10">Developer resoruces</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="reveal_up_down max-w-full sm:max-w-sm rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
+                    <img src="../assets/thumbnail/ionic-discord.webp" alt="">
+                    <div class="mt-16 text-2xl font-bold text-white">Ionic Discord <i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+                <div class="reveal_up_down max-w-full sm:max-w-sm rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
+                    <img src="../assets/thumbnail/Ionic-forum.webp" alt="">
+                    <div class="mt-16 text-2xl font-bold text-white">Ionic Forum <i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+                <div class="reveal_up_down max-w-full sm:max-w-sm rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
+                    <img src="../assets/thumbnail/Ionic Docs.webp" alt="">
+                    <div class="mt-16 text-2xl font-bold text-white">Ionic Docs <i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+                <div class="reveal_up_down max-w-full sm:max-w-sm   rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
+                    <img src="../assets/thumbnail/ionic-github.webp" alt="">
+                    <div class="mt-16 text-2xl font-bold text-white ">Ionic Github <i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+            </div>
         </div>
-        <!-- Developer resources -->
-        <h1 class="reveal_up_down text-white font-bold  text-2xl mb-10">Developer resoruces</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-            <div class="reveal_up_down max-w-full sm:max-w-sm rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
-                <img src="../assets/thumbnail/ionic-discord.webp" alt="">
-                <div class="mt-16 text-2xl font-bold text-white">Ionic Discord <i class="fa-solid fa-arrow-right-long"></i></div>
-            </div>
-            <div class="reveal_up_down max-w-full sm:max-w-sm rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
-                <img src="../assets/thumbnail/Ionic-forum.webp" alt="">
-                <div class="mt-16 text-2xl font-bold text-white">Ionic Forum <i class="fa-solid fa-arrow-right-long"></i></div>
-            </div>
-            <div class="reveal_up_down max-w-full sm:max-w-sm rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
-                <img src="../assets/thumbnail/Ionic Docs.webp" alt="">
-                <div class="mt-16 text-2xl font-bold text-white">Ionic Docs <i class="fa-solid fa-arrow-right-long"></i></div>
-            </div>
-            <div class="reveal_up_down max-w-full sm:max-w-sm   rounded-xl py-10 px-5 bg-slate-600 cursor-pointer dark:hover:bg-slate-900 hover:bg-slate-500">
-                <img src="../assets/thumbnail/ionic-github.webp" alt="">
-                <div class="mt-16 text-2xl font-bold text-white ">Ionic Github <i class="fa-solid fa-arrow-right-long"></i></div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 <!-- ionic for enterprise -->
-<section class="dark:bg-slate-800">
-    <div class="pb-32 pt-32 md:mt-auto container mx-auto">
-        <div class=" overflow-hidden relative mx-auto flex flex-col md:flex-row  items-start md:items-center md:justify-start xl:justify-between px-5 w-full">
-            <div class=" ">
-                <h1 class="reveal_up_down mb-5 dark:text-slate-100">Ionic for enterprise</h1>
-                <h1 class="reveal_up_down text-5xl font-bold mb-4 max-w-lg dark:text-slate-100 w-330-size-platform" >A single platform for delivering enterprise digital experiences securely and at scale.</h1>
-                <p class="reveal_up_down text-lg mb-4 max-w-xl dark:text-slate-300">The Ionic Platform is designed to help enterprise teams meet the need for digital experiences across their business. Enable any web developer to build brand new custom mobile applications, create and distribute micro frontend applications and embedded mobile experiences, and ship custom design systems and reusable component libraries at scale.</p>
-                <div class=" reveal_up_down">
-                    <button class="bg-slate-800 text-white rounded-full px-4 py-3">Learn how <i class="fa-solid fa-arrow-right"></i></button>
+    <section class="dark:bg-slate-800">
+        <div class="pb-32 pt-32 md:mt-auto container mx-auto">
+            <div class=" overflow-hidden relative mx-auto flex flex-col md:flex-row  items-start md:items-center md:justify-start xl:justify-between px-5 w-full">
+                <div class=" ">
+                    <h1 class="reveal_up_down mb-5 dark:text-slate-100">Ionic for enterprise</h1>
+                    <h1 class="reveal_up_down text-5xl font-bold mb-4 max-w-lg dark:text-slate-100 w-330-size-platform" >A single platform for delivering enterprise digital experiences securely and at scale.</h1>
+                    <p class="reveal_up_down text-lg mb-4 max-w-xl dark:text-slate-300">The Ionic Platform is designed to help enterprise teams meet the need for digital experiences across their business. Enable any web developer to build brand new custom mobile applications, create and distribute micro frontend applications and embedded mobile experiences, and ship custom design systems and reusable component libraries at scale.</p>
+                    <div class=" reveal_up_down">
+                        <button class="bg-slate-800 text-white rounded-full px-4 py-3">Learn how <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="reveal_up_down hidden md:flex md:h-[700px] xl:h-[900px] md:w-[600px] xl:w-[900px]  bg-cover bg-center bg-no-repeat bg-[url('../assets/thumbnail/enterprise.webp')]">
+            
                 </div>
             </div>
-            <div class="reveal_up_down hidden md:flex md:h-[700px] xl:h-[900px] md:w-[600px] xl:w-[900px]  bg-cover bg-center bg-no-repeat bg-[url('../assets/thumbnail/enterprise.webp')]">
-        
+            <div class="grid  grid-cols-3 enterprise-grid  container mx-auto mt-10  gap-5 px-5">
+                <div class="reveal_up_down border border-slate-300 enterprise-feature-w group hover:shadow-xl hover:skew-1 hover:skew-y-1 hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer    py-5 px-5 rounded-2xl max-w-sm">
+                    <div class="dark:shadow-[0_0px_20px_0px_#020617] dark:border-none dark:p-1 dark:text-slate-100 h-[260px] overflow-hidden feature-container ">
+                        <img class="w-28  " src="../assets/thumbnail/enterprise-build--active.webp" alt="">
+                        <h5 class="mt-10">BUILD</h1>
+                        <h2 class="text-2xl font-bold">Build amazing apps for any platform <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
+                    </div>
+                </div>
+                <div class="reveal_up_down border group hover:shadow-xl hover:skew-1 enterprise-feature-w hover:skew-y-1 hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl max-w-sm">
+                    <div class="dark:shadow-[0_0px_20px_0px_#020617] dark:border-none dark:p-1 dark:text-slate-100 h-[260px] overflow-hidden feature-container">
+                        <img class="w-28 " src="../assets/thumbnail/enterprise-secure--active.webp" alt="">
+                        <h5 class="mt-10">SECURE</h1>
+                        <h2 class="text-2xl font-bold">Keep user safe and be secure <i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Best-in class mobile protection, fully managed and supported by Ionic</p>
+                    </div>
+                </div>
+                <div class="reveal_up_down border group hover:shadow-xl hover:skew-1 hover:skew-y-1 enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl max-w-sm">
+                    <div class="dark:shadow-[0_0px_20px_0px_#020617] dark:border-none dark:p-1 dark:text-slate-100 h-[260px] overflow-hidden ease-in-out transition-all feature-container">
+                        <img class="w-28 " src="../assets/thumbnail/enterprise-deliver--active.webp" alt="">
+                        <h5 class="mt-10">DELIVER</h1>
+                        <h2 class="text-2xl font-bold">Unlock continuous mobile delivery<i class="fa-solid fa-arrow-right"></i></h2>
+                        <p class="mt-5">Build continuously, release instantly, publish as often as you like.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="grid  grid-cols-3 enterprise-grid  container mx-auto mt-10  gap-5 px-5">
-            <div class="reveal_up_down border border-slate-300 enterprise-feature-w group hover:shadow-xl hover:skew-1 hover:skew-y-1 hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer    py-5 px-5 rounded-2xl max-w-sm">
-                <div class="dark:shadow-[0_0px_20px_0px_#020617] dark:border-none dark:p-1 dark:text-slate-100 h-[260px] overflow-hidden feature-container ">
-                    <img class="w-28  " src="../assets/thumbnail/enterprise-build--active.webp" alt="">
-                    <h5 class="mt-10">BUILD</h1>
-                    <h2 class="text-2xl font-bold">Build amazing apps for any platform <i class="fa-solid fa-arrow-right"></i></h2>
-                    <p class="mt-5">Go from web to native with no platform dependencies or complex build steps.</p>
-                </div>
-            </div>
-            <div class="reveal_up_down border group hover:shadow-xl hover:skew-1 enterprise-feature-w hover:skew-y-1 hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl max-w-sm">
-                <div class="dark:shadow-[0_0px_20px_0px_#020617] dark:border-none dark:p-1 dark:text-slate-100 h-[260px] overflow-hidden feature-container">
-                    <img class="w-28 " src="../assets/thumbnail/enterprise-secure--active.webp" alt="">
-                    <h5 class="mt-10">SECURE</h1>
-                    <h2 class="text-2xl font-bold">Keep user safe and be secure <i class="fa-solid fa-arrow-right"></i></h2>
-                    <p class="mt-5">Best-in class mobile protection, fully managed and supported by Ionic</p>
-                </div>
-            </div>
-            <div class="reveal_up_down border group hover:shadow-xl hover:skew-1 hover:skew-y-1 enterprise-feature-w hover:shadow-slate-400 hvr-text-img border-1   cursor-pointer   border-slate-300 py-5 px-5 rounded-2xl max-w-sm">
-                <div class="dark:shadow-[0_0px_20px_0px_#020617] dark:border-none dark:p-1 dark:text-slate-100 h-[260px] overflow-hidden ease-in-out transition-all feature-container">
-                    <img class="w-28 " src="../assets/thumbnail/enterprise-deliver--active.webp" alt="">
-                    <h5 class="mt-10">DELIVER</h1>
-                    <h2 class="text-2xl font-bold">Unlock continuous mobile delivery<i class="fa-solid fa-arrow-right"></i></h2>
-                    <p class="mt-5">Build continuously, release instantly, publish as often as you like.</p>
-                </div>
-            </div>
-        </div>
-     </div>
-</section>
+    </section>
 
 <!-- services -->
-<section class="dark:bg-slate-800" >
-    <div class="pb-32 container mx-auto px-5">
-        <h1 class="reveal_up_down text-2xl font-bold dark:text-slate-100">Go even further with Ionic expert services.</h1>
-        <div class="grid sm:grid-cols-2 gap-5 mt-10 ">
-            <div class="reveal_up_down dark:text-slate-100 relative dark:shadow-[0_0px_20px_0px_#020617]  dark:hover:shadow-xl dark:hover:shadow-slate-100hover: dark:border-none   border max-w-full py-1 hover:shadow-xl hover:shadow-slate-400 rounded-3xl border-slate-300 cursor-pointer flex items-center">
-                <div class="px-5 absolute">
-                    <h5>IONIC SUPPORT</h5>
-                    <h2 class=" max-w-[50%] md:max-w-[40%] text-xl font-bold ">Your partner, at every stage of development.</h2>
+    <section class="dark:bg-slate-800" >
+        <div class="pb-32 container mx-auto px-5">
+            <h1 class="reveal_up_down text-2xl font-bold dark:text-slate-100">Go even further with Ionic expert services.</h1>
+            <div class="grid sm:grid-cols-2 gap-5 mt-10 ">
+                <div class="reveal_up_down dark:text-slate-100 relative dark:shadow-[0_0px_20px_0px_#020617]  dark:hover:shadow-xl dark:hover:shadow-slate-100hover: dark:border-none   border max-w-full py-1 hover:shadow-xl hover:shadow-slate-400 rounded-3xl border-slate-300 cursor-pointer flex items-center">
+                    <div class="px-5 absolute">
+                        <h5>IONIC SUPPORT</h5>
+                        <h2 class=" max-w-[50%] md:max-w-[40%] text-xl font-bold ">Your partner, at every stage of development.</h2>
+                    </div>
+                    <span class="">
+                        <img class="h-64  lg:translate-x-20 feature-img " src="../assets/thumbnail/ionic support.webp" alt="">
+                    </span>
                 </div>
-                <span class="">
-                    <img class="h-64  lg:translate-x-20 feature-img " src="../assets/thumbnail/ionic support.webp" alt="">
-                </span>
-            </div>
-            <div class="reveal_up_down dark:text-slate-100 relative dark:shadow-[0_0px_20px_0px_#020617]  dark:hover:shadow-xl dark:hover:shadow-slate-100hover: dark:border-none  hover:shadow-xl hover:shadow-slate-400 border max-w-full py-1 rounded-3xl border-slate-300 cursor-pointer flex items-center">
-                <div class="px-5 absolute">
-                    <h5>IONIC TRAINING</h5>
-                    <h2 class=" max-w-[50%] md:max-w-[40%] text-xl font-bold ">Empower your team with the skills to deliever, faster</h2>
+                <div class="reveal_up_down dark:text-slate-100 relative dark:shadow-[0_0px_20px_0px_#020617]  dark:hover:shadow-xl dark:hover:shadow-slate-100hover: dark:border-none  hover:shadow-xl hover:shadow-slate-400 border max-w-full py-1 rounded-3xl border-slate-300 cursor-pointer flex items-center">
+                    <div class="px-5 absolute">
+                        <h5>IONIC TRAINING</h5>
+                        <h2 class=" max-w-[50%] md:max-w-[40%] text-xl font-bold ">Empower your team with the skills to deliever, faster</h2>
+                    </div>
+                    <span class="">
+                        <img class=" h-64  lg:translate-x-20 feature-img  " src="../assets/thumbnail/ionic traning.webp" alt="">
+                    </span>
+                        
                 </div>
-                <span class="">
-                    <img class=" h-64  lg:translate-x-20 feature-img  " src="../assets/thumbnail/ionic traning.webp" alt="">
-                </span>
-                    
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- 1000's of customers -->
-<section class="dark:bg-slate-800">
+    <section class="dark:bg-slate-800">
 
-        <div class="text-center max-w-sm mx-auto pb-10 dark:text-slate-100">
-            <h1 class="reveal_up_down  text-sm tracking-wider">1000's OF CUSTOMERS</h1>
-            <h1 class="reveal_up_down text-4xl font-bold ">Loved by developers. Trusted by enterprise.</h1>
-        </div>
-    
-   
-</section>
-
-<section class="dark:bg-slate-800">
-    <div class="reveal_up_down pb-24  items-center  mx-auto  flex justify-center px-5">
-        <div class="swiper swipercontainer   mySwiper   swiper-h">
-            <div class="swiper-wrapper mt-20">
-                <div class="swiper-slide  swiper-slide-active slider-w-640" >
-                    <div class="">
-                        <ul>
-                            <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
-                                <img class=" bg-contain" src="../assets/thumbnail/bg-bobcat.webp" alt="">
-                                
-                                    <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
-                                        <img class="" src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
-                                        <div class="mt-10">
-                                            <p class="text-white text-sm">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
-                                            <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
-                                        </div>
-                                    
-                                </div>
-                            
-                            </li>
-                        </ul>
-                    
-                    
-                    </div>
-                </div>
-                <div class="swiper-slide swiper-slide-active slider-w-640" >
-                    <div class=" ">
-                        <ul>
-                            <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-red-500 via-red-400 to">
-                                <img class=" bg-contain" src="../assets/thumbnail/bg-burger-king.webp" alt="">
-                                
-                                    <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
-                                        <img class="" src="../assets/thumbnail/logo-burger-king-dark.webp" alt="">
-                                        <div class="mt-10">
-                                            <p class="text-white text-sm">Learn how Burger King leveraged Ionic Capacitor bring their unique design system to mobile, across multiple platforms.</p>
-                                            <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
-                                        </div>
-                                    
-                                </div>
-                            
-                            </li>
-                        </ul>
-                    
-                    
-                    </div>
-                </div>
-                <div class="swiper-slide swiper-slide-active slider-w-640" >
-                    <div class=" ">
-                        <ul>
-                            <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-green-500 via-green-400 to">
-                                <img class=" bg-contain" src="../assets/thumbnail/bg-hr-block.webp" alt="">
-                                
-                                    <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
-                                        <img class="bg-white" src="../assets/thumbnail/logo-hr-block-dark.webp" alt="">
-                                        <div class="mt-10">
-                                            <p class="text-white text-sm">H&amp;R Block delivers a cutting-edge mobile experience to customers, while accelerating development timelines, reducing risk, and improving operational agility.</p>
-                                            <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
-                                        </div>
-                                    
-                                </div>
-                            
-                            </li>
-                        </ul>
-                    
-                    
-                    </div>
-                </div>
-                <div class="swiper-slide swiper-slide-active slider-w-640" >
-                    <div class=" ">
-                        <ul>
-                            <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-cyan-500 via-cyan-400 to">
-                                <img class=" bg-contain" src="../assets/thumbnail/bg-nhs.webp">
-                                    <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
-                                        <img class="bg-white" src="../assets/thumbnail/logo-nhs-dark.webp" alt="">
-                                        <div class="mt-10">
-                                            <p class="text-white text-sm">Learn how one of the world's largest health care providers, National Health Service, chose Ionic to boost worker productivity and agility.</p>
-                                            <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
-                                        </div>
-                                    
-                                </div>
-                            
-                            </li>
-                        </ul>
-                    
-                    
-                    </div>
-                </div>
-                <div class="swiper-slide swiper-slide-active slider-w-640" >
-                    <div class="">
-                        <ul>
-                            <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-blue-500 via-blue-400 to">
-                                <img class=" bg-contain" src="../assets/thumbnail/bg-southwest.webp" alt="">
-                                
-                                    <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
-                                        <img class="" src="../assets/thumbnail/logo-southwest-dark.webp" alt="">
-                                        <div class="mt-10">
-                                            <p class="text-white text-sm">Southwest delivers a cutting-edge mobile experience to riders, while accelerating development timelines, reducing risk, and improving operational agility.</p>
-                                            <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
-                                        </div>
-                                    
-                                </div>
-                            
-                            </li>
-                        </ul>
-                    
-                    
-                    </div>
-                </div>
-                
+            <div class="text-center max-w-sm mx-auto pb-10 dark:text-slate-100">
+                <h1 class="reveal_up_down  text-sm tracking-wider">1000's OF CUSTOMERS</h1>
+                <h1 class="reveal_up_down text-4xl font-bold ">Loved by developers. Trusted by enterprise.</h1>
             </div>
-            <div class="swiper-pagination"></div>
+        
+    
+    </section>
+
+    <section class="dark:bg-slate-800">
+        <div class="reveal_up_down pb-24  items-center  mx-auto  flex justify-center px-5">
+            <div class="swiper swipercontainer   mySwiper   swiper-h">
+                <div class="swiper-wrapper mt-20">
+                    <div class="swiper-slide  swiper-slide-active slider-w-640" >
+                        <div class="">
+                            <ul>
+                                <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
+                                    <img class=" bg-contain" src="../assets/thumbnail/bg-bobcat.webp" alt="">
+                                    
+                                        <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
+                                            <img class="" src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
+                                            <div class="mt-10">
+                                                <p class="text-white text-sm">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
+                                                <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active slider-w-640" >
+                        <div class=" ">
+                            <ul>
+                                <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-red-500 via-red-400 to">
+                                    <img class=" bg-contain" src="../assets/thumbnail/bg-burger-king.webp" alt="">
+                                    
+                                        <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
+                                            <img class="" src="../assets/thumbnail/logo-burger-king-dark.webp" alt="">
+                                            <div class="mt-10">
+                                                <p class="text-white text-sm">Learn how Burger King leveraged Ionic Capacitor bring their unique design system to mobile, across multiple platforms.</p>
+                                                <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active slider-w-640" >
+                        <div class=" ">
+                            <ul>
+                                <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-green-500 via-green-400 to">
+                                    <img class=" bg-contain" src="../assets/thumbnail/bg-hr-block.webp" alt="">
+                                    
+                                        <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
+                                            <img class="bg-white" src="../assets/thumbnail/logo-hr-block-dark.webp" alt="">
+                                            <div class="mt-10">
+                                                <p class="text-white text-sm">H&amp;R Block delivers a cutting-edge mobile experience to customers, while accelerating development timelines, reducing risk, and improving operational agility.</p>
+                                                <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active slider-w-640" >
+                        <div class=" ">
+                            <ul>
+                                <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-cyan-500 via-cyan-400 to">
+                                    <img class=" bg-contain" src="../assets/thumbnail/bg-nhs.webp">
+                                        <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
+                                            <img class="bg-white" src="../assets/thumbnail/logo-nhs-dark.webp" alt="">
+                                            <div class="mt-10">
+                                                <p class="text-white text-sm">Learn how one of the world's largest health care providers, National Health Service, chose Ionic to boost worker productivity and agility.</p>
+                                                <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active slider-w-640" >
+                        <div class="">
+                            <ul>
+                                <li class="max-w-xl slider-w-640 relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-blue-500 via-blue-400 to">
+                                    <img class=" bg-contain" src="../assets/thumbnail/bg-southwest.webp" alt="">
+                                    
+                                        <div class="px-5 px-w-285 absolute mt-bobcat top-0 ">
+                                            <img class="" src="../assets/thumbnail/logo-southwest-dark.webp" alt="">
+                                            <div class="mt-10">
+                                                <p class="text-white text-sm">Southwest delivers a cutting-edge mobile experience to riders, while accelerating development timelines, reducing risk, and improving operational agility.</p>
+                                                <button class="text-white fs-w-285 text-xs whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="dark:bg-slate-800">
-    <div class="container mx-auto ">
-        <p class="reveal_up_down text-center text-blue-600  p-10">Meet our customers <i class="fa-solid fa-arrow-right"></i></p>
-    </div>
-</section>
-
+    <section class="dark:bg-slate-800">
+        <div class="container mx-auto ">
+            <p class="reveal_up_down text-center text-blue-600  p-10">Meet our customers <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </section>
 
 <!-- one codebase -->
-<section class="dark:bg-slate-800">
-    <div class="reveal_up_down pb-32 px-5 pt-32 codebase-padding container mx-auto">
-        <div class="relative prefooter flex items-center justify-center bg-[url('../assets/thumbnail/prefooter-bg.png')] w-full bg-cover h-[300px] rounded-3xl">
-            <div class=" text-center ">
-                <h1 class="text-5xl font-bold text-white mb-2 codebase-text">One codebase.Any platform.</h1>
-                <h3 class="text-lg font-bold text-white mb-5">Start building, or get in touch with our app experts.</h3>
-                <div class="button-codebase">
-                    <button class="bg-slate-200 px-5 py-2 rounded-3xl mr-3">Get Started <i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="text-white">Contact Sales <i class="fa-solid fa-arrow-right"></i></button>
+    <section class="dark:bg-slate-800">
+        <div class="reveal_up_down pb-32 px-5 pt-32 codebase-padding container mx-auto">
+            <div class="relative prefooter flex items-center justify-center bg-[url('../assets/thumbnail/prefooter-bg.png')] w-full bg-cover h-[300px] rounded-3xl">
+                <div class=" text-center ">
+                    <h1 class="text-5xl font-bold text-white mb-2 codebase-text">One codebase.Any platform.</h1>
+                    <h3 class="text-lg font-bold text-white mb-5">Start building, or get in touch with our app experts.</h3>
+                    <div class="button-codebase">
+                        <button class="bg-slate-200 px-5 py-2 rounded-3xl mr-3">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="text-white">Contact Sales <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
  <!-- footer -->
- <section class="dark:bg-slate-800">
-    <div class="container mx-auto px-5">
-        <div class="grid grid-cols-2  py-28    gap-5 md:grid-cols-3 lg:grid-cols-6">
-            <!-- logo -->
-            <div >
-                <img class="reveal_up_down w-20" src="../assets/image/ionic dark logotype black.png" alt="">
-            </div>
-            <div>
-                <ul class="reveal_up_down space-y-3 dark:text-slate-100">
-                    <li class="font-bold ">The Platform</li>
-                    <li class="text-slate-600 cursor-pointer">Overview</li>
-                    <li class="text-slate-600 cursor-pointer">Build</li>
-                    <li class="text-slate-600 cursor-pointer">Secure</li>
-                    <li class="text-slate-600 cursor-pointer">Deliver</li>
-                    <li class="text-slate-600 cursor-pointer">Why Ionic?</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="reveal_up_down space-y-3 dark:text-slate-100">
-                    <li class="font-bold">Products</li>
-                    <li class="text-slate-600 cursor-pointer ">Framework</li>
-                    <li class="text-slate-600 cursor-pointer">Capacitor</li>
-                    <li class="text-slate-600 cursor-pointer">Appflow</li>
-                    <li class="text-slate-600 cursor-pointer">Identity Vault</li>
-                    <li class="text-slate-600 cursor-pointer">Secure Storage</li>
-                    <li class="text-slate-600 cursor-pointer">Auth Connect</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="reveal_up_down space-y-3 dark:text-slate-100">
-                    <li class="font-bold">Resources</li>
-                    <li class="text-slate-600 cursor-pointer">Resorce Center</li>
-                    <li class="text-slate-600 cursor-pointer">Blog</li>
-                    <li class="text-slate-600 cursor-pointer">Articles</li>
-                    <li class="text-slate-600 cursor-pointer">Webinars</li>
-                    <li class="text-slate-600 cursor-pointer">Case Studies</li>
-                    <li class="text-slate-600 cursor-pointer">Videos</li>
-                </ul>
-            </div>
-            <div>
-                <ul class=" reveal_up_down space-y-3 dark:text-slate-100">
-                    <li class="font-bold">Company</li>
-                    <li class="text-slate-600 cursor-pointer">About us</li>
-                    <li class="text-slate-600 cursor-pointer">Customers</li>
-                    <li class="text-slate-600 cursor-pointer">Brand</li>
-                    <li class="text-slate-600 cursor-pointer">Contact</li>
-                    <li class="text-slate-600 cursor-pointer">Careers</li>
-                    <li class="text-slate-600 cursor-pointer">Privacy</li>
-                </ul>
-            </div>
-            <div>
-                <ul class=" reveal_up_down space-y-3 dark:text-slate-100">
-                    <li class="font-bold">Support</li>
-                    <li class="text-slate-600 cursor-pointer">Help Center</li>
-                    <li class="text-slate-600 cursor-pointer">Partners</li>
-                    <li class="text-slate-600 cursor-pointer">Advisory</li>
-                    <li class="text-slate-600 cursor-pointer">Enterprise Guide</li>
-                </ul>
-            </div>
-        
+    <section class="dark:bg-slate-800">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-2  py-28    gap-5 md:grid-cols-3 lg:grid-cols-6">
+                <!-- logo -->
+                <div >
+                    <img class="reveal_up_down w-20" src="../assets/image/ionic dark logotype black.png" alt="">
+                </div>
+                <div>
+                    <ul class="reveal_up_down space-y-3 dark:text-slate-100">
+                        <li class="font-bold ">The Platform</li>
+                        <li class="text-slate-600 cursor-pointer">Overview</li>
+                        <li class="text-slate-600 cursor-pointer">Build</li>
+                        <li class="text-slate-600 cursor-pointer">Secure</li>
+                        <li class="text-slate-600 cursor-pointer">Deliver</li>
+                        <li class="text-slate-600 cursor-pointer">Why Ionic?</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="reveal_up_down space-y-3 dark:text-slate-100">
+                        <li class="font-bold">Products</li>
+                        <li class="text-slate-600 cursor-pointer ">Framework</li>
+                        <li class="text-slate-600 cursor-pointer">Capacitor</li>
+                        <li class="text-slate-600 cursor-pointer">Appflow</li>
+                        <li class="text-slate-600 cursor-pointer">Identity Vault</li>
+                        <li class="text-slate-600 cursor-pointer">Secure Storage</li>
+                        <li class="text-slate-600 cursor-pointer">Auth Connect</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="reveal_up_down space-y-3 dark:text-slate-100">
+                        <li class="font-bold">Resources</li>
+                        <li class="text-slate-600 cursor-pointer">Resorce Center</li>
+                        <li class="text-slate-600 cursor-pointer">Blog</li>
+                        <li class="text-slate-600 cursor-pointer">Articles</li>
+                        <li class="text-slate-600 cursor-pointer">Webinars</li>
+                        <li class="text-slate-600 cursor-pointer">Case Studies</li>
+                        <li class="text-slate-600 cursor-pointer">Videos</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class=" reveal_up_down space-y-3 dark:text-slate-100">
+                        <li class="font-bold">Company</li>
+                        <li class="text-slate-600 cursor-pointer">About us</li>
+                        <li class="text-slate-600 cursor-pointer">Customers</li>
+                        <li class="text-slate-600 cursor-pointer">Brand</li>
+                        <li class="text-slate-600 cursor-pointer">Contact</li>
+                        <li class="text-slate-600 cursor-pointer">Careers</li>
+                        <li class="text-slate-600 cursor-pointer">Privacy</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class=" reveal_up_down space-y-3 dark:text-slate-100">
+                        <li class="font-bold">Support</li>
+                        <li class="text-slate-600 cursor-pointer">Help Center</li>
+                        <li class="text-slate-600 cursor-pointer">Partners</li>
+                        <li class="text-slate-600 cursor-pointer">Advisory</li>
+                        <li class="text-slate-600 cursor-pointer">Enterprise Guide</li>
+                    </ul>
+                </div>
+            
 
-        </div>
-        <!-- Copyright -->
-        <div class=" flex justify-between copyright-flex py-5   mt-5 mb-5">
-            <div>
-                <ul class="flex justify-between text-sm gap-3 dark:text-slate-100  text-slate-500 ">
-                    <li class="cursor-pointer">Copyright © 2023 Ionic</li>
-                    <li class="cursor-pointer">Terms</li>
-                    <li class="cursor-pointer">Privacy</li>
-                </ul>
             </div>
-            <div>
-                <ul class="flex gap-3  margin-top">
-                    <li class=" dark:text-slate-100"><i  class="text-slate-500  dark:text-slate-100 hover:text-slate-800 fa-brands fa-twitter "></i></li>
-                    <li><i class="fa-brands fa-github text-slate-500 hover:text-slate-800 dark:text-slate-100"></i></li>
-                    <li><i class="fa-brands fa-facebook text-slate-500 hover:text-slate-800 dark:text-slate-100"></i></li>
-                </ul>
+            <!-- Copyright -->
+            <div class=" flex justify-between copyright-flex py-5   mt-5 mb-5">
+                <div>
+                    <ul class="flex justify-between text-sm gap-3 dark:text-slate-100  text-slate-500 ">
+                        <li class="cursor-pointer">Copyright © 2023 Ionic</li>
+                        <li class="cursor-pointer">Terms</li>
+                        <li class="cursor-pointer">Privacy</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex gap-3  margin-top">
+                        <li class=" dark:text-slate-100"><i  class="text-slate-500  dark:text-slate-100 hover:text-slate-800 fa-brands fa-twitter "></i></li>
+                        <li><i class="fa-brands fa-github text-slate-500 hover:text-slate-800 dark:text-slate-100"></i></li>
+                        <li><i class="fa-brands fa-facebook text-slate-500 hover:text-slate-800 dark:text-slate-100"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -1885,6 +1974,9 @@ box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
         reset:true,
     }
     );
+    window.addEventListener("load",_=>{
+        document.querySelector(".loading").style.display= "none"
+    })
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
