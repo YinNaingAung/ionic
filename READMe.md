@@ -1,3 +1,3 @@
-#Ionic
-##Blog
-##Pricing
+# Ionic
+## Blog
+### Pricing
